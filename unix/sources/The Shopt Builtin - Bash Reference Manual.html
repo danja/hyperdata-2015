@@ -1,0 +1,300 @@
+<html lang="en">
+<head>
+<title>The Shopt Builtin - Bash Reference Manual</title>
+<meta http-equiv="Content-Type" content="text/html">
+<meta name="description" content="Bash Reference Manual">
+<meta name="generator" content="makeinfo 4.13">
+<link title="Top" rel="start" href="index.html#Top">
+<link rel="up" href="Modifying-Shell-Behavior.html#Modifying-Shell-Behavior" title="Modifying Shell Behavior">
+<link rel="prev" href="The-Set-Builtin.html#The-Set-Builtin" title="The Set Builtin">
+<link href="http://www.gnu.org/software/texinfo/" rel="generator-home" title="Texinfo Homepage">
+<!--
+This text is a brief description of the features that are present in
+the Bash shell (version 4.1, 23 December 2009).
+
+This is Edition 4.1, last updated 23 December 2009,
+of `The GNU Bash Reference Manual',
+for `Bash', Version 4.1.
+
+Copyright (C) 1988--2009 Free Software Foundation, Inc.
+
+Permission is granted to make and distribute verbatim copies of
+this manual provided the copyright notice and this permission notice
+are preserved on all copies.
+
+     Permission is granted to copy, distribute and/or modify this
+     document under the terms of the GNU Free Documentation License,
+     Version 1.3 or any later version published by the Free Software
+     Foundation; with no Invariant Sections, with the Front-Cover texts
+     being ``A GNU Manual'', and with the Back-Cover Texts as in (a)
+     below.  A copy of the license is included in the section entitled
+     ``GNU Free Documentation License''.
+
+     (a) The FSF's Back-Cover Text is: You are free to copy and modify
+     this GNU manual.  Buying copies from GNU Press supports the FSF in
+     developing GNU and promoting software freedom.''
+
+   -->
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css"><!--
+  pre.display { font-family:inherit }
+  pre.format  { font-family:inherit }
+  pre.smalldisplay { font-family:inherit; font-size:smaller }
+  pre.smallformat  { font-family:inherit; font-size:smaller }
+  pre.smallexample { font-size:smaller }
+  pre.smalllisp    { font-size:smaller }
+  span.sc    { font-variant:small-caps }
+  span.roman { font-family:serif; font-weight:normal; } 
+  span.sansserif { font-family:sans-serif; font-weight:normal; } 
+--></style>
+</head>
+<body>
+<div class="node">
+<a name="The-Shopt-Builtin"></a>
+<p>
+Previous:&nbsp;<a rel="previous" accesskey="p" href="The-Set-Builtin.html#The-Set-Builtin">The Set Builtin</a>,
+Up:&nbsp;<a rel="up" accesskey="u" href="Modifying-Shell-Behavior.html#Modifying-Shell-Behavior">Modifying Shell Behavior</a>
+<hr>
+</div>
+
+<h4 class="subsection">4.3.2 The Shopt Builtin</h4>
+
+<p>This builtin allows you to change additional shell optional behavior.
+
+     <dl>
+<dt><code>shopt</code><dd><a name="index-shopt-150"></a>
+     <pre class="example">          shopt [-pqsu] [-o] [<var>optname</var> ...]
+</pre>
+     <p>Toggle the values of variables controlling optional shell behavior. 
+With no options, or with the <samp><span class="option">-p</span></samp> option, a list of all settable
+options is displayed, with an indication of whether or not each is set. 
+The <samp><span class="option">-p</span></samp> option causes output to be displayed in a form that
+may be reused as input. 
+Other options have the following meanings:
+
+          <dl>
+<dt><code>-s</code><dd>Enable (set) each <var>optname</var>.
+
+          <br><dt><code>-u</code><dd>Disable (unset) each <var>optname</var>.
+
+          <br><dt><code>-q</code><dd>Suppresses normal output; the return status
+indicates whether the <var>optname</var> is set or unset. 
+If multiple <var>optname</var> arguments are given with <samp><span class="option">-q</span></samp>,
+the return status is zero if all <var>optnames</var> are enabled;
+non-zero otherwise.
+
+          <br><dt><code>-o</code><dd>Restricts the values of
+<var>optname</var> to be those defined for the <samp><span class="option">-o</span></samp> option to the
+<code>set</code> builtin (see <a href="The-Set-Builtin.html#The-Set-Builtin">The Set Builtin</a>). 
+</dl>
+
+     <p>If either <samp><span class="option">-s</span></samp> or <samp><span class="option">-u</span></samp>
+is used with no <var>optname</var> arguments, the display is limited to
+those options which are set or unset, respectively.
+
+     <p>Unless otherwise noted, the <code>shopt</code> options are disabled (off)
+by default.
+
+     <p>The return status when listing options is zero if all <var>optnames</var>
+are enabled, non-zero otherwise.  When setting or unsetting options,
+the return status is zero unless an <var>optname</var> is not a valid shell
+option.
+
+     <p>The list of <code>shopt</code> options is:
+          <dl>
+<dt><code>autocd</code><dd>If set, a command name that is the name of a directory is executed as if
+it were the argument to the <code>cd</code> command. 
+This option is only used by interactive shells.
+
+          <br><dt><code>cdable_vars</code><dd>If this is set, an argument to the <code>cd</code> builtin command that
+is not a directory is assumed to be the name of a variable whose
+value is the directory to change to.
+
+          <br><dt><code>cdspell</code><dd>If set, minor errors in the spelling of a directory component in a
+<code>cd</code> command will be corrected. 
+The errors checked for are transposed characters,
+a missing character, and a character too many. 
+If a correction is found, the corrected path is printed,
+and the command proceeds. 
+This option is only used by interactive shells.
+
+          <br><dt><code>checkhash</code><dd>If this is set, Bash checks that a command found in the hash
+table exists before trying to execute it.  If a hashed command no
+longer exists, a normal path search is performed.
+
+          <br><dt><code>checkjobs</code><dd>If set, Bash lists the status of any stopped and running jobs before
+exiting an interactive shell.  If any jobs are running, this causes
+the exit to be deferred until a second exit is attempted without an
+intervening command (see <a href="Job-Control.html#Job-Control">Job Control</a>). 
+The shell always postpones exiting if any jobs are stopped.
+
+          <br><dt><code>checkwinsize</code><dd>If set, Bash checks the window size after each command
+and, if necessary, updates the values of
+<samp><span class="env">LINES</span></samp> and <samp><span class="env">COLUMNS</span></samp>.
+
+          <br><dt><code>cmdhist</code><dd>If set, Bash
+attempts to save all lines of a multiple-line
+command in the same history entry.  This allows
+easy re-editing of multi-line commands.
+
+          <br><dt><code>compat31</code><dd>If set, Bash
+changes its behavior to that of version 3.1 with respect to quoted
+arguments to the conditional command's =~ operator.
+
+          <br><dt><code>dirspell</code><dd>If set, Bash
+attempts spelling correction on directory names during word completion
+if the directory name initially supplied does not exist.
+
+          <br><dt><code>dotglob</code><dd>If set, Bash includes filenames beginning with a `.' in
+the results of filename expansion.
+
+          <br><dt><code>execfail</code><dd>If this is set, a non-interactive shell will not exit if
+it cannot execute the file specified as an argument to the <code>exec</code>
+builtin command.  An interactive shell does not exit if <code>exec</code>
+fails.
+
+          <br><dt><code>expand_aliases</code><dd>If set, aliases are expanded as described below under Aliases,
+<a href="Aliases.html#Aliases">Aliases</a>. 
+This option is enabled by default for interactive shells.
+
+          <br><dt><code>extdebug</code><dd>If set, behavior intended for use by debuggers is enabled:
+
+               <ol type=1 start=1>
+<li>The <samp><span class="option">-F</span></samp> option to the <code>declare</code> builtin (see <a href="Bash-Builtins.html#Bash-Builtins">Bash Builtins</a>)
+displays the source file name and line number corresponding to each function
+name supplied as an argument.
+
+               <li>If the command run by the <code>DEBUG</code> trap returns a non-zero value, the
+next command is skipped and not executed.
+
+               <li>If the command run by the <code>DEBUG</code> trap returns a value of 2, and the
+shell is executing in a subroutine (a shell function or a shell script
+executed by the <code>.</code> or <code>source</code> builtins), a call to
+<code>return</code> is simulated.
+
+               <li><code>BASH_ARGC</code> and <code>BASH_ARGV</code> are updated as described in their
+descriptions (see <a href="Bash-Variables.html#Bash-Variables">Bash Variables</a>).
+
+               <li>Function tracing is enabled:  command substitution, shell functions, and
+subshells invoked with <code>( </code><var>command</var><code> )</code> inherit the
+<code>DEBUG</code> and <code>RETURN</code> traps.
+
+               <li>Error tracing is enabled:  command substitution, shell functions, and
+subshells invoked with <code>( </code><var>command</var><code> )</code> inherit the
+<code>ERROR</code> trap.
+               </ol>
+
+          <br><dt><code>extglob</code><dd>If set, the extended pattern matching features described above
+(see <a href="Pattern-Matching.html#Pattern-Matching">Pattern Matching</a>) are enabled.
+
+          <br><dt><code>extquote</code><dd>If set, <code>$'</code><var>string</var><code>'</code> and <code>$"</code><var>string</var><code>"</code> quoting is
+performed within <code>${</code><var>parameter</var><code>}</code> expansions
+enclosed in double quotes.  This option is enabled by default.
+
+          <br><dt><code>failglob</code><dd>If set, patterns which fail to match filenames during filename expansion
+result in an expansion error.
+
+          <br><dt><code>force_fignore</code><dd>If set, the suffixes specified by the <samp><span class="env">FIGNORE</span></samp> shell variable
+cause words to be ignored when performing word completion even if
+the ignored words are the only possible completions. 
+See <a href="Bash-Variables.html#Bash-Variables">Bash Variables</a>, for a description of <samp><span class="env">FIGNORE</span></samp>. 
+This option is enabled by default.
+
+          <br><dt><code>globstar</code><dd>If set, the pattern &lsquo;<samp><span class="samp">**</span></samp>&rsquo; used in a filename expansion context will
+match a files and zero or more directories and subdirectories. 
+If the pattern is followed by a &lsquo;<samp><span class="samp">/</span></samp>&rsquo;, only directories and
+subdirectories match.
+
+          <br><dt><code>gnu_errfmt</code><dd>If set, shell error messages are written in the standard <span class="sc">gnu</span> error
+message format.
+
+          <br><dt><code>histappend</code><dd>If set, the history list is appended to the file named by the value
+of the <samp><span class="env">HISTFILE</span></samp>
+variable when the shell exits, rather than overwriting the file.
+
+          <br><dt><code>histreedit</code><dd>If set, and Readline
+is being used, a user is given the opportunity to re-edit a
+failed history substitution.
+
+          <br><dt><code>histverify</code><dd>If set, and Readline
+is being used, the results of history substitution are not immediately
+passed to the shell parser.  Instead, the resulting line is loaded into
+the Readline editing buffer, allowing further modification.
+
+          <br><dt><code>hostcomplete</code><dd>If set, and Readline is being used, Bash will attempt to perform
+hostname completion when a word containing a &lsquo;<samp><span class="samp">@</span></samp>&rsquo; is being
+completed (see <a href="Commands-For-Completion.html#Commands-For-Completion">Commands For Completion</a>).  This option is enabled
+by default.
+
+          <br><dt><code>huponexit</code><dd>If set, Bash will send <code>SIGHUP</code> to all jobs when an interactive
+login shell exits (see <a href="Signals.html#Signals">Signals</a>).
+
+          <br><dt><code>interactive_comments</code><dd>Allow a word beginning with &lsquo;<samp><span class="samp">#</span></samp>&rsquo;
+to cause that word and all remaining characters on that
+line to be ignored in an interactive shell. 
+This option is enabled by default.
+
+          <br><dt><code>lithist</code><dd>If enabled, and the <code>cmdhist</code>
+option is enabled, multi-line commands are saved to the history with
+embedded newlines rather than using semicolon separators where possible.
+
+          <br><dt><code>login_shell</code><dd>The shell sets this option if it is started as a login shell
+(see <a href="Invoking-Bash.html#Invoking-Bash">Invoking Bash</a>). 
+The value may not be changed.
+
+          <br><dt><code>mailwarn</code><dd>If set, and a file that Bash is checking for mail has been
+accessed since the last time it was checked, the message
+<code>"The mail in </code><var>mailfile</var><code> has been read"</code> is displayed.
+
+          <br><dt><code>no_empty_cmd_completion</code><dd>If set, and Readline is being used, Bash will not attempt to search
+the <samp><span class="env">PATH</span></samp> for possible completions when completion is attempted
+on an empty line.
+
+          <br><dt><code>nocaseglob</code><dd>If set, Bash matches filenames in a case-insensitive fashion when
+performing filename expansion.
+
+          <br><dt><code>nocasematch</code><dd>If set, Bash matches patterns in a case-insensitive fashion when
+performing matching while executing <code>case</code> or <code>[[</code>
+conditional commands.
+
+          <br><dt><code>nullglob</code><dd>If set, Bash allows filename patterns which match no
+files to expand to a null string, rather than themselves.
+
+          <br><dt><code>progcomp</code><dd>If set, the programmable completion facilities
+(see <a href="Programmable-Completion.html#Programmable-Completion">Programmable Completion</a>) are enabled. 
+This option is enabled by default.
+
+          <br><dt><code>promptvars</code><dd>If set, prompt strings undergo
+parameter expansion, command substitution, arithmetic
+expansion, and quote removal after being expanded
+as described below (see <a href="Printing-a-Prompt.html#Printing-a-Prompt">Printing a Prompt</a>). 
+This option is enabled by default.
+
+          <br><dt><code>restricted_shell</code><dd>The shell sets this option if it is started in restricted mode
+(see <a href="The-Restricted-Shell.html#The-Restricted-Shell">The Restricted Shell</a>). 
+The value may not be changed. 
+This is not reset when the startup files are executed, allowing
+the startup files to discover whether or not a shell is restricted.
+
+          <br><dt><code>shift_verbose</code><dd>If this is set, the <code>shift</code>
+builtin prints an error message when the shift count exceeds the
+number of positional parameters.
+
+          <br><dt><code>sourcepath</code><dd>If set, the <code>source</code> builtin uses the value of <samp><span class="env">PATH</span></samp>
+to find the directory containing the file supplied as an argument. 
+This option is enabled by default.
+
+          <br><dt><code>xpg_echo</code><dd>If set, the <code>echo</code> builtin expands backslash-escape sequences
+by default.
+
+     </dl>
+
+     <p class="noindent">The return status when listing options is zero if all <var>optnames</var>
+are enabled, non-zero otherwise. 
+When setting or unsetting options, the return status is zero unless an
+<var>optname</var> is not a valid shell option.
+
+   </dl>
+
+   </body></html>
+
