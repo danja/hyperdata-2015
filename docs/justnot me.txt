@@ -1,0 +1,56 @@
+That's Just Not Me
+
+Do this on youtube?
+
+http://peterfox.com.au/manifesto_write.htm
+http://e.piphanies.com/manifesto.php
+
+fish aren't curious about water. Eskimos, snow.
+
+This post is going to be a bit of a brain dump about how I use the Internet and how I'd like to use the Internet. Also how the Internet uses me and how I'd like the Internet to use me. I'm hoping that by getting this stuff down into black and white I can crystalize out some kind of strategy for getting from the former of each of these to the latter. I'm aiming for some kind of a personal manifesto, something that'll fit on one slide.
+
+Other Internet
+
+http://www.searchenginejournal.com/should-bloggers-be-nervous-about-google-plus/31366/
+http://marshallk.com/how-to-quit-your-day-job-become-a-professional-tech-blogger
+http://www.newscientist.com/article/mg21128211.900-welcome-to-the-age-of-the-splinternet.html
+http://blog.jonudell.net/2011/07/18/distracting-chatter-is-useful-but-thanks-to-rss-remember-that-its-optional/
+http://www.w3.org/DesignIssues/CloudStorage.html
+http://www.w3.org/DesignIssues/Abstractions.html
+
+http://www.w3.org/2009/Talks/01-15-steven-website/
+http://www.w3.org/2008/Talks/10-22-steven-website/
+
+instant gratification
+
+G+ and identity
+use http://dannyayers.com
+
+Web
+Until recently most of my intentional use of the social Web fell into three buckets: Twitter, Facebook and the Blogosphere.
+
+pl -> plus. not planet.
+
+static content vs. news content (http://www.w3.org/DesignIssues/)
+
+What do I search for?
+
+I personally have a handful of relatively specialized interests : the Semantic Web
+Broader interests : art history, 
+
+While the core themes of these has stayed relatively static for many years, there has been chnage. Semantic Web, Linked Data, Distributed Social Web.
+
+Completely new stuff
+
+
+personal knowledgebase
+
+action/reaction
+social grooming
+connections
+opinion
+ideas
+
+MANIFESTO
+You Should Have a Web Site
+http://en.wikipedia.org/wiki/Think_Globally,_Act_Locally
