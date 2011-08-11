@@ -1,0 +1,6 @@
+=== Sources ===
+
+man pages
+Wikipedia/dbPedia
+
+http://www.techpresentations.com/category/site-improvements/
