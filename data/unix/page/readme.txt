@@ -1,0 +1,1 @@
+this dir will provide HTML representations of resources

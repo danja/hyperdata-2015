@@ -1,0 +1,26 @@
+=== How? ===
+
+server-side or in-browser?
+prototype in Scute? Yes!!!
+
+node.js 
+https://github.com/antoniogarrote/rdfstore-js/
+may cover both...
+
+--------------------
+views: 
+
+Columns 
+- expanding backwards/forwards across screen, s, p, o (bit like tabulator)
+right-click on node, Add to Collection...
+
+Collection
+- subgraph for further study
+
+Item
+- properties of individual resources 
+custom renderers for known types
+
+
+
+
