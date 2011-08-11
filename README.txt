@@ -10,3 +10,6 @@ unix -linked data for Unix/Bash/POSIX commands
 lambda - linked data describing programming languages
 electro - linked data for electronic circuits
 danja - linked data for danny stuff
+
+== Related Projects ==
+Scute - will prototype browser there
