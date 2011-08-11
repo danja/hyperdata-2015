@@ -12,4 +12,4 @@ electro - linked data for electronic circuits
 danja - linked data for danny stuff
 
 == Related Projects ==
-Scute - will prototype browser there
+Scute - will prototype browser there.
