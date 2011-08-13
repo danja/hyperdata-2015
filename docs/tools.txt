@@ -2,3 +2,6 @@
 
 RDF-aware spider
 pluggable conversion scripts
+
+////
+dev tools: Eclipse + Chrome JS plugin + git plugin
