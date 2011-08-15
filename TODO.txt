@@ -9,9 +9,18 @@ addTarget(t)
 addProcessor(p)
 
 add Digest auth proxy to Fuseki
+
+simple data POST form (upload & pasted)
 ]
 
 write tests
 
+----------------------------------
+http://curl.haxx.se/docs/httpscripting.html
 
 
+curl --data-urlencode "name=I am Daniel" http://www.example.com
+
+curl --anyauth -u "username:password" 
+
+ curl --form upload=@localfilename --form press=OK [URL]
