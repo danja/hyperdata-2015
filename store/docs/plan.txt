@@ -1,0 +1,2 @@
+Fuseki + TDB + Erlda
+Exposed via node.js proxy with Digest Auth on updates
