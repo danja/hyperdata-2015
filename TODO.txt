@@ -1,0 +1,17 @@
+2011-08-15
+
+sketch tests (curl?) for:
+[
+setup Fuseki + TDB (hidden port)
+
+figure out how to modularise proxy.js, something like:
+addTarget(t)
+addProcessor(p)
+
+add Digest auth proxy to Fuseki
+]
+
+write tests
+
+
+
