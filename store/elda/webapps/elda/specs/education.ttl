@@ -1,0 +1,1144 @@
+#
+# API endpoints for accessing the data at the SPARQL endpoint
+# http://services.data.gov.uk/education/sparql
+#
+# This is a big file, but don't worry: after about line 200 it's
+# all vocabulary definitions, giving types, short names, and
+# ranges to properties. 
+#
+
+@prefix spec: <http://services.data.gov.uk/education/api#> .
+
+@prefix lda:     <http://purl.org/linked-data/api/vocab#> .
+
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix geo:     <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix school:  <http://education.data.gov.uk/def/school/> .
+@prefix spatialrelations:  <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/> .
+
+@prefix extras: <http://www.epimorphics.com/vocabularies/lda#> .
+@prefix ids: <http://education.data.gov.uk/id/school/>.
+
+# select schools that are related to a resource, via the school:pageOfEducation property, 
+# whose label is "Primary"
+#
+# Equivalent sparql (ignoring prefixes):
+#
+# SELECT ?item WHERE {
+#   ?item a school:School;
+#      school:phaseOfEducation ?phase.
+#   ?phase rdfs:label "Primary".
+# }
+#
+spec:schoolsPrimarySelector
+	a lda:Selector ;
+	lda:filter "type=School&name-phaseOfEducation=Primary"
+	.
+
+# select schools that are related to a resource, via the school:pageOfEducation property, 
+# whose label is "Secondary"
+#
+# Equivalent sparql (ignoring prefixes):
+#
+# SELECT ?item WHERE {
+#   ?item a school:School;
+#      school:phaseOfEducation ?phase.
+#   ?phase rdfs:label "Secondary#No order specified".
+# }
+#
+spec:schoolsSecondarySelector
+	a lda:Selector ;
+	lda:filter "type=School&name-phaseOfEducation=Secondary"
+	.
+
+#VIEWERS
+
+spec:viewerShort a lda:Viewer 
+    ; lda:name "short" 
+    ; lda:property 
+        rdf:type, rdfs:label, school:establishmentStatus, school:typeOfEstablishment
+    .
+
+spec:viewerMedium a lda:Viewer 
+    ; lda:name "medium" 
+    ; lda:property "type.label", "type.nurseryProvision"
+    ; lda:property 
+        rdfs:label, school:establishmentStatus, school:typeOfEstablishment, school:schoolCapacity
+        , school:phaseOfEducation, school:districtAdministrative, school:parliamentaryConstituency
+        , school:administrativeWard, school:nurseryProvision 
+    .
+
+#
+# API DESCRIPTION
+#
+
+<http://services.data.gov.uk/education/sparql> extras:supportsNestedSelect false.
+
+spec:api a lda:API 
+    ; rdfs:label "Edubase API"@en
+    ; foaf:primaryTopic school:theUkSchoolsSystemWhichNeedsAProperURI
+    ; lda:maxPageSize "50"
+    ; lda:defaultPageSize "10" 
+    ; lda:sparqlEndpoint <http://services.data.gov.uk/education/sparql>
+    #
+    # normally constructed URIs (for views, formatters, metadata, etc) are based
+    # on the context root of the request. If lda:base is set, then it is used as
+    # the root instead.
+    #
+    #- ; lda:base "http://education.gov.uk/" 
+    #
+    # activeImageBase is used by the stylesheet to specify the server-relative
+    # location for active image icons; likewise inactiveImageBase for inactive
+    # icons. _resourceRoot is used as the (possibly relative) root for URIs
+    # constructed by the stylesheet for possibly-shared resources. webapp is
+    # the webapp root name.
+    #
+	; lda:variable
+		[lda:name "activeImageBase"; lda:value "/elda/images/green/16x16"]
+		, [lda:name "inactiveImageBase"; lda:value "/elda/images/grey/16x16"]
+		, [lda:name "_resourceRoot"; lda:value "/elda/"]
+		, [lda:name "webapp"; lda:value "/elda"]
+	#
+	# the default html formatter invokes the XSLT stylesheet. It will normally
+	# be pulled in by a browsers default accept-header, but it can be specified
+	# explicitly using the .html suffix on the URI path.
+	#
+	; lda:formatter 
+		[a lda:XsltFormatter
+		; lda:name 'html'
+		; lda:stylesheet 'xsltsheets/ashtml.xsl'    
+		; extras:metadataOptions "bindings,formats,versions,execution"
+		; lda:mimeType 'text/html'
+		] 
+	#
+	# as an alternative, a non-default html formatter with the name
+	# 'plainhtml' produces a very simple html rendering of the view.
+	#
+	# the turtle, rdf/xml, and json renderers are builtin and don't
+	# need specification in this config file.
+	#
+	; lda:formatter
+		[a lda:HtmlFormatter
+		; extras:className "com.epimorphics.lda.demo.Demo_HTML_RendererFactory"
+		; lda:name "plainhtml"
+		; lda:mimeType 'text/htmlx'
+		]
+	#
+	# a bunch of school-type-specific endpoints.
+	#
+	; lda:endpoint 
+	   spec:schools
+	   , spec:schoolsPrimary
+	   , spec:schoolsSecondary
+	   , spec:schoolsPrimaryDistrict
+	   , spec:schoolsSecondaryDistrict 
+	   , spec:school-by-id
+	#
+	# Magic variables.
+	#
+	# _suppress_ipto, if set to "yes", causes the isPrimaryTopicOf item
+	# endpoints to be suppressed, to avoid tickling a stylesheet infelicity.
+	#
+	; lda:variable [lda:name "_suppress_ipto"; lda:value "yes"]
+    #
+    # causes property names starting "hasX", with some capital letter
+    # 'X', to start with 'x' instead, to bypass a stylesheet infelicity.
+    #
+    ; lda:variable [lda:name "_strip_has"; lda:value "yes"]        
+    #
+    # don't suppress media-type selection of renderer
+    # (if you need to, set it to "yes")
+    #
+    ; lda:variable [lda:name "_supress_media_type"; lda:value "no"]
+    .
+    	
+#ENDPOINTS
+
+spec:school-by-id
+	a lda:ItemEndpoint
+	; lda:uriTemplate "/education/id/school/{id}"
+	; lda:selector [lda:filter "uniqueReferenceNumber={id}"]
+	; lda:viewer lda:describeViewer
+	.
+
+#List all schools
+spec:schools
+	a lda:ListEndpoint ;
+	lda:uriTemplate "/education/schools" ;
+	lda:selector [ 
+		lda:filter "type=School"
+	] ;
+	lda:defaultViewer lda:labelledDescribeViewer ;
+	lda:viewer spec:viewerShort ;
+	lda:viewer spec:viewerMedium ;
+	lda:viewer [ 
+		lda:name "geo" ;
+		lda:property rdf:type, rdfs:label, school:establishmentStatus, geo:lat, geo:long
+	]
+	.
+
+#List all primary schools
+spec:schoolsPrimary
+	a lda:ListEndpoint ;
+	lda:uriTemplate "/education/schools/primary" ;
+	lda:selector spec:schoolsPrimarySelector ;
+	lda:defaultViewer spec:viewerShort
+	.
+
+#List all secondary schools
+spec:schoolsSecondary
+	a lda:ListEndpoint ;
+	lda:uriTemplate "/education/schools/secondary" ;
+	lda:selector spec:schoolsSecondarySelector;
+	lda:defaultViewer spec:viewerShort
+	.
+
+#List primary schools for a specific district
+#District is identified by a token in the URL
+#Selector builds on the primary school selector, narrowing query to matching region from uri template
+spec:schoolsPrimaryDistrict
+	a lda:ListEndpoint ;
+	lda:uriTemplate "/education/schools/primary/district/{district}" ;
+    lda:selector [ 
+		lda:parent spec:schoolsPrimarySelector ;
+		lda:filter "name-districtAdministrative={district}"
+	] ;
+	lda:defaultViewer spec:viewershort
+    .
+
+spec:schoolsSecondaryDistrict
+	a lda:ListEndpoint ;
+	lda:uriTemplate "/education/schools/secondary/district/{district}" ;
+    lda:selector [ 
+		lda:parent spec:schoolsSecondarySelector ;
+		lda:filter "name-districtAdministrative={district}"
+	] ;
+	lda:defaultViewer spec:viewerShort
+	.
+
+#
+# VOCABULARY
+#
+# The vocabulary declarations say which properties can be used in queries
+# and by what short name those properties are known. If property P with short
+# name Q has range type T, then a query parameters Q=V is translated to
+# a WHERE clause fragment ?item P V' where V' is a literal which is V
+# with type T. This is especially important for numbers and booleans.
+# 
+
+rdf:type
+  lda:label "type" .
+  
+geo:lat
+      lda:label "lat" .
+
+school:openDate
+	a owl:DatatypeProperty
+	; rdfs:range xsd:date
+    ; lda:label "openDate" 
+    .
+
+school:EICLSU
+   	a owl:DatatypeProperty ;
+    rdfs:range xsd:boolean ;
+    lda:label "EICLSU" .
+
+school:highDayFee
+      lda:label "highDayFee" .
+
+school:admissionsPolicy
+      lda:label "admissionsPolicy" .
+
+school:dateofLastISIVisit
+	a owl:DatatypeProperty
+	; rdfs:range xsd:date
+    ; lda:label "dateofLastISIVisit" 
+    .
+
+school:region
+      lda:label "region" .
+
+school:nextHMIorISIvisit
+      lda:label "nextHMIorISIvisit" .
+
+school:teenageMotherPlaces
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "teenageMotherPlaces" .
+
+school:girls18
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls18" .
+
+school:boys10
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys10" .
+
+school:PFI
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "PFI" .
+
+school:HP_Leading_Option
+      lda:label "HP_Leading_Option" .
+
+school:TypeOfEstablishment_City_Technology_College
+      lda:label "Type_City_Technology_College" .
+
+school:TypeOfEstablishment_Foundation_Special_School
+      lda:label "Type_Foundation_Special_School" .
+
+school:parliamentaryConstituency
+      lda:label "parliamentaryConstituency" .
+
+school:TypeOfEstablishment_European_Schools
+      lda:label "Type_European_Schools" .
+
+spatialrelations:northing
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "northing" .
+
+school:association
+      lda:label "association" .
+
+school:LSOA
+      lda:label "LSOA" .
+
+school:lastChangedDate
+	a owl:DatatypeProperty
+    ; lda:label "lastChangedDate" 
+    ; rdfs:range xsd:date
+    .
+
+school:administrativeWard
+      lda:label "administrativeWard" .
+
+school:boys9
+      a owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys9" .
+
+school:trust
+      lda:label "trust" .
+
+school:UKPRN
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "UKPRN" .
+
+school:totalHoursPerWeekPTStaff
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "totalHoursPerWeekPTStaff" .
+
+school:mainSpecialism
+      lda:label "mainSpecialism" .
+
+school:Foundation
+      lda:label "Foundation" .
+
+school:districtAdministrative
+      lda:label "districtAdministrative" .
+
+school:girls16
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls16" .
+
+school:phaseOfEducation
+      lda:label "phaseOfEducation" .
+
+school:town
+      lda:label "town" .
+
+school:EICGroup
+      lda:label "EICGroup" .
+
+school:LLSC
+      lda:label "LLSC" .
+
+school:approvedNumberBoardersSpecial
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "approvedNumberBoardersSpecial" .
+
+school:IndependentSchoolType_Steiner
+      lda:label "IndependentSchoolType_Steiner" .
+
+school:TypeOfEstablishment_Other_Independent_Special_School
+      lda:label "Type_Other_Independent_Special_School" .
+
+school:boarders
+      lda:label "boarders" .
+
+school:TypeOfEstablishment_Special_College
+      lda:label "Type_Special_College" .
+
+school:totalGirlBoarders
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "totalGirlBoarders" .
+
+school:websiteAddress
+      lda:label "websiteAddress" .
+
+school:boys19plus
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys19plus" .
+
+school:dateofLastFPVisit
+	a owl:DatatypeProperty
+    ; rdfs:range xsd:date
+    ; lda:label "dateofLastFPVisit" 
+    .
+
+geo:long
+      lda:label "long" .
+
+school:hasTeenageMothers
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "hasTeenageMothers" .
+
+school:girls17
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls17" .
+
+school:PTGirls3
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "PTGirls3" .
+
+school:PTBoys4c
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "PTBoys4c" .
+
+school:dateofLastOfstedVisit
+	a owl:DatatypeProperty
+	; rdfs:range xsd:date
+	; lda:label "dateofLastOfstedVisit" 
+	.
+
+school:secondarySpecialism
+      lda:label "secondarySpecialism" .
+
+school:PTGirls4c
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "PTGirls4c" .
+
+school:PTGirls2andUnder
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "PTGirls2andUnder" .
+
+school:burnhamReport
+      lda:label "burnhamReport" .
+
+school:hasGOR
+      lda:label "hasGOR" .
+
+school:boys14
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys14" .
+
+school:address1
+      lda:label "address1" .
+
+school:boys6
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys6" .
+
+school:beacon
+      lda:label "beacon" .
+
+school:vcard
+      lda:label "vcard" .
+
+school:censusRecord
+      lda:label "censusRecord" .
+
+school:address
+      lda:label "address" .
+
+school:TypeOfEstablishment_Community_School
+      lda:label "Type_Community_School" .
+
+school:totalPupilsInPublicCare
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "totalPupilsInPublicCare" .
+
+spatialrelations:easting
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "easting" .
+
+school:PTGirls4b
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "PTGirls4b" .
+
+school:numberOfPupils
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "numberOfPupils" .
+
+school:TypeOfEstablishment_Welsh_Establishment
+      lda:label "Type_Welsh_Establishment" .
+
+school:placesPRU
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "placesPRU" .
+
+school:TypeOfEstablishment_Further_Education
+      lda:label "Type_Further_Education" .
+
+school:furtherEducationType
+      lda:label "furtherEducationType" .
+
+school:girls19plus
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls19plus" .
+
+school:boys13
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys13" .
+
+school:boys5
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys5" .
+
+school:address2
+      lda:label "address2" .
+
+school:ofstedSpecialMeasures
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "ofstedSpecialMeasures" .
+
+school:boys4a
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys4a" .
+
+school:compSchoolAge
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "compSchoolAge" .
+
+school:PTBoys4a
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "PTBoys4a" .
+
+
+school:marketingOptInOut
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "marketingOptInOut" .
+
+school:PTGirls4a
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "PTGirls4a" .
+
+school:EIC
+      lda:label "EIC" .
+
+school:nurseryProvision
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "nurseryProvision" .
+
+school:totalPupilsFullTime
+      lda:label "totalPupilsFullTime" .
+
+school:censusAreaStatisticWard
+      lda:label "censusAreaStatisticWard" .
+
+school:specialPupils
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "specialPupils" .
+
+school:address3
+      lda:label "address3" .
+
+school:boys12
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys12" .
+
+school:notes
+      lda:label "notes" .
+
+school:boys4b
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys4b" .
+
+school:boys8
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys8" .
+
+school:statutoryHighAge
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "statutoryHighAge" .
+
+school:TypeOfEstablishment_Voluntary_Controlled_School
+      lda:label "Type_Voluntary_Controlled_School" .
+
+school:postcode
+      lda:label "postcode" .
+
+school:actionFP
+      lda:label "actionFP" .
+
+school:closeDate
+	a owl:DatatypeProperty
+    ; lda:label "closeDate" 
+	; rdfs:range xsd:date
+    .
+
+school:leadershipIncentiveGrant
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "leadershipIncentiveGrant" .
+
+school:PTBoys4b
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "PTBoys4b" .
+
+school:EICCLS
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "EICCLS" .
+
+school:totalBoyBoarders
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "totalBoyBoarders" .
+
+school:TypeOfEstablishment_Sixth_Form_Centres
+      lda:label "Type_Sixth_Form_Centres" .
+
+school:totalStaffPartTime
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "totalStaffPartTime" .
+
+school:registeredEY
+      lda:label "registeredEY" .
+
+school:admingeo
+      lda:label "admingeo" .
+
+school:boys11
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys11" .
+
+school:lowBoardFee
+      lda:label "lowBoardFee" .
+
+school:FTProv
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "FTProv" .
+
+school:boys7
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys7" .
+
+school:hasCCF
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "hasCCF" .
+
+school:boys4c
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys4c" .
+
+school:TypeOfEstablishment_Other_Independent_School
+      lda:label "Type_Other_Independent_School" .
+
+school:boys2
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys2" .
+
+school:establishmentNumber
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "establishmentNumber" .
+
+school:dateofLastWelfareVisit
+	a owl:DatatypeProperty
+	; rdfs:range xsd:date
+    ; lda:label "dateofLastWelfareVisit" 
+    .
+
+school:gender
+      lda:label "gender" .
+
+school:IndependentSchoolType_Music
+      lda:label "IndependentSchoolType_Music" .
+
+school:girls10
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls10" .
+
+school:burnhamGroup
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "burnhamGroup" .
+
+school:girls2andUnder
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls2andUnder" .
+
+school:TrainingSchool
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean .
+
+dc:date
+	# a owl:DatatypeProperty
+	# ; rdfs:range xsd:date
+    lda:label "date" 
+    .
+
+school:ASCHighestAge
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "ASCHighestAge" .
+
+school:boys18
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys18" .
+
+school:totalPupilsPartTime
+      lda:label "totalPupilsPartTime" .
+
+school:FSM
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "FSM" .
+
+school:TypeOfEstablishment_Higher_Education_Institutions
+      lda:label "Type_Higher_Education_Institutions" .
+
+school:girls5
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls5" .
+
+school:uniqueReferenceNumber
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "uniqueReferenceNumber" .
+
+school:IndependentSchoolType_Unusual
+      lda:label "IndependentSchoolType_Unusual" .
+
+school:EBD
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "EBD" .
+
+school:edByOther
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "edByOther" .
+
+school:girls3
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls3" .
+
+school:girls11
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls11" .
+
+school:typeOfEstablishment
+      lda:label "typeOfEstablishment" .
+
+school:TypeOfEstablishment_LA_Nursery_School
+      lda:label "Type_LA_Nursery_School" .
+
+school:establishmentName
+      lda:label "establishmentName" .
+
+school:eaz
+      lda:label "eaz" .
+
+school:IndependentSchoolType_Tutorial
+      lda:label "IndependentSchoolType_Tutorial" .
+
+school:ASCLowestAge
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "ASCLowestAge" .
+
+school:sen
+      lda:label "sen" .
+
+school:FSMPercentage
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "FSMPercentage" .
+
+school:SENStat
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "SENStat" .
+
+school:boys17
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys17" .
+
+school:localAuthority
+      lda:label "localAuthority" .
+
+school:IndependentSchoolType_Montessori_School
+      lda:label "IndependentSchoolType_Montessori_School" .
+
+school:inspectorate
+      lda:label "inspectorate" .
+
+school:Trust
+      lda:label "Trust" .
+
+school:previousLA
+      lda:label "previousLA" .
+
+school:accomChange
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "accomChange" .
+
+school:TypeOfEstablishment_Playing_for_Success_Centres
+      lda:label "Type_Playing_for_Success_Centres" .
+
+school:boys16
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys16" .
+
+school:CensusRecord
+      lda:label "CensusRecord" .
+
+school:specialClasses
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "specialClasses" .
+
+school:lowDayFee
+      lda:label "lowDayFee" .
+
+school:girls7
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls7" .
+
+school:TypeOfEstablishment_Independent_School_Approved_for_SEN_Pupils
+      lda:label "Type_Independent_School_Approved_for_SEN_Pupils" .
+
+school:reasonEstablishmentOpened
+      lda:label "reasonEstablishmentOpened" .
+
+school:boys3
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys3" .
+
+school:investorInPeople
+      lda:label "investorInPeople" .
+
+school:statutoryLowAge
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "statutoryLowAge" .
+
+school:eiCActionZone
+      lda:label "eiCActionZone" .
+
+school:SCUpreferredemail
+      lda:label "SCUpreferredemail" .
+
+school:freshStart
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "freshStart" .
+
+school:SENPRU
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "SENPRU" .
+
+school:boys15
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "boys15" .
+
+school:dateofLastBridgeVisit
+	a owl:DatatypeProperty
+	; rdfs:range xsd:date
+    ; lda:label "dateofLastBridgeVisit" 
+    .
+
+school:TypeOfEstablishment_Voluntary_Aided_School
+      lda:label "Type_Voluntary_Aided_School" .
+
+school:previousEstablishmentNumber
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "previousEstablishmentNumber" .
+
+school:TypeOfEstablishment_Community_Special_School
+      lda:label "Type_Community_Special_School" .
+
+school:IndependentSchoolType_Foreign
+      lda:label "IndependentSchoolType_Foreign" .
+
+school:TypeOfEstablishment_Secure_Units
+      lda:label "Type_Secure_Units" .
+
+school:girls6
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls6" .
+
+school:SCUAlternativeEmail
+      lda:label "SCUAlternativeEmail" .
+
+school:officialSixthForm
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "officialSixthForm" .
+
+school:independentSchoolType
+      lda:label "independentSchoolType" .
+
+school:TypeOfEstablishment_EY_Setting
+      lda:label "Type_EY_Setting" .
+
+school:TypeOfEstablishment_Legacy_types
+      lda:label "Type_Legacy_types" .
+
+school:TypeOfEstablishment_Institution_funded_by_other_Government_Department
+      lda:label "Type_Institution_funded_by_other_Government_Department" .
+
+school:FEHEIdentifier
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "FEHEIdentifier" .
+
+rdfs:label
+      lda:label "label" .
+
+school:girls14
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls14" .
+
+school:BoardingEstablishment
+      lda:label "BoardingEstablishment" .
+
+school:establishmentStatus
+      lda:label "establishmentStatus" .
+
+school:actionGEN
+      lda:label "actionGEN" .
+
+school:ofstedLastInsp
+      lda:label "ofstedLastInsp" .
+
+school:superannuationCategory
+      lda:label "superannuationCategory" .
+
+school:TypeOfEstablishment_Foundation_School
+      lda:label "Type_Foundation_School" .
+
+school:girls9
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls9" .
+
+school:highBoardFee
+      lda:label "highBoardFee" .
+
+school:totalStaffFullTime
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "totalStaffFullTime" .
+
+school:TypeOfEstablishment_Pupil_Referral_Unit
+      lda:label "Type_Pupil_Referral_Unit" .
+
+school:TypeOfEstablishment_Miscellaneous
+      lda:label "Type_Miscellaneous" .
+
+school:girls15
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls15" .
+
+school:TypeOfEstablishment_Service_Childrens_Education
+      lda:label "Type_Service_Childrens_Education" .
+
+school:PTBoys3
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "PTBoys3" .
+
+school:girls8
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls8" .
+
+school:pupilTeacherRatio
+      lda:label "pupilTeacherRatio" .
+
+school:PTBoys2andUnder
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "PTBoys2andUnder" .
+
+school:urbanRural
+      lda:label "urbanRural" .
+
+
+school:reasonEstablishmentClosed
+      lda:label "reasonEstablishmentClosed" .
+
+school:dateofLastSISVisit
+	a owl:DatatypeProperty
+	; rdfs:range xsd:date
+    ; lda:label "dateofLastSISVisit" 
+    .
+
+school:girls12
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls12" .
+
+school:girls4c
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls4c" .
+
+school:federation
+      lda:label "federation" .
+
+school:School
+      lda:label "School" .
+
+school:numberOfBoys
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "numberOfBoys" .
+
+school:charity
+      lda:label "charity" .
+
+school:IndependentSchoolType_Arts
+      lda:label "IndependentSchoolType_Arts" .
+
+school:religiousCharacter
+      lda:label "religiousCharacter" .
+
+school:diocese
+      lda:label "diocese" .
+
+school:TypeOfEstablishment_Offshore_Schools
+      lda:label "Type_Offshore_Schools" .
+
+school:TypeOfEstablishment_Non-Maintained_Special_School
+      lda:label "Type_Non-Maintained_Special_School" .
+
+school:MSOA
+      lda:label "MSOA" .
+
+school:Diocese
+      lda:label "Diocese" .
+
+school:earlyExcellence
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "earlyExcellence" .
+
+school:girls4b
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls4b" .
+
+school:actionWEL
+      lda:label "actionWEL" .
+
+school:girls13
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls13" .
+
+school:trustSchool
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:boolean ;
+      lda:label "trustSchool" .
+
+school:numberOfGirls
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "numberOfGirls" .
+
+school:girls4a
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "girls4a" .
+
+school:schoolCapacity
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "schoolCapacity" .
+
+school:TypeOfEstablishment_Academies
+      lda:label "Type_Academies" .
+
+school:SENNoStat
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "SENNoStat" .
+
+school:EYGovernmentFundedChildren
+      a       owl:DatatypeProperty ;
+      rdfs:range xsd:int ;
+      lda:label "EYGovernmentFundedChildren" .
+
+	

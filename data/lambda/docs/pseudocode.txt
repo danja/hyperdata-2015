@@ -1,0 +1,6 @@
+find all programming languages in dbpedia
+
+get all triples referring to them
+
+
+

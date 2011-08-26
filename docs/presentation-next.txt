@@ -1,0 +1,16 @@
+
+include JustNotMe bits
+
+----
+the rise of the dataheads
+
+http://www.google.com/trends?q=json+data%2C+html+documents&ctab=0&geo=all&date=all&sort=0
+
+----------------
+Scripting agents - recycle
+
+Browser as VM - with UI framework and some support for HTTP...
+
+(V8 compiles to native)
+http://en.wikipedia.org/wiki/V8_(JavaScript_engine)
+------------------

@@ -1,0 +1,254 @@
+1.1.7-SNAPSHOT
+
+* Supplying a lang-P=L query parameter, but no P=V
+  parameter, caused the server to fail with a NullPointer
+  exception. This has been fixed; the setting is silently
+  ignored. (Silently, except that a debug-log entry is
+  generated.)
+
+* The viewer property api:include has been implemented.
+
+* The limited caches now clear themselves /before/ adding
+  the new entry, rather than (unhelpfully) afterwards.
+
+* Media type "application/xml" wasn't supported; it has
+  been added to the built-in renderers as well as text/xml
+  (which appears to have been an accident ...)
+
+* The built-in (Elda extra) JSON renderer now respects the
+  media type supplied when constructed, rather than always
+  producing application/json.
+
+* The options offered when the supplied URL does not match
+  any template URI should now have correct (non-404ing) URIs.
+  The previous method of constructing the URIs was not correct,
+  as it relied on the demo-specific Elda servlet settings.
+
+* When the JSON encoder hits a literal with an unknown datatype,
+  the message is now a log.warn not a System.out.println and
+  mentions the type as well as the literal spelling.
+
+1.1.6
+
+* The JSON encoder now unpacks bnodes in-situ rather than
+  deferring them to the top level for later expansion. (That
+  later level no longer generates incorrect syntax for
+  deferred items.)
+
+* When Elda adds a formatter suffix to a URI and removes any
+  previous formatter suffix, it makes sure that the suffix it
+  removes really is a formatter suffix of this endpoint. Previously it
+  would remove anything that looked like a suffix, eg ".ewea".
+
+* The LimitedTriplesCache now recognises that it's time to empty
+  the resultset cache. (The test had been a literal "false" for
+  debugging purposes that had not been unset.)
+
+* If a stack overflow or out-of-memory exception occurs during Elda 
+  processing, the log entry is more tightly controlled (an 
+  stacktrace is only supplied at DEBUG level) and the message
+  back to the client is clearer.
+
+* A given property chain in the SELECT query binds to a single
+  variable, not a fresh one on every mention (as may happen with
+  eg min-p.q=A&max-p.q=B).
+
+* RouterRestlet.parse() used to crash when the URI fragment supplied
+  to it contained neither "/" nor ".". 
+
+* An unrecognised short property name in a query parameter no longer
+  generates a stack-trace at the op (RouterRestlet) level; the
+  exception is caught and translated to a 400 Bad Query mentioning
+  the unknown name.
+
+* Some places where URI's containing {} were generated have been fixed.
+
+* If a SPARQL endpoint is known to support nested selects, these are
+  used in property-chain view query generation rather than replicating
+  the view template for each different selected ?item. An endpoint
+  can be marked with a property to say that it supports nested
+  selects; local: and tdb: endpoints are automatically known to do
+  this (and that property can be used to switch nested selects off).
+
+* Work is in progress to simplify and decouple the query-generation
+  code.
+
+1.1.5
+
+* mavenisation of release process tested for this release
+
+* added more comments to education.ttl example and rearranged
+  it slightly for clarity; replaced uses of api: prefix with
+  lda: instead.
+
+* Corrected banner on stylesheet-generated page
+
+* fixed bug in media types of built-in renderers (two of them
+  had each other's types).
+
+* fixed a bug in the generated metalink for lda:definition
+  which had accidentally collapsed item URIs and with
+  metalinks and confused the stylesheet.
+
+* fixed some trivial javadoc bugs that made noises in the
+  build process.
+
+* removed the obsolete _ROOT and x_change_(from|to) variables
+  from the config file, code, and documentation.
+
+* updated the documentation, covering some of the magic
+  & stylesheet-driving variables.
+
+* POM does not default to deploying the (large) standalone
+  jar.
+
+* Updated Elda issues list -- marked several issues as
+  fixed.
+
+* Stylesheet revisions (thanks Stuart) to allow generated
+  URIs to be set from LDA variables.
+
+* Revised POMs (thanks Brian) so that the stand-alone
+  demo jar can be constructed using Maven.
+
+* the api:base from the config, if present, over-rides the
+  fixed part of the request URI used for URI construction
+  (for eg the different formatters and views). This allows
+  Elda endpoints to recover from redirections that may have
+  happened when they are mounted somewhere other than the
+  root webapp.
+
+* for compatability with Puelia output, the isPrimaryTopicOf
+  property for item endpoints can be suppressed by setting
+  the config variable _suppress_ipto to "yes".
+
+* built-in views have their defined names, even when they
+  are specified by `api:viewer api:ThatViewerLocalName` constructs.
+  (Previously their names would have been ThatViewerLocalName.)
+
+* Stylesheets are compiled at their point of first user, rather
+  than every time that they are invoked.
+
+* The XML renderer sorts properties by given shortname in its
+  output.
+
+* Fixed bug in variable bindings: the value of an api:variable
+  can now depend on a parameter from a URI template, as the
+  LDA spec says. Bindings are evaluated when used and, if they
+  are complete, will not be evaluated again.
+
+* Item endpoints no longer have page numbers.
+
+* _metadata metadata is now always generated, but not put into
+  the result model unless specified by a _metadata option or
+  demanded by a renderer; this latter allows the XSLT renderer
+  to pull in metadata it requires without the user having to
+  request it.
+
+* Fixed some bugs in URI construction (eg missing ? or / or &).
+
+* Added some extra micro-vocabulary classes.
+
+1.1.4 (1st June 2011)
+
+* Setting variable "_strip_has" to "yes" strips "has"
+  from property shortnames starting hasX with X a capital
+  letter -- hack to allow compatability with Puelia and
+  stylesheet.
+
+* term bindings only generated for properties appearing
+  in the result set, not all possible properties.
+
+* Fixed use of test filenames including "?" which
+  didn't work on Windows clients.
+
+* fixed some issues with defintion of "short names" used
+  for properties.
+
+* Documentation now mentions how to use Elda directly
+  (ie without needing a webapp).
+
+* Elda now has its own internal MediaType type rather
+  than using type/subtype strings.
+
+* Additional metadata -- select and view queries. Versions
+  and formats now off by default. Formats driven from 
+  config file (used to run from a fixed list). Execution
+  context identifies Elda as processor.
+
+* Internals no longer depends on Jersey -- URIInfo and
+  MultivaluedMap have been replaced by local code.
+
+* XML Renderer respects multi-valued-property declarations.
+
+* fixed bug in XML renderer, which was introducing
+  <item> nodes when it should not have.
+
+* The names allocated to pseudo-bnodes in the XML
+  tree now start "_:".
+
+* Elda accepts _metadata=m1,m2... query parameters to specify which
+  metadata is returned. The currently understood options are
+  'all', 'bindings', 'versions', and 'formats', and for the moment 
+  'versions' and 'formats' are enabled regardless (until the test
+  suite is fixed). The bindings metadata is intended to be the
+  same as provided by our sibling implementations.
+
+* progress towards eliminating use of UriBuilder from
+  endpoint code (then from CallContext, reducing
+  dependencies.)
+
+1.1.3 (21 April 2011):
+
+* corrections to language-tag handling: the _lang query
+  parameter has been implemented. Views are now language-
+  filtered as per spec (especially appropriate if one of
+  the DESCRIBE views has been used).
+
+* union parameter handling has been implemented: if there
+  are multiple bindings for some (plain, ie non-prefixed)
+  property, then the query will allow either value for
+  that property. (The current implementation uses ||-filters,
+  not actual unions.)
+
+* the default simple HTML renderer has been rewritten.
+  The new version attaches less-than, equal-to, and
+  greater-than links to integer and date property values.
+  Other kinds of property have an equal-to link. This
+  provides (a weak form of) faceted browsing. The education
+  spec has been updated to type more of these properties.
+
+* the dispatcher that processes URIs and selects the
+  appropriate endpoint has been improved; it now respects
+  JAX-RS template preference order (and should be faster).
+
+* some internal changes to the way query parameters are 
+  handled result in different problem reports:
+
+  - unknown reserved parameters, ie _something other than
+    the defined _ parameters, result in an "unknown reserved
+    parameter" message rather than being treated as a property.
+
+  - multiple values for anything other than a plain P=V
+    parameter are reported as incorrect.
+
+* when the CONSTRUCT queries that do non-DESCRIBE views
+  are very large (which happens surprisingly often in the
+  current architecture), significant time was consumed in
+  their construction. This was traced to naive use of
+  string concatenation and has been fixed.
+
+* exception reporting and handling has been improved.
+
+1.1.2:
+  (details not provided, rolled into 1.1.3)
+
+Post 1.1.1:
+
+* corrected oversight which had the Jetty licenses appearing at the
+  top level of the demo directory. Corrected by distinguishing
+  elda- licenses and jetty- licenses in differently-named files.
+
+* the delivery process now creates and installs javadoc into the
+  elda-javadoc directory.
+

@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Elda -- an implementation of the Linked Data API</title>
+<link href="style.css" type="text/css" rel="stylesheet"></link>
+</head>
+<body>
+
+<div class="main">
+
+<div class="heading">
+<a href="http://www.epimorphics.com">
+<img class="logo" src="epilogo-240.png">
+</a>
+<h1>Elda</h1>
+<h2>An implementation of the Linked Data API</h2>
+</div>
+
+<h1>Additional Elda features</h1>
+
+<p>
+    Elda reserves LDA variable names that begin "_" for
+    configuration purposes.
+</p>
+
+<p>
+    Elda has a built-in XSL stylesheet available which
+    is a mildly configured version of the original
+    written by Jeni Tennison.
+</p>
+
+<p>
+    Elda uses the <code>api:base</code> property to
+    specify where generated URIs are anchored.
+</p>
+
+<p>
+    Elda can exploit SPARQL 1.1 servers to reduce query
+    size for some views.
+</p>
+
+<h2>Configuration variables</h2>
+
+<h3>Variables used by the stylesheet</h3>
+
+<p>
+    The built-in Elda stylesheet generates HTML pages
+    that require http access to images, CSS stylesheets,
+    and Javascript served by the Elda server. Because
+    the webapp root isn't fixed, the stylesheet reads
+    location information from LDA variables that are
+    set as part of creating an Elda webapp.
+</p>
+
+<ul>
+    <li>_resourceRoot: the location from which the
+    resources will be served, relative to the server
+    root. May include a domain:port if the resources
+    are on a different server.
+    </li>
+
+    <li>activeImageBase: the location within the
+    resource root where the active (enabled) images
+    used by the stylesheet are fetched from.
+    </li>
+
+    <li>inactiveImageBase: the location within the
+    resource root where the inactive (disabled) images
+    used by the stylesheet are fetched from.
+    </li>
+
+</ul>
+
+<h3>Variables used by the Elda code</h3>
+
+<ul>
+    <li>_strip_has: (OBSOLESCENT) If this variable is defined
+    and has the value "yes", the XML renderer will rename
+    properties "hasWhatever" (ie where the fourth character
+    is upper-case) to "whatever". This is for compatability
+    with Puelia when using a Puelia-specific stylesheet.
+    </li>
+
+    <li>_suppress_media_type: If there is no .formatter
+    suffix in the request URL, and no _format= query
+    parameter, then the prescribed LDA behaviour is to
+    see if the request headers specify an appropriate
+    media type. If the requesting entity is a browser
+    it almost always will (with */*), which is inconvenient
+    when testing for the default default behaviour of
+    sending JSON. Setting this variable to "yes" will
+    cause Elda to ignore the supplied media type.
+    </li>
+</ul>
+
+<h2>api:base</h2>
+
+<p>
+    An LDA configuration may specify an api:base property.
+    This should, if possible, be used to specify where 
+    the Elda webapp is served from. If specified, all
+    Elda's constructed URIs (such as those for different
+    views or formats of the displayed page) will use
+    that base URI with the path and query parameters
+    supplied in the request. This means that a server
+    at location A can generate URIs as though it were
+    at location B (from which it may have been redirected). 
+</p>
+
+<h2>SPARQL 1.1 features</h2>
+
+<p>
+    Some generated queries -- those that have view defined by
+    property chains and are applied to many selected items -- 
+    are rather large (exceeding a megabyte). These queries are
+    repetitions of the view property accesses specialised by
+    the selected item. If the SPARQL server supports nested
+    selects (part of, but not limited to, SPARQL 1.1), then
+    these repetitions can be replaced by a single application
+    of the view wrapped round a nested select that fetches
+    the items.
+</p>
+
+<p>
+    Elda automatically uses nested selects if the data source 
+    is a <b>local:</b> or <b>tdb:</b> model, or it the
+    <code>sparqEndpoint</code> value of the API is a
+    resource with an <b>extras:supportsNestedSelects</b>
+    value of true, "true", or "yes". (We anticipate that
+    later versions of Elda will dynamically check the server
+    to see if nested selects work.)
+</p>
+
+
+<h2>Building Elda</h2>
+
+<p>TBD</p>
+
+<div class="footer">
+<hr>
+&copy; Copyright 2011 Epimorphics Limited. For licencing conditions see
+<a href="http://elda.googlecode.com/hg/LICENCE.html">http://elda.googlecode.com/hg/LICENCE.html</a>.
+</div>
+</div>
+
+</body>
+</html>
+

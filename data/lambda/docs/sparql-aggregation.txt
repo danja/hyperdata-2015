@@ -1,0 +1,16 @@
+(from andys)
+
+ARQ runs in standards mode (SPARQL 1.1) by default:
+
+SELECT (count(*) AS ?C) { ?s ?p ?o }
+
+Older style,
+
+SELECT count(*) { ?s ?p ?o }
+
+will work if you choose syntaxARQ (which is ticking "SPARQL extended syntax" in the validator [1] or the same service in the Fuseki download.
+
+ARQ supports all the SPARQl 1.1 aggregates [2]
+COUNT, SUM, MIN, MAX, AVG, GROUP_CONCAT, and SAMPLE.
+
+Let me know if you are stil having problems - the jena users list is jena-users AT incubator.apache.org

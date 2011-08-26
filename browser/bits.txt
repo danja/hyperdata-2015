@@ -1,0 +1,16 @@
+RDF faceted browsing
+
+check http://cocoondev.org/main/facetedBrowser/default
+
+Do deref look-ahead
+
+First question:
+Object is:
+* link to HTML = remote content
+* link to RDF = remote path
+* bnode = local path
+* literal = local content
+
+Second question:
+property
+

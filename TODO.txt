@@ -24,3 +24,5 @@ curl --data-urlencode "name=I am Daniel" http://www.example.com
 curl --anyauth -u "username:password" 
 
  curl --form upload=@localfilename --form press=OK [URL]
+ 
+ remember CORS header

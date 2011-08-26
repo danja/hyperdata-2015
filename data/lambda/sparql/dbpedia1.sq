@@ -1,0 +1,12 @@
+# play in snorql http://dbpedia.org/snorql/
+
+SELECT * WHERE {
+{
+     ?a a  <http://dbpedia.org/class/yago/ProgrammingLanguage106898352> 
+} union {
+   ?a a <http://dbpedia.org/class/yago/FunctionalLanguages> 
+}
+
+# also there are 
+# ?s rdfs:subClassOf <http://dbpedia.org/class/yago/ProgrammingLanguage106898352> 
+# ?s rdfs:subClassOf <http://dbpedia.org/class/yago/FunctionalLanguages> 

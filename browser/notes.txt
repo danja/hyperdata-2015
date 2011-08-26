@@ -7,6 +7,9 @@ node.js
 https://github.com/antoniogarrote/rdfstore-js/
 may cover both...
 
+Command-line (in-browser) interface:
+http://ajaxorg.github.com/ace/
+
 --------------------
 views: 
 
