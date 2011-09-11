@@ -16,3 +16,7 @@ danja - linked data for danny stuff : blog, bookmarks etc.
 
 == Related Projects ==
 Scute - will prototype browser there.
+
+[top-level danja project notes](https://github.com/danja/projects)
+
+[Danny](http://dannyayers.com/) 2011

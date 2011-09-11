@@ -3,3 +3,11 @@ http://blog.nodejitsu.com/jsdom-jquery-in-5-lines-on-nodejs
 https://github.com/mikeal/request#readme
 
 https://github.com/fjakobs/async.js#readme
+
+https://github.com/nshah/nodejs-walker
+
+http://www.slideshare.net/sylvinus/web-crawling-with-nodejs
+
+http://stackoverflow.com/questions/2564287/jquery-extracting-the-hrefs-from-multiple-links-on-a-page
+
+http://stackoverflow.com/questions/7116748/scraping-subelements-in-html-using-jquery

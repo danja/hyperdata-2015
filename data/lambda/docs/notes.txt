@@ -3,3 +3,6 @@
 LtU blog
 Wikipedia/dbPedia
 http://en.literateprograms.org/LiteratePrograms:Welcome
+
+http://stackoverflow.com/questions/tagged/c?sort=votes&pagesize=15
+Amazon?

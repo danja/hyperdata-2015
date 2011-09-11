@@ -7,6 +7,9 @@ node.js
 https://github.com/antoniogarrote/rdfstore-js/
 may cover both...
 
+jenit's in-browser RDF :
+http://code.google.com/p/rdfquery/
+
 Command-line (in-browser) interface:
 http://ajaxorg.github.com/ace/
 
