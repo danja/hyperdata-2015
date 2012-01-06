@@ -23,23 +23,29 @@ $.editableFactory = {
 
 var li = $($this.data('editable.current'));
 
- $.each( li,
+ 		$.each( li,
                     function(){
 			var a = this.getElementsByTagName("a")[0];
-			var form = 'url:<input type="text" value="'+a+'" />';
-			form += 'text:<input type="text" value="'+a.text+'" />';
-			form += 'title:<input type="text" value="'+a.title+'" />';
+			var form = 'url:<input type="text" name="url" value="'+a+'" />';
+			form += 'text:<input type="text" name="text" value="'+a.text+'" />';
+			form += 'title:<input type="text" name="title" value="'+a.title+'" />';
+
 			var d =  this.getElementsByTagName("span")[0];
-form += 'description:<input type="text" value="'+$(d.firstChild).text()+'" />';
-$this.append(form);
+			form += 'description:<input type="text" name="description" value="'+$(d.firstChild).text()+'" />';
+			$this.append(form);
                     }
                 )
-
-
-
         },
-        getValue: function($this,options){
-            return $this.children().val();
+
+  getValue: function($this,options){
+		var inputs = $($this.children());
+	    var value = "";
+            inputs.each(
+                function(){
+                        value += $(this).val() + " * ";
+                }
+            )
+            return value;
         }
     }
 }
@@ -58,7 +64,7 @@ title: $('li.link').attr("title")
 
 ////////////////////////////////////////
 
-		$('ol.sortable').nestedSortable({
+		$('ul').nestedSortable({ // was 'ol.sortable'
 			disableNesting: 'no-nest',
 			forcePlaceholderSize: true,
 			handle: 'div',
