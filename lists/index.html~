@@ -13,6 +13,24 @@
   </script>
   <script type="text/javascript">
       OnloadScheduler.schedule(function(){ CollapsibleLists.apply(); });</script>
+
+<link rel="stylesheet" href="./css/lists.css" type="text/css">
+<script language="JavaScript" type="text/javascript" src="./js/coordinates.js"></script>
+<script language="JavaScript" type="text/javascript" src="./js/drag.js"></script>
+<script language="JavaScript" type="text/javascript" src="./js/dragdrop.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+	window.onload = function() {
+		var lists = document.getElementsByTagName( "ul" );
+		for (var i = 0; i < lists.length; i++) {
+DragDrop.makeListContainer( lists[i] );
+		 lists[i].onDragOver = function() { this.style["background"] = "#EEF"; };
+		 lists[i].onDragOut = function() {this.style["background"] = "none"; };
+		}
+
+	};
+	//-->
+
+</script>
 </head>
 
 <body>
@@ -21,9 +39,10 @@
 
 <div class="top left quarter">
 <h1>main list (one)</h1>
-<ul class="collapsibleList treeView">
+<!-- ul class="collapsibleList treeView" -->
+<ul  id="phonetic"  style="margin-left: 1em; background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; ">
   <li>Parent item 
-    <ul>
+    <ul id="phonetic" class="sortable boxy" style="margin-left: 1em; background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; ">
       <li><a
         href="http://code.stephenmorley.org/javascript/collapsible-lists/">Collapsible
         lists in JavaScript</a></li>
@@ -41,9 +60,10 @@
 
 <div class="top right quarter">
 <h1>target list (two)</h1>
-<ul class="collapsibleList treeView">
+<!-- ul class="collapsibleList treeView" -->
+<ul id="numeric" class="sortable boxier collapsibleList treeView" style="margin-right: 1em; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: white; border-right-color: white; border-bottom-color: white; border-left-color: white; border-image: initial; ">
   <li>Parent item 
-    <ul>
+    <ul class="sortable boxier">
       <li><a
         href="http://code.stephenmorley.org/javascript/collapsible-lists/">Collapsible
         lists in JavaScript</a></li>
@@ -58,10 +78,9 @@
   </li>
 </ul>
 </div>
-<br/><p>here</p>
 <div class="bottom left quarter">
 <h1>iframe (three)</h1>
-<iframe name="frame" src="frametest.html" width="100%" height="288" scrolling="auto" frameborder="0">[Your user agent does not support frames or is currently configured not to display rames.]</iframe>
+<iframe name="frame" src="frametest.html" width="100%" height="288" scrolling="auto" frameborder="1">[Your user agent does not support frames or is currently configured not to display rames.]</iframe>
 </div>
 
 <div class="bottom right quarter">
