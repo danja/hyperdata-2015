@@ -1,0 +1,9 @@
+Ensure each project:
+
+* has proper backup
+* is catalogued (basic)
+* is online
+* is linked
+* is catalogued (comprehensive)
+* has glossary 
+

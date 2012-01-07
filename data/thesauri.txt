@@ -1,0 +1,25 @@
+danja
+   (personal)
+      Basil
+   woodcarving
+      macaroni gouge
+   paper/printing
+      deckel
+   semweb
+      reification
+   dsp
+      sinc function
+   music
+      augmented fourth
+
+electro
+   spice
+      gyrator
+
+lambda
+   prog languages
+      monad
+
+unix
+   shell
+      nice

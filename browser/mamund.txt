@@ -1,0 +1,17 @@
+comment on https://plus.google.com/112609322932428633493/posts/WAi65sJUxDg
+
+see also http://www.markbaker.ca/2003/05/RDF-Forms/
+
+- +Danny Ayers my comment about hypermedia and RDF is not really about what is possible but what is available at any given moment in time. IOW, while it is possible that every URI in an RDF graph represents a navigation action (HTTP GET & replace the viewport), it's usually not always correct for every RDF representation the browser will see.
+
+transclusion is as simple as an img to embed in the existing display. both HTML and Atom identify these affordances as an aid to client apps; RDF payloads do not. "following HTML.A everywhere" is great in theory, but not in practicality. HTML and Atom both identify affordances that represent either navigation, naming, or transclusion.
+
+"parameterized" transitions are key to elevating RDF from a read-only experience (ala CSV, TDS, etc.) to an interactive experience (ala HTML, Atom, VoiceXML, etc.). again, the point i mean to make here is that payloads need to indicate the current possible actions (for this user, and this client, and this server, at this time<g>). telling all clients and all users and all servers that at all times, these same X number of things are possible is not sufficient, IMO.
+
+"What I'm having trouble imagining is how they would appear in the UI, what extra they might facilitate..?" - HTML (more than any other message format to date) facilitates advancing the application state through the presentation of context- and time-sensitive hypermedia affordances (jeez that sounds snooty). HTML.LINK, HTML,IMG, HTML.A, HTML.FROM(get), and HTML.FORM(post) make up the basic set of hypermedia affordances in a message. Atom has a more limited set (CRUD-style + a few more). in the case of HTML and Atom, it is possible to build a unique application (one that supports read/write/query) w/o updating the client code at all. i have yet to see this done w/ RDF formats; even in cases where vocab are defined for protocol-level (HTTP) expressions.
+
+my personal POV is that, until RDF formats (or some supporting format ala XENON, etc.) can provide this in-message (could be headers, could be body links, could be inline) set of affordances to allow read/write/query indicators (not possibilities, actual _indicators), RDF "apps" will always be custom apps - even those that just consume RDF data as if it was CSV or TDS).
+
+nothing wrong w/ that, of course. not all mesage formats are designed for supporting actual "apps" themselfes. there are no "apps" built using only CSV since it is not the goal of CSV to support "apps", just support data. there are "apps" built using HTML, Atom, voiceXML, etc.because that was the intention of the message format design. 
+
+anyway, i ramble. my only point really is: if RDF browsers are to be more than spreadsheets, we'll need a way to indicate temporal hypermedia affordances.

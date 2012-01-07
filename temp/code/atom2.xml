@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xml:lang="en"
+      xml:base="http://copia.ogbuji.net">
+  <id>http://copia.ogbuji.net/atom1.0</id>
+  <title>Copia</title>
+  <updated>2005-07-15T12:00:00Z</updated>
+  <author>
+    <name>Uche Ogbuji</name>
+    <uri>http://uche.ogbuji.net</uri>
+    <email>uche@ogbuji.net</email>
+  </author>
+  <link href="/blog" />
+  <link rel="self" href="/blog/atom1.0" />
+  <entry>
+    <id>http://copia.ogbuji.net/blog/2005-09-16/xhtml</id>
+    <title>XHTML tutorial pubbed</title>
+    <link href="http://copia.ogbuji.net/blog/2005-09-16/xhtml"/>
+    <category term="xml"/>
+    <category term="css"/>
+    <category term="xhtml"/>
+    <updated>2005-07-15T12:00:00Z</updated>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+	<p>
+	  <a href="http://www.ibm.com/developerworks/edu/x-dw-x-xhtml-i.html">
+	    "XHTML, step-by-step"
+	  </a>
+	</p>
+	<blockquote>
+	  <p>Start working with Extensible Hypertext Markup
+	  Language. In this tutorial, author Uche Ogbuji shows you how to use
+	  XHTML in practical Web sites.</p>
+	</blockquote>
+	<p>In this tutorial</p>
+	<ul>
+	  <li>Tutorial introduction</li>
+	  <li>Anatomy of an XHTML Web page</li>
+	  
+	  <li>Understand the ground rules</li>
+	  <li>Replace common HTML idioms</li>
+	  <li>Some practical considerations</li>
+	  <li>Wrap up</li>
+	</ul>
+      </div>
+    </content>
+  </entry>
+  <entry>
+    <id>http://copia.ogbuji.net/blog/2005-06-21/XSLT___CSS</id>
+    <title>XSLT + CSS tutorial pubbed</title>
+    <link href="http://copia.ogbuji.net/blog/2005-06-21/XSLT___CSS" />
+    <category term="xml"/>
+    <category term="css"/>
+    <category term="xslt"/>
+    <updated>2005-07-14T12:00:00Z</updated>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+	<p>
+	  <a href="http://www.ibm.com/developerworks/edu/x-dw-x-xmlcss3-i.html">
+	    "Use Cascading Stylesheets to display XML, Part 3"
+	  </a>
+	</p>
+	<blockquote>
+	  <p>CSS isn't just for HTML anymore! Learn to combine the strengths
+             of CSS with those of XSLT and fine-tune your XML presentation
+             in a browser.</p>
+	</blockquote>
+        <ul>
+	  <li>
+	  <a href="http://www.ibm.com/developerworks/edu/x-dw-x-xmlcss-i.html">
+	  "Use Cascading Stylesheets to display XML, Part 1"</a>
+	  which introduces the use of CSS to style XML in browsers
+	  (November 2004)</li>
+	  <li><a href="http://www.ibm.com/developerworks/edu/x-dw-x-xmlcss2-i.html">
+	  "Use Cascading Stylesheets to display XML, Part 2"</a>
+	  which covers advanced topics for the use of CSS to style XML
+	  in browsers (February 2005)</li>
+	</ul>
+      </div>
+    </content>
+  </entry>
+</feed>

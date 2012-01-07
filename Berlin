@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:dbpprop="http://dbpedia.org/property/" 
+    xmlns:foaf="http://xmlns.com/foaf/0.1/" 
+    version="XHTML+RDFa 1.0" xml:lang="en">
+
+
+<!-- header -->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <title>About: Berlin</title>
+    <link rel="alternate" type="application/rdf+xml" href="http://dbpedia.org/data/Berlin.rdf" title="Structured Descriptor Document (RDF/XML format)" />
+    <link rel="alternate" type="text/rdf+n3" href="http://dbpedia.org/data/Berlin.n3" title="Structured Descriptor Document (N3/Turtle format)" />
+    <link rel="alternate" type="application/json+rdf" href="http://dbpedia.org/data/Berlin.jrdf" title="Structured Descriptor Document (RDF/JSON format)" />
+    <link rel="alternate" type="application/json" href="http://dbpedia.org/data/Berlin.json" title="Structured Descriptor Document (RDF/JSON format)" />
+    <link rel="alternate" type="application/atom+xml" href="http://dbpedia.org/data/Berlin.atom" title="OData (Atom+Feed format)" />
+    <link rel="alternate" type="text/plain" href="http://dbpedia.org/data/Berlin.ntriples" title="Structured Descriptor Document (N-Triples format)" />
+    <link rel="alternate" href="http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&amp;query=DESCRIBE+&lt;http://dbpedia.org/resource/Berlin&gt;&amp;format=text%2Fcsv" type="text/csv" title="Structured Descriptor Document (CSV format)" />
+    
+    <link rel="alternate" href="http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&amp;query=DESCRIBE+&lt;http://dbpedia.org/resource/Berlin&gt;&amp;output=application%2Fmicrodata%2Bjson" type="application/microdata+json" 	title="Structured Descriptor Document (Microdata/JSON format)" />
+    <link rel="alternate" href="http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&amp;query=DESCRIBE+&lt;http://dbpedia.org/resource/Berlin&gt;&amp;output=text%2Fhtml" 		     type="text/html" 			title="Structured Descriptor Document (Microdata/HTML format)" />
+    <link rel="alternate" href="http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&amp;query=DESCRIBE+&lt;http://dbpedia.org/resource/Berlin&gt;&amp;output=application%2Fx-json%2Bld"      type="application/x-json+ld" 	title="Structured Descriptor Document (JSON-LD format)" />
+    <link rel="timegate" type="text/html" href="http://mementoarchive.lanl.gov/dbpedia/timegate/http://dbpedia.org/page/Berlin" title="Time Machine" />
+    <link rel="stylesheet" type="text/css" href="/statics/style.css" />
+    <link href="/statics/highlighter.css" type="text/css" rel="stylesheet" charset="utf-8" />
+    <link rel="foaf:primarytopic" href="http://dbpedia.org/resource/Berlin"/>
+    <link rev="describedby" href="http://dbpedia.org/resource/Berlin"/>
+    <script type="text/javascript" src="/statics/script.js"></script>
+</head>
+<body onload="init();" about="http://dbpedia.org/resource/Berlin">
+    <div id="header">
+      <div id="hd_l">
+	  <h1 id="title">About: <a href="http://dbpedia.org/resource/Berlin">Berlin</a></h1>
+        <div id="homelink">
+          <!--?vsp if (white_page = 0) http (txt); ?-->
+        </div>
+	<div class="page-resource-uri">
+	    An Entity of Type : <a href="http://dbpedia.org/ontology/PopulatedPlace">populated place</a>, 
+	    from Named Graph : <a href="http://dbpedia.org">http://dbpedia.org</a>, 
+	    within Data Space : <a href="http://dbpedia.org">dbpedia.org</a>
+        </div>
+      </div> <!-- hd_l -->
+      <div id="hd_r">
+	  <a href="http://wiki.dbpedia.org/Imprint" title="About DBpedia">
+	      <img src="/statics/dbpedia_logo.png" height="64" alt="About DBpedia"/>
+        </a>
+      </div> <!-- hd_r -->
+    </div> <!-- header -->
+    <div id="content">
+
+      <p>Berlin is the capital city of Germany and is one of the 16 states of Germany. With a population of 3.45 million people, Berlin is Germany's largest city. It is the second most populous city proper and the seventh most populous urban area in the European Union. Located in northeastern Germany, it is the center of the Berlin/Brandenburg Metropolitan Region, which has 4.4 million residents from over 190 nations. Located in the European Plains, Berlin is influenced by a temperate seasonal climate.</p>
+<!-- proptable -->
+      <table class="description"><tr><th>Property</th><th>Value</th></tr>
+
+<tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/PopulatedPlace/areaTotal"><small>dbpedia-owl:</small>PopulatedPlace/areaTotal</a>
+</td><td><ul>
+	<li><span class="literal"><span property="ns0:areaTotal" xmlns:ns0="http://dbpedia.org/ontology/PopulatedPlace/">891.85</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/abstract"><small>dbpedia-owl:</small>abstract</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Berlin is the capital city of Germany and is one of the 16 states of Germany. With a population of 3.45 million people, Berlin is Germany's largest city. It is the second most populous city proper and the seventh most populous urban area in the European Union. Located in northeastern Germany, it is the center of the Berlin/Brandenburg Metropolitan Region, which has 4.4 million residents from over 190 nations. Located in the European Plains, Berlin is influenced by a temperate seasonal climate. Around one third of the city's area is composed of forests, parks, gardens, rivers and lakes. First documented in the 13th century, Berlin was the capital of the Kingdom of Prussia (1701–1918), the German Empire (1871–1918), the Weimar Republic (1919–1933) and the Third Reich (1933–1945). Berlin in the 1920s was the third largest municipality in the world. After World War II, the city became divided into East Berlin—the capital of East Germany—and West Berlin, a West German exclave surrounded by the Berlin Wall (1961–1989). Following German reunification in 1990, the city regained its status as the capital of Germany, hosting 147 foreign embassies. Berlin is a world city of culture, politics, media, and science. Its economy is primarily based on the service sector, encompassing a diverse range of creative industries, media corporations, and convention venues. Berlin also serves as a continental hub for air and rail transport, and is a popular tourist destination. Significant industries include IT, pharmaceuticals, biomedical engineering, biotechnology, electronics, traffic engineering, and renewable energy. Berlin is home to renowned universities, research institutes, orchestras, museums, and celebrities, as well as host of many sporting events. Its urban settings and historical legacy have made it a popular location for international film productions. The city is well renowned for its festivals, diverse architecture, nightlife, contemporary arts, public transportation networks and a high quality of living.</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Berlin ist Bundeshauptstadt und Regierungssitz der Bundesrepublik Deutschland. Als Stadtstaat ist Berlin ein Land und bildet das Zentrum der Metropolregion Berlin/Brandenburg. Berlin ist mit 3,4 Millionen Einwohnern die bevölkerungsreichste und flächengrößte Stadt Deutschlands, sowie nach Einwohnern die zweitgrößte und nach Fläche die fünftgrößte Stadt der Europäischen Union. Berlin ist in zwölf Bezirke unterteilt. Im Stadtgebiet befinden sich die Flüsse Spree und Havel, mehrere kleinere Fließgewässer sowie zahlreiche Seen. Urkundlich erstmals im 13. Jahrhundert erwähnt, war Berlin im Verlauf der Geschichte Hauptstadt Brandenburgs, Preußens und Deutschlands in seinen verschiedenen Staatsformen. Faktisch war der Ostteil der Stadt Hauptstadt der Deutschen Demokratischen Republik. Seit der Wiedervereinigung im Jahr 1990 ist Berlin gesamtdeutsche Hauptstadt mit Sitz des Bundespräsidenten seit 1994, des Deutschen Bundestags seit 1999 sowie des Bundesrats seit 2000. Die Metropole Berlin gilt als Weltstadt der Kultur, Politik, Medien und Wissenschaften. Sie ist ein wichtiger europäischer Verkehrsknotenpunkt und eine der meistbesuchten Städte des Kontinents. Institutionen wie die Universitäten, Forschungseinrichtungen und Museen genießen internationalen Ruf. In der Stadt leben und arbeiten Kunstschaffende, Diplomaten und Einwanderer aus aller Welt. Berlins Geschichte, Nachtleben, Architektur und vielfältige Lebensbedingungen sind weitbekannt.</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Berlín es la ciudad capital de la República Federal de Alemania y uno de los dieciséis Estados federados alemanes. Está localizada al noreste de Alemania, a escasos 70 km de la frontera con Polonia. Es atravesada por los ríos Spree y Havel. Con una población de 3,4 millones de habitantes, Berlín es la ciudad más poblada del país, así como la quinta aglomeración urbana entre los países de la Unión Europea. Fundada en 1237 como Cölln, Berlín fue sucesivamente capital del Reino de Prusia (1701-1918), del Imperio Alemán (1871–1918), de la República de Weimar (1919–1933) y del Tercer Reich (1933–1945). Después de la Segunda Guerra Mundial, la ciudad fue dividida; la parte este de la ciudad se convirtió en la capital de Alemania Oriental, mientras que la región oeste de la ciudad se convirtió en un enclave de la República Federal de Alemania en la Alemania Oriental. Es una de las ciudades más influyentes en el ámbito político de la Unión Europea y en el 2006 fue elegida Ciudad Creativa por la Unesco. En 2009 la ciudad recibió el Premio Príncipe de Asturias de la Concordia.</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Berliini on Saksan pääkaupunki ja yksi Saksan osavaltioista. Noin 3,4 miljoonalla asukkaallaan se on myös Saksan suurin ja Euroopan unionin toiseksi suurin kaupunki Lontoon jälkeen. Toisin kuin joidenkin muiden kaupunkialueiden (esimerkiksi noin 12 miljoonan asukkaan Suur-Pariisin) kohdalla, Berliinissä kaupungin viralliset rajat ja kaupunkimaisesti rakennetun alueen tosiasialliset rajat vastaavat melko hyvin toisiaan. Löyhemmin määritelty Berliinin metropolialue jatkuu kuitenkin kauas ympäristöön ja sillä asuu – alueen tarkasta määritelmästä riippuen – noin 4,4–5,9 miljoonaa ihmistä. Kansainvälisesti tunnettuine kulttuurilaitoksineen, yliopistoineen ja tapahtumineen Berliini on yksi Euroopan merkittävimmistä tiede- ja kulttuurikeskuksista. EU:n väkirikkaimman jäsenmaan pääkaupunkina se on myös vaikutusvaltainen poliittinen keskus ja tärkeä liikenteellinen solmukohta. Kaupunki tunnetaan myös vilkkaasta yöelämästään ja kansainvälisestä ja vapaamielisestä ilmapiiristään, joka houkuttelee varsinkin nuoria muuttajia. Pääkaupunkiasemastaan huolimatta Berliini ei ole kaikissa suhteissa Saksan tärkein kaupunki: esimerkiksi maan finanssielämän keskus on Frankfurt am Main ja vaurain kaupunki Hampuri sekä monella mittarilla innovatiivisin kaupunki München. 1200-luvun alussa perustettu Berliini kohosi vuonna 1701 Preussin kuningaskunnan pääkaupungiksi. Myöhemmin se toimi Saksan keisarikunnan, Weimarin tasavallan ja Kolmannen valtakunnan pääkaupunkina. Toisen maailmansodan jälkeen kaupunki joutui kylmän sodan polttopisteeseen, kun se jakautui Itä-Berliiniin, josta tuli faktisesti DDR:n pääkaupunki, ja Länsi-Berliiniin, jonka ympärille DDR rakensi vuonna 1961 Berliinin muurin. Muurin murtumisen ja Saksojen yhdistymisen jälkeen Berliini nousi taas koko maan pääkaupungiksi ja yhdeksi Euroopan vilkkaimmin kehittyvistä metropoleista.</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Coordinate: 52°31′N 13°25′E&#xfeff; / 52.517, 13.417 File:Nota disambigua. svg Disambiguazione – Se stai cercando altri significati del termine, vedi Berlino (disambigua). &lt;imagemap&gt;Immagine:Segui progetto. png Berlin File:Collage Berlin2. jpg File:Flag of Berlin. svg File:Coat of arms of Berlin. svg Stato: Germania Capitale: Superficie: 892 km&sup2; Abitanti: 3.429.870 Densità: 3.846 ab. /km&sup2; ISO 3166-2: DE-BE NUTS: DE3 Targa aut. : B Politica Sindaco: Klaus Wowereit Governo: SPD, Die Linke Parlamento(149 seggi): SPD 53CDU 37Die Linke 23Verdi 23FDP 13 Ultime elezioni: 17 settembre 2006 Prossime: 2011 Bundesrat: 4 seggi Economia PIL: 80,3 miliardi di €)23.600 €/ab. Disoccupazione: 14,0 %) File:Deutschland Lage Berlins. svg Sito istituzionale File:Portal. svg Visita il Portale Germania Berlino è la maggiore città e nel contempo un Land della Germania, quindi una città-stato. Capitale federale della Repubblica Federale di Germania e sede del suo governo, è uno dei più importanti centri politici, culturali, scientifici, fieristici e mediatici d'Europa e, dopo Londra, il secondo comune più popoloso dell'Unione europea.</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">ベルリン（Berlin、伯林）は、ドイツの北東部に位置する都市で、ドイツ連邦共和国の首都である。</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Berlijn is de hoofdstad van Duitsland en als stadstaat een deelstaat van dat land. Met zijn 3.429.525 inwoners is het tevens de grootste stad van het land en de op één na grootste stad in de Europese Unie. De stad ligt in het noordoosten van Duitsland, aan de rivier de Spree en wordt omsloten door de deelstaat Brandenburg, waarvan ze sinds 1920 geen deel meer uitmaakt. In zijn geschiedenis, die teruggaat tot de dertiende eeuw, was Berlijn de hoofdstad van achtereenvolgens Pruisen (1701–1918), het Duitse Keizerrijk (1871–1918), de Weimarrepubliek (1919–1933) en Nazi-Duitsland (1933–1945). Na de Tweede Wereldoorlog was Berlijn gedurende meer dan veertig jaar een verdeelde stad, waarbij het oostelijke deel als hoofdstad fungeerde van Oost-Duitsland en West-Berlijn een exclave van West-Duitsland was. Na de Duitse hereniging in 1990 werd Berlijn de hoofdstad van de Bondsrepubliek Duitsland en de zetel van het parlement, de deelstaatvertegenwoordiging en het staatshoofd. Berlijn is een metropool en geldt in Europa als één van de grootste culturele, politieke en wetenschappelijke centra. De stad is ook bekend vanwege het hoog-ontwikkelde culturele leven en de liberale levensstijl, moderne Zeitgeist en de lage kosten. Bovendien is Berlijn één van de groenste steden van Europa: 18% van Berlijn bestaat uit natuur en parken en 7% uit meren, rivieren en kanalen.</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Mal:ThumbBerlin er den føderale hovedstaden og en delstat i Tyskland. Det er Tysklands største by, og den nest største byen i Den europeiske union definert etter offisielle grenser. Byen er et av de viktigste sentre for europeisk politikk, kultur og vitenskap. Byen er et viktig transportknutepunkt i Sentral-Europa og har noen av verdens fremste universiteter, museer, teatre og orkestre, samt tre operaer. Den multikulturelle metropolen har innbyggere fra over 180 nasjoner, og er en magnet for mennesker som tiltrekkes av den liberale livsstilen, urbane smeltedigelen og kunstneriske friheten i byen. Den er berømt for sine festivaler, uteliv, samtidsarkitektur og avantgardekunst. Byens historie går tilbake til 1200-tallet. På 1400-tallet ble den residensby for kurfyrstene av Brandenburg, i 1701 ble den hovedstad i Kongeriket Preussen, og med den tyske rikssamlingen i 1871 rikshovedstad i nasjonalstaten Tyskland. Berlins historie i det 20. århundre var turbulent. Etter en blomstringsperiode som metropol i den første delen av århundret opplevde byen store ødeleggelser under andre verdenskrig. Etter å ha vært delt under den kalde krigen, siden 1960-årene av mur og minefelt, ble byen gjenforent og gjort til hovedstad igjen i 1990. Knapt noen by har så mange spor etter det tyvende århundre, og på 1990-tallet ble Berlin beskrevet som «verdens største byggeplass». Sammenlignet med resten av Tyskland er levekostnadene lave og byen er et av de viktigste turistmål i Europa.</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Berlin – stolica i największe miasto Niemiec, na prawach kraju związkowego. Zajmuje powierzchnię 890 km², zamieszkuje je blisko 3,5 mln osób.</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Berlim é a capital e um dos dezesseis estados da Alemanha. Com uma população de 3,4 milhões dentro de limites da cidade, é a maior cidade do país, além de ser a segunda mais populosa cidade e a oitava mais populosa área urbana da União Europeia. Situado no nordeste da Alemanha, é o centro da área metropolitana de Berlim-Brandemburgo, que inclui 5 milhões de pessoas de mais de 190 nações. Predefinição:Carece de fontes Documentada pela primeira vez no século XIII, Berlim foi sucessivamente a capital do Reino da Prússia, do Império Alemão, da República de Weimar e do Terceiro Reich. Após a Segunda Guerra Mundial, a cidade foi dividida; Berlim Oriental se tornou a capital da Alemanha Oriental, enquanto Berlim Ocidental se tornou um exclave da Alemanha Ocidental, cercada pelo muro de Berlim, entre os anos de 1961-1989, enquanto a cidade de Bona tornou-se a capital da Alemanha Ocidental. Após a reunificação alemã em 1990, a cidade recuperou o seu estatuto, como a capital da República Federal da Alemanha, sediando 147 embaixadas estrangeiras. Berlim é um dos mais influentes centros de política, cultura e ciência européia. A cidade serve como um importante centro do transporte continental e é "casa" para algumas das mais importantes universidades, eventos esportivos, orquestras e museus. O rápido desenvolvimento da metrópole atraiu uma reputação internacional aos seus festivais, arquitectura contemporânea e vida nocturna, sendo um grande centro turístico e moradia para pessoas de 180 nações diferentes.</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Berlin är huvudstad i Tyskland och dess folkrikaste stad med 3,4 miljoner invånare. Med förorter har staden 4,4 miljoner invånare. Berlin utgör förbundslandet Berlin och är med sina 892 kvadratkilometer Tysklands största stad till ytan. Berlin är genom sitt kulturella och historiska arv en av Europas mest kända och besökta metropoler. Berlin är en betydande trafikknutpunkt och ett viktigt ekonomiskt och kulturellt centrum i Tyskland och Europa. Institutioner som universitet, forskningscentrum, teatrar, museer men också festivaler, nattlivet och arkitekturen i Berlin har ett världsrykte. Historiskt har Berlin varit huvudstad i flera tidiga historiska tyska stater, som Mark Brandenburg, Preussen, Tyska kejsardömet, Weimarrepubliken, Nazityskland och Östtyskland. Berlin är sedan 1991 det återförenade Tysklands huvudstad. Från krigsslutet hade Bonn fungerat som huvudstad i Västtyskland och Östberlin som huvudstad i Östtyskland.</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Берли́н — столица Германии, самый крупный и самый населённый город Германии. После Лондона Берлин — второй по населению и пятый по площади город Евросоюза. Берлин — одна из 16 земель в составе Федеративной Республики Германия. Город расположен на берегах рек Шпрее (с этим связано «прозвище» Берлина «Spree-Athen» — «Афины на Шпрее») и Хафель в центре федеральной земли Бранденбург, частью которой он не является. Около 1200 года на месте современного Берлина располагались два торговых поселения — Кёльн и Берлин. Точная дата получения ими городских прав неизвестна. Городские права Кёльна впервые упоминаются в 1237 году, городские права Берлина — в 1244 году. В 1307 году города объединились и образовали общую городскую управу. В 1400 году население объединённого Берлина составляло 8000 человек. Историческое название «Кёльн» нашло своё отражение в названии берлинского района Нойкёльн. Берлин был столицей маркграфства/курфюршества Бранденбургского, Пруссии (после объединения курфюршества Бранденбург с герцогством Пруссия) и после создания Германской империи стал её столицей. После Второй мировой войны в соответствии с решениями Ялтинской конференции Берлин, хотя и находился на территории советской зоны оккупации Германии, был разделён четырьмя державами-победительницами на оккупационные секторы. Позднее три сектора оккупации союзников были преобразованы в Западный Берлин, получивший статус особого государственного образования, но безусловно тесно связанного с ФРГ. Передвижение между секторами Берлина длительное время оставалось свободным, и в целях предотвращения утечки населения в западные секторы правительством ГДР было принято решение о возведении Берлинской стены, окружившей с 13 августа 1961 года Западный Берлин. Берлинская стена, ставшая одним из главных символов холодной войны, просуществовала до 1989 года. После объединения Германии в 1990 году её столицей стал воссоединённый Берлин. В 1994 году туда переехала из Бонна администрация президента и в 1999 году бундестаг и администрация федерального канцлера вместе с федеральными министерствами . Сегодня Берлин является одним из важнейших промышленных, научных и культурных центров.</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">柏林（Template:Lang-de，Template:IPA-de）是德国首都，也是德国最大的城市，现有居民约340万人。柏林位于德国东北部，四面被勃兰登堡州环绕，施普雷河和哈维尔河流经该市。柏林也是德国十六个联邦州之一，因此也称为柏林州，和汉堡、不来梅同为德国僅有的三個的城市州。 柏林是欧盟區內人口第2多的城市以及城市面积第8大的城市。它是柏林-勃兰登堡都会区的中心，有来自超过190个国家的5百万人口。地理上位于欧洲平原，受温带季节性气候影响。城市周围1/3的土地由森林、公园、花园、河流和湖泊组成。 该市第一次有文字记载是在13世纪，柏林连续的成为以下这些国家的首都：普鲁士王国（1701-1870）、德意志帝国（1871-1918）、魏玛共和国（1919-1933）、第三帝国（1933-1945）。在1920年代，柏林是世界第3大自治市。二战后，城市被分割；东柏林成为了东德的首都，而西柏林事实上成为了西德在东德的一块飛地，被柏林墙围住。直到1990年两德统一，该市重新获得了全德国首都的地位，驻有147个外国大使馆。 柏林无论是从文化、政治、传媒还是科学上讲都称的上是世界级城市。该市经济主要基于服务业，包括多种多样的创造性产业、传媒集团、议会举办地点。柏林扮演了一个欧洲大陆上航空与铁路运输交通枢纽的角色，同时它也是欧盟内游客数量最多的城市之一。主要的产业包括信息技术、制药、生物工程、生物科技、光学电子、交通工程和可再生能源。 柏林都会区有知名大学、研究院、体育赛事、管弦乐队、博物馆和知名人士。城市的历史遗存使该市成为国际电影产品的交流中心。该市在节日活动、建筑的多样化、夜生活、当代艺术、公共交通网络以及高质量生活方面得到了广泛认可。柏林已经发展成一个全球焦点城市，以崇尚自由生活方式和现代精神的年轻人和艺术家而闻名。。</span></span></li>
+	<li><span class="literal"><span property="dbpedia-owl:abstract" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Berlin est la capitale et la plus grande ville d'Allemagne. Située dans le nord-est du pays, elle forme un land (État fédéré) à part entière et compte environ 3,4 millions d'habitants. L'aire urbaine de la région métropolitaine de Berlin-Brandebourg dépasse les frontières du land et regroupe au total près de 6 millions d'habitants, ce qui en fait une des dix métropoles les plus peuplées de l'Union européenne. Fondée au Modèle:XIIIe siècle, Berlin a été successivement capitale du royaume de Prusse (1701-1871), de l'Empire allemand (1871-1918), de la république de Weimar (1919-1933) et du Troisième Reich (1933-1945). Après 1945 et jusqu'à la chute du mur de Berlin en 1989, la ville est partagée en quatre secteurs d'occupation. Pendant la Guerre froide, le secteur soviétique de la ville, nommé Berlin-Est, est devenu la capitale de la République démocratique allemande, tandis que Berlin-Ouest était politiquement rattachée à la République fédérale d'Allemagne, devenant ainsi un bastion avancé du monde occidental à l'intérieur du Bloc communiste. Elle redevint capitale en 1990 et les principales institutions fédérales y emménagèrent en 1999. Berlin est une ville mondiale culturelle et artistique de premier plan. La ville abrite ainsi 165 musées, 146 bibliothèques et 60 théâtres. En 2008, Berlin a accueilli près de 8 millions de visiteurs.</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/areaCode"><small>dbpedia-owl:</small>areaCode</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpedia-owl:areaCode" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">030</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/areaTotal"><small>dbpedia-owl:</small>areaTotal</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpedia-owl:areaTotal" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">891850000.000000</span><small> (xsd:double)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/country"><small>dbpedia-owl:</small>country</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:country" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Germany"><small>dbpedia</small>:Germany</a></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/elevation"><small>dbpedia-owl:</small>elevation</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpedia-owl:elevation" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">34.000000</span><small> (xsd:double)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/leader"><small>dbpedia-owl:</small>leader</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:leader" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Klaus_Wowereit"><small>dbpedia</small>:Klaus_Wowereit</a></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/leaderParty"><small>dbpedia-owl:</small>leaderParty</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:leaderParty" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/The_Left_%28Germany%29"><small>dbpedia</small>:The_Left_(Germany)</a></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/leaderTitle"><small>dbpedia-owl:</small>leaderTitle</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpedia-owl:leaderTitle" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">Governing Mayor</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/populationAsOf"><small>dbpedia-owl:</small>populationAsOf</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpedia-owl:populationAsOf" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">2010-09-30</span><small> (xsd:date)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/populationMetro"><small>dbpedia-owl:</small>populationMetro</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpedia-owl:populationMetro" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">4429847</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/populationTotal"><small>dbpedia-owl:</small>populationTotal</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpedia-owl:populationTotal" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">3450889</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/postalCode"><small>dbpedia-owl:</small>postalCode</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpedia-owl:postalCode" xmlns:dbpedia-owl="http://dbpedia.org/ontology/">10001–14199</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/thumbnail"><small>dbpedia-owl:</small>thumbnail</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:thumbnail" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Berlin_Montage.png/200px-Berlin_Montage.png">http://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Berlin_Montage.png/200px-Berlin_Montage.png</a></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/ontology/wikiPageExternalLink"><small>dbpedia-owl:</small>wikiPageExternalLink</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:wikiPageExternalLink" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://www.flickr.com/photos/41182695@N08/sets/72157622725699696/">http://www.flickr.com/photos/41182695@N08/sets/72157622725699696/</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:wikiPageExternalLink" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://www.gastro-stars-berlin.com/">http://www.gastro-stars-berlin.com/</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:wikiPageExternalLink" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://www.berlin-tourist-information.de/index.en.php">http://www.berlin-tourist-information.de/index.en.php</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:wikiPageExternalLink" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://www.hauptstadtregion-berlin-brandenburg.de/">http://www.hauptstadtregion-berlin-brandenburg.de/</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:wikiPageExternalLink" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://www.berlin.de/international/index.en.php/">http://www.berlin.de/international/index.en.php/</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:wikiPageExternalLink" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://www.businesslocationcenter.de/en/Start/index.html">http://www.businesslocationcenter.de/en/Start/index.html</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:wikiPageExternalLink" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://www.exberliner.com/">http://www.exberliner.com/</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:wikiPageExternalLink" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://berlin.unlike.net/">http://berlin.unlike.net/</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:wikiPageExternalLink" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://www.berlin.de/international/index.en.php">http://www.berlin.de/international/index.en.php</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:wikiPageExternalLink" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://iwannagothere.com/travel-guides/berlin/11">http://iwannagothere.com/travel-guides/berlin/11</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dbpedia-owl:wikiPageExternalLink" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://www.berlin-regional.de/">http://www.berlin-regional.de/</a></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/aprHighC"><small>dbpprop:</small>aprHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:aprHighC">13</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/aprLowC"><small>dbpprop:</small>aprLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:aprLowC">4</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/aprMeanC"><small>dbpprop:</small>aprMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:aprMeanC">9</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/aprRainDays"><small>dbpprop:</small>aprRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:aprRainDays">8</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/aprRainMm"><small>dbpprop:</small>aprRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:aprRainMm">37</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/aprRecordHighC"><small>dbpprop:</small>aprRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:aprRecordHighC">27</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/aprRecordLowC"><small>dbpprop:</small>aprRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:aprRecordLowC">-4</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/aprSun"><small>dbpprop:</small>aprSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:aprSun">159</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/area"><small>dbpprop:</small>area</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:area">892</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/augHighC"><small>dbpprop:</small>augHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:augHighC">24</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/augLowC"><small>dbpprop:</small>augLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:augLowC">14</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/augMeanC"><small>dbpprop:</small>augMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:augMeanC">19</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/augRainDays"><small>dbpprop:</small>augRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:augRainDays">8</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/augRainMm"><small>dbpprop:</small>augRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:augRainMm">58</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/augRecordHighC"><small>dbpprop:</small>augRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:augRecordHighC">35</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/augRecordLowC"><small>dbpprop:</small>augRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:augRecordLowC">7</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/augSun"><small>dbpprop:</small>augSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:augSun">211</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/coaSize"><small>dbpprop:</small>coaSize</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:coaSize">0</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/coordinatesDisplay"><small>dbpprop:</small>coordinatesDisplay</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:coordinatesDisplay">display=inline, title</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/date"><small>dbpprop:</small>date</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:date">September 2010</span></span></li>
+	<li><span class="literal"><span property="dbpprop:date">August 2010</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/decHighC"><small>dbpprop:</small>decHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:decHighC">4</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/decLowC"><small>dbpprop:</small>decLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:decLowC">−0.4</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/decMeanC"><small>dbpprop:</small>decMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:decMeanC">2</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/decRainDays"><small>dbpprop:</small>decRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:decRainDays">11</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/decRainMm"><small>dbpprop:</small>decRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:decRainMm">55</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/decRecordHighC"><small>dbpprop:</small>decRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:decRecordHighC">15</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/decRecordLowC"><small>dbpprop:</small>decRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:decRecordLowC">-17</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/decSun"><small>dbpprop:</small>decSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:decSun">37</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/demonym"><small>dbpprop:</small>demonym</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:demonym">Berliner</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/divisions"><small>dbpprop:</small>divisions</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:divisions">12</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/elevation"><small>dbpprop:</small>elevation</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:elevation">34</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/febHighC"><small>dbpprop:</small>febHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:febHighC">4</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/febLowC"><small>dbpprop:</small>febLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:febLowC">−1.5</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/febMeanC"><small>dbpprop:</small>febMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:febMeanC">1</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/febRainDays"><small>dbpprop:</small>febRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:febRainDays">8</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/febRainMm"><small>dbpprop:</small>febRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:febRainMm">33</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/febRecordHighC"><small>dbpprop:</small>febRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:febRecordHighC">17</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/febRecordLowC"><small>dbpprop:</small>febRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:febRecordLowC">-14</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/febSun"><small>dbpprop:</small>febSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:febSun">74</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/flag"><small>dbpprop:</small>flag</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:flag">Flag_of_Berlin.svg</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/gdp"><small>dbpprop:</small>gdp</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:gdp">95</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/gdpYear"><small>dbpprop:</small>gdpYear</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:gdpYear">2010</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/imageCaption"><small>dbpprop:</small>imageCaption</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:imageCaption">Left to right: City skyline, Berliner Fernsehturm, Brandenburger Tor, Rotes Rathaus, Reichstag, and Berliner Dom</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/isoRegion"><small>dbpprop:</small>isoRegion</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:isoRegion">DE-BE</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/janHighC"><small>dbpprop:</small>janHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:janHighC">3</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/janLowC"><small>dbpprop:</small>janLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:janLowC">−1.9</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/janMeanC"><small>dbpprop:</small>janMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:janMeanC">1</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/janRainDays"><small>dbpprop:</small>janRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:janRainDays">10</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/janRainMm"><small>dbpprop:</small>janRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:janRainMm">42</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/janRecordHighC"><small>dbpprop:</small>janRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:janRecordHighC">15</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/janRecordLowC"><small>dbpprop:</small>janRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:janRecordLowC">-21</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/janSun"><small>dbpprop:</small>janSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:janSun">47</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/julHighC"><small>dbpprop:</small>julHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:julHighC">24</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/julLowC"><small>dbpprop:</small>julLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:julLowC">14</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/julMeanC"><small>dbpprop:</small>julMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:julMeanC">19</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/julRainDays"><small>dbpprop:</small>julRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:julRainDays">8</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/julRainMm"><small>dbpprop:</small>julRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:julRainMm">56</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/julRecordHighC"><small>dbpprop:</small>julRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:julRecordHighC">38</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/julRecordLowC"><small>dbpprop:</small>julRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:julRecordLowC">7</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/julSun"><small>dbpprop:</small>julSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:julSun">217</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/junHighC"><small>dbpprop:</small>junHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:junHighC">22</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/junLowC"><small>dbpprop:</small>junLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:junLowC">12</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/junMeanC"><small>dbpprop:</small>junMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:junMeanC">17</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/junRainDays"><small>dbpprop:</small>junRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:junRainDays">10</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/junRainMm"><small>dbpprop:</small>junRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:junRainMm">69</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/junRecordHighC"><small>dbpprop:</small>junRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:junRecordHighC">36</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/junRecordLowC"><small>dbpprop:</small>junRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:junRecordLowC">4</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/junSun"><small>dbpprop:</small>junSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:junSun">222</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/kfz"><small>dbpprop:</small>kfz</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:kfz">B</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/latd"><small>dbpprop:</small>latd</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:latd">52</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/latm"><small>dbpprop:</small>latm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:latm">30</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/lats"><small>dbpprop:</small>lats</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:lats">2</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/leader"><small>dbpprop:</small>leader</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:leader">Klaus Wowereit</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/leaderParty"><small>dbpprop:</small>leaderParty</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:leaderParty">SPD</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/leaderTitle"><small>dbpprop:</small>leaderTitle</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="dbpprop:leaderTitle" href="http://dbpedia.org/resource/Governing_Mayor_of_Berlin"><small>dbpedia</small>:Governing_Mayor_of_Berlin</a></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/location"><small>dbpprop:</small>location</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:location">Berlin</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/longd"><small>dbpprop:</small>longd</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:longd">13</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/longm"><small>dbpprop:</small>longm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:longm">23</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/longs"><small>dbpprop:</small>longs</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:longs">56</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/map"><small>dbpprop:</small>map</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:map">Berlin in Germany and EU.png</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/mapSize"><small>dbpprop:</small>mapSize</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:mapSize">270</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/mapText"><small>dbpprop:</small>mapText</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:mapText">Location within European Union and Germany</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/marHighC"><small>dbpprop:</small>marHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:marHighC">9</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/marLowC"><small>dbpprop:</small>marLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:marLowC">1</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/marMeanC"><small>dbpprop:</small>marMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:marMeanC">5</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/marRainDays"><small>dbpprop:</small>marRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:marRainDays">9</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/marRainMm"><small>dbpprop:</small>marRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:marRainMm">41</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/marRecordHighC"><small>dbpprop:</small>marRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:marRecordHighC">23</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/marRecordLowC"><small>dbpprop:</small>marRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:marRecordLowC">-13</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/marSun"><small>dbpprop:</small>marSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:marSun">121</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/mayHighC"><small>dbpprop:</small>mayHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:mayHighC">19</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/mayLowC"><small>dbpprop:</small>mayLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:mayLowC">9</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/mayMeanC"><small>dbpprop:</small>mayMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:mayMeanC">14</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/mayRainDays"><small>dbpprop:</small>mayRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:mayRainDays">9</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/mayRainMm"><small>dbpprop:</small>mayRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:mayRainMm">54</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/mayRecordHighC"><small>dbpprop:</small>mayRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:mayRecordHighC">33</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/mayRecordLowC"><small>dbpprop:</small>mayRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:mayRecordLowC">-1</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/maySun"><small>dbpprop:</small>maySun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:maySun">220</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/metricFirst"><small>dbpprop:</small>metricFirst</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:metricFirst">yes</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/name"><small>dbpprop:</small>name</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:name">Berlin</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/novHighC"><small>dbpprop:</small>novHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:novHighC">7</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/novLowC"><small>dbpprop:</small>novLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:novLowC">2</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/novMeanC"><small>dbpprop:</small>novMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:novMeanC">5</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/novRainDays"><small>dbpprop:</small>novRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:novRainDays">10</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/novRainMm"><small>dbpprop:</small>novRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:novRainMm">44</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/novRecordHighC"><small>dbpprop:</small>novRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:novRecordHighC">18</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/novRecordLowC"><small>dbpprop:</small>novRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:novRecordLowC">-9</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/novSun"><small>dbpprop:</small>novSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:novSun">51</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/nuts"><small>dbpprop:</small>nuts</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:nuts">DE3</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/octHighC"><small>dbpprop:</small>octHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:octHighC">13</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/octLowC"><small>dbpprop:</small>octLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:octLowC">6</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/octMeanC"><small>dbpprop:</small>octMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:octMeanC">10</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/octRainDays"><small>dbpprop:</small>octRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:octRainDays">8</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/octRainMm"><small>dbpprop:</small>octRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:octRainMm">37</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/octRecordHighC"><small>dbpprop:</small>octRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:octRecordHighC">25</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/octRecordLowC"><small>dbpprop:</small>octRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:octRecordLowC">-7</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/octSun"><small>dbpprop:</small>octSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:octSun">112</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/plz"><small>dbpprop:</small>plz</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:plz">10001</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/popDate"><small>dbpprop:</small>popDate</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:popDate">30</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/popMetro"><small>dbpprop:</small>popMetro</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:popMetro">4429847</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/population"><small>dbpprop:</small>population</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:population">3450889</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/rulingParty"><small>dbpprop:</small>rulingParty</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="dbpprop:rulingParty" href="http://dbpedia.org/resource/The_Left_%28Germany%29"><small>dbpedia</small>:The_Left_(Germany)</a></span></li>
+	<li><span class="literal"><span property="dbpprop:rulingParty">SPD</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/sepHighC"><small>dbpprop:</small>sepHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:sepHighC">19</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/sepLowC"><small>dbpprop:</small>sepLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:sepLowC">11</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/sepMeanC"><small>dbpprop:</small>sepMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:sepMeanC">15</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/sepRainDays"><small>dbpprop:</small>sepRainDays</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:sepRainDays">8</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/sepRainMm"><small>dbpprop:</small>sepRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:sepRainMm">45</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/sepRecordHighC"><small>dbpprop:</small>sepRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:sepRecordHighC">32</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/sepRecordLowC"><small>dbpprop:</small>sepRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:sepRecordLowC">0</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/sepSun"><small>dbpprop:</small>sepSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:sepSun">156</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/singleLine"><small>dbpprop:</small>singleLine</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:singleLine">yes</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/source"><small>dbpprop:</small>source</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:source">World Meteorological Organization</span></span></li>
+	<li><span class="literal"><span property="dbpprop:source">HKO</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/state"><small>dbpprop:</small>state</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:state">Berlin</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/stateCoa"><small>dbpprop:</small>stateCoa</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:stateCoa">Coat of arms of Berlin.svg</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/vorwahl"><small>dbpprop:</small>vorwahl</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:vorwahl">30</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/votes"><small>dbpprop:</small>votes</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:votes">4</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/website"><small>dbpprop:</small>website</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="dbpprop:website" href="http://www.berlin.de/international/index.en.php">http://www.berlin.de/international/index.en.php</a></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/wikiPageUsesTemplate"><small>dbpprop:</small>wikiPageUsesTemplate</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="dbpprop:wikiPageUsesTemplate" href="http://dbpedia.org/resource/Template:Weather_box"><small>dbpedia</small>:Template:Weather_box</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dbpprop:wikiPageUsesTemplate" href="http://dbpedia.org/resource/Template:Infobox_German_state"><small>dbpedia</small>:Template:Infobox_German_state</a></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/yearHighC"><small>dbpprop:</small>yearHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:yearHighC">13</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/yearLowC"><small>dbpprop:</small>yearLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:yearLowC">6</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/yearMeanC"><small>dbpprop:</small>yearMeanC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:yearMeanC">10</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/yearRainMm"><small>dbpprop:</small>yearRainMm</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:yearRainMm">571</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/yearRecordHighC"><small>dbpprop:</small>yearRecordHighC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:yearRecordHighC">38</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://dbpedia.org/property/yearRecordLowC"><small>dbpprop:</small>yearRecordLowC</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:yearRecordLowC">-21</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://dbpedia.org/property/yearSun"><small>dbpprop:</small>yearSun</a>
+</td><td><ul>
+	<li><span class="literal"><span property="dbpprop:yearSun">1626</span><small> (xsd:integer)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://purl.org/dc/terms/subject"><small>dcterms:</small>subject</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="dcterms:subject" xmlns:dcterms="http://purl.org/dc/terms/" href="http://dbpedia.org/resource/Category:European_Capitals_of_Culture"><small>category</small>:European_Capitals_of_Culture</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dcterms:subject" xmlns:dcterms="http://purl.org/dc/terms/" href="http://dbpedia.org/resource/Category:City-states"><small>category</small>:City-states</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dcterms:subject" xmlns:dcterms="http://purl.org/dc/terms/" href="http://dbpedia.org/resource/Category:Berlin"><small>category</small>:Berlin</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dcterms:subject" xmlns:dcterms="http://purl.org/dc/terms/" href="http://dbpedia.org/resource/Category:German_state_capitals"><small>category</small>:German_state_capitals</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dcterms:subject" xmlns:dcterms="http://purl.org/dc/terms/" href="http://dbpedia.org/resource/Category:Host_cities_of_the_Summer_Olympic_Games"><small>category</small>:Host_cities_of_the_Summer_Olympic_Games</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dcterms:subject" xmlns:dcterms="http://purl.org/dc/terms/" href="http://dbpedia.org/resource/Category:States_of_Germany"><small>category</small>:States_of_Germany</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dcterms:subject" xmlns:dcterms="http://purl.org/dc/terms/" href="http://dbpedia.org/resource/Category:Populated_places_established_in_the_13th_century"><small>category</small>:Populated_places_established_in_the_13th_century</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dcterms:subject" xmlns:dcterms="http://purl.org/dc/terms/" href="http://dbpedia.org/resource/Category:Members_of_the_Hanseatic_League"><small>category</small>:Members_of_the_Hanseatic_League</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dcterms:subject" xmlns:dcterms="http://purl.org/dc/terms/" href="http://dbpedia.org/resource/Category:States_and_territories_established_in_1237"><small>category</small>:States_and_territories_established_in_1237</a></span></li>
+	<li><span class="literal"><a class="uri" rel="dcterms:subject" xmlns:dcterms="http://purl.org/dc/terms/" href="http://dbpedia.org/resource/Category:Capitals_in_Europe"><small>category</small>:Capitals_in_Europe</a></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://www.georss.org/georss/point"><small>grs:</small>point</a>
+</td><td><ul>
+	<li><span class="literal"><span property="grs:point" xmlns:grs="http://www.georss.org/georss/">52.50055555555556 13.398888888888889</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"><small>rdf:</small>type</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://www.w3.org/2002/07/owl#Thing"><small>owl</small>:Thing</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://schema.org/City">http://schema.org/City</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/class/yago/StatesOfGermany"><small>yago</small>:StatesOfGermany</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/ontology/PopulatedPlace"><small>dbpedia-owl</small>:PopulatedPlace</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/ontology/Settlement"><small>dbpedia-owl</small>:Settlement</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/class/yago/CapitalsInEurope"><small>yago</small>:CapitalsInEurope</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/class/yago/HostCitiesOfTheSummerOlympicGames"><small>yago</small>:HostCitiesOfTheSummerOlympicGames</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/class/yago/Weather111524662"><small>yago</small>:Weather111524662</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/ontology/Place"><small>dbpedia-owl</small>:Place</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/ontology/City"><small>dbpedia-owl</small>:City</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://schema.org/Place">http://schema.org/Place</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/class/yago/GermanStateCapitals"><small>yago</small>:GermanStateCapitals</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://www.opengis.net/gml/_Feature"><small>gml</small>:_Feature</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/class/yago/StatesAndTerritoriesEstablishedIn1237"><small>yago</small>:StatesAndTerritoriesEstablishedIn1237</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://umbel.org/umbel/rc/City">http://umbel.org/umbel/rc/City</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://umbel.org/umbel/rc/PopulatedPlace">http://umbel.org/umbel/rc/PopulatedPlace</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/class/yago/EuropeanCapitalsOfCulture"><small>yago</small>:EuropeanCapitalsOfCulture</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/class/yago/GeoclassCapitalOfAPoliticalEntity"><small>yago</small>:GeoclassCapitalOfAPoliticalEntity</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/class/yago/Locations"><small>yago</small>:Locations</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://umbel.org/umbel/rc/Village">http://umbel.org/umbel/rc/Village</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://umbel.org/umbel/rc/Location_Underspecified">http://umbel.org/umbel/rc/Location_Underspecified</a></span></li>
+	<li><span class="literal"><a class="uri" rel="rdf:type" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" href="http://dbpedia.org/class/yago/PopulatedPlacesEstablishedInThe13thCentury"><small>yago</small>:PopulatedPlacesEstablishedInThe13thCentury</a></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://www.w3.org/2000/01/rdf-schema#comment"><small>rdfs:</small>comment</a>
+</td><td><ul>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">ベルリン（Berlin、伯林）は、ドイツの北東部に位置する都市で、ドイツ連邦共和国の首都である。</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlin – stolica i największe miasto Niemiec, na prawach kraju związkowego. Zajmuje powierzchnię 890 km², zamieszkuje je blisko 3,5 mln osób.</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">柏林（Template:Lang-de，Template:IPA-de）是德国首都，也是德国最大的城市，现有居民约340万人。柏林位于德国东北部，四面被勃兰登堡州环绕，施普雷河和哈维尔河流经该市。柏林也是德国十六个联邦州之一，因此也称为柏林州，和汉堡、不来梅同为德国僅有的三個的城市州。 柏林是欧盟區內人口第2多的城市以及城市面积第8大的城市。它是柏林-勃兰登堡都会区的中心，有来自超过190个国家的5百万人口。地理上位于欧洲平原，受温带季节性气候影响。城市周围1/3的土地由森林、公园、花园、河流和湖泊组成。 该市第一次有文字记载是在13世纪，柏林连续的成为以下这些国家的首都：普鲁士王国（1701-1870）、德意志帝国（1871-1918）、魏玛共和国（1919-1933）、第三帝国（1933-1945）。在1920年代，柏林是世界第3大自治市。二战后，城市被分割；东柏林成为了东德的首都，而西柏林事实上成为了西德在东德的一块飛地，被柏林墙围住。直到1990年两德统一，该市重新获得了全德国首都的地位，驻有147个外国大使馆。 柏林无论是从文化、政治、传媒还是科学上讲都称的上是世界级城市。该市经济主要基于服务业，包括多种多样的创造性产业、传媒集团、议会举办地点。柏林扮演了一个欧洲大陆上航空与铁路运输交通枢纽的角色，同时它也是欧盟内游客数量最多的城市之一。主要的产业包括信息技术、制药、生物工程、生物科技、光学电子、交通工程和可再生能源。 柏林都会区有知名大学、研究院、体育赛事、管弦乐队、博物馆和知名人士。城市的历史遗存使该市成为国际电影产品的交流中心。该市在节日活动、建筑的多样化、夜生活、当代艺术、公共交通网络以及高质量生活方面得到了广泛认可。柏林已经发展成一个全球焦点城市，以崇尚自由生活方式和现代精神的年轻人和艺术家而闻名。。</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlin ist Bundeshauptstadt und Regierungssitz der Bundesrepublik Deutschland. Als Stadtstaat ist Berlin ein Land und bildet das Zentrum der Metropolregion Berlin/Brandenburg. Berlin ist mit 3,4 Millionen Einwohnern die bevölkerungsreichste und flächengrößte Stadt Deutschlands, sowie nach Einwohnern die zweitgrößte und nach Fläche die fünftgrößte Stadt der Europäischen Union. Berlin ist in zwölf Bezirke unterteilt.</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlin is the capital city of Germany and is one of the 16 states of Germany. With a population of 3.45 million people, Berlin is Germany's largest city. It is the second most populous city proper and the seventh most populous urban area in the European Union. Located in northeastern Germany, it is the center of the Berlin/Brandenburg Metropolitan Region, which has 4.4 million residents from over 190 nations. Located in the European Plains, Berlin is influenced by a temperate seasonal climate.</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlín es la ciudad capital de la República Federal de Alemania y uno de los dieciséis Estados federados alemanes. Está localizada al noreste de Alemania, a escasos 70 km de la frontera con Polonia. Es atravesada por los ríos Spree y Havel. Con una población de 3,4 millones de habitantes, Berlín es la ciudad más poblada del país, así como la quinta aglomeración urbana entre los países de la Unión Europea.</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berliini on Saksan pääkaupunki ja yksi Saksan osavaltioista. Noin 3,4 miljoonalla asukkaallaan se on myös Saksan suurin ja Euroopan unionin toiseksi suurin kaupunki Lontoon jälkeen. Toisin kuin joidenkin muiden kaupunkialueiden (esimerkiksi noin 12 miljoonan asukkaan Suur-Pariisin) kohdalla, Berliinissä kaupungin viralliset rajat ja kaupunkimaisesti rakennetun alueen tosiasialliset rajat vastaavat melko hyvin toisiaan.</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Coordinate: 52°31′N 13°25′E&#xfeff; / 52.517, 13.417 File:Nota disambigua. svg Disambiguazione – Se stai cercando altri significati del termine, vedi Berlino (disambigua). &lt;imagemap&gt;Immagine:Segui progetto. png Berlin File:Collage Berlin2. jpg File:Flag of Berlin. svg File:Coat of arms of Berlin. svg Stato: Germania Capitale: Superficie: 892 km&sup2; Abitanti: 3.429.870 Densità: 3.846 ab. /km&sup2; ISO 3166-2: DE-BE NUTS: DE3 Targa aut.</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlijn is de hoofdstad van Duitsland en als stadstaat een deelstaat van dat land. Met zijn 3.429.525 inwoners is het tevens de grootste stad van het land en de op één na grootste stad in de Europese Unie. De stad ligt in het noordoosten van Duitsland, aan de rivier de Spree en wordt omsloten door de deelstaat Brandenburg, waarvan ze sinds 1920 geen deel meer uitmaakt.</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Mal:ThumbBerlin er den føderale hovedstaden og en delstat i Tyskland. Det er Tysklands største by, og den nest største byen i Den europeiske union definert etter offisielle grenser. Byen er et av de viktigste sentre for europeisk politikk, kultur og vitenskap. Byen er et viktig transportknutepunkt i Sentral-Europa og har noen av verdens fremste universiteter, museer, teatre og orkestre, samt tre operaer.</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlim é a capital e um dos dezesseis estados da Alemanha. Com uma população de 3,4 milhões dentro de limites da cidade, é a maior cidade do país, além de ser a segunda mais populosa cidade e a oitava mais populosa área urbana da União Europeia. Situado no nordeste da Alemanha, é o centro da área metropolitana de Berlim-Brandemburgo, que inclui 5 milhões de pessoas de mais de 190 nações.</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Берли́н — столица Германии, самый крупный и самый населённый город Германии. После Лондона Берлин — второй по населению и пятый по площади город Евросоюза. Берлин — одна из 16 земель в составе Федеративной Республики Германия. Город расположен на берегах рек Шпрее (с этим связано «прозвище» Берлина «Spree-Athen» — «Афины на Шпрее») и Хафель в центре федеральной земли Бранденбург, частью которой он не является.</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlin är huvudstad i Tyskland och dess folkrikaste stad med 3,4 miljoner invånare. Med förorter har staden 4,4 miljoner invånare. Berlin utgör förbundslandet Berlin och är med sina 892 kvadratkilometer Tysklands största stad till ytan. Berlin är genom sitt kulturella och historiska arv en av Europas mest kända och besökta metropoler. Berlin är en betydande trafikknutpunkt och ett viktigt ekonomiskt och kulturellt centrum i Tyskland och Europa.</span></span></li>
+	<li><span class="literal"><span property="rdfs:comment" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlin est la capitale et la plus grande ville d'Allemagne. Située dans le nord-est du pays, elle forme un land (État fédéré) à part entière et compte environ 3,4 millions d'habitants. L'aire urbaine de la région métropolitaine de Berlin-Brandebourg dépasse les frontières du land et regroupe au total près de 6 millions d'habitants, ce qui en fait une des dix métropoles les plus peuplées de l'Union européenne.</span></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://www.w3.org/2000/01/rdf-schema#label"><small>rdfs:</small>label</a>
+</td><td><ul>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlin</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlin</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlín</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berliini</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlin</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlino</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlijn</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">ベルリン</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlin</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlin</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlim</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Берлин</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">Berlin</span></span></li>
+	<li><span class="literal"><span property="rdfs:label" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">柏林</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://www.w3.org/2002/07/owl#sameAs"><small>owl:</small>sameAs</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="owl:sameAs" href="http://www4.wiwiss.fu-berlin.de/eurostat/resource/regions/Berlin">http://www4.wiwiss.fu-berlin.de/eurostat/resource/regions/Berlin</a></span></li>
+	<li><span class="literal"><a class="uri" rel="owl:sameAs" href="http://rdf.freebase.com/ns/m/0156q"><small>fbase</small>:Berlin</a></span></li>
+	<li><span class="literal"><a class="uri" rel="owl:sameAs" href="http://linkedgeodata.org/triplify/node/240109189#id">http://linkedgeodata.org/triplify/node/240109189#id</a></span></li>
+	<li><span class="literal"><a class="uri" rel="owl:sameAs" href="http://sws.geonames.org/2950159/">http://sws.geonames.org/2950159/</a></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://www.w3.org/2003/01/geo/wgs84_pos#geometry"><small>geo:</small>geometry</a>
+</td><td><ul>
+	<li><span class="literal"><span property="geo:geometry" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">POINT(13.3989 52.5006)</span></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://www.w3.org/2003/01/geo/wgs84_pos#lat"><small>geo:</small>lat</a>
+</td><td><ul>
+	<li><span class="literal"><span property="geo:lat" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">52.500557</span><small> (xsd:float)</small></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://www.w3.org/2003/01/geo/wgs84_pos#long"><small>geo:</small>long</a>
+</td><td><ul>
+	<li><span class="literal"><span property="geo:long" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">13.398889</span><small> (xsd:float)</small></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://xmlns.com/foaf/0.1/depiction"><small>foaf:</small>depiction</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="foaf:depiction" xmlns:foaf="http://xmlns.com/foaf/0.1/" href="http://upload.wikimedia.org/wikipedia/commons/a/a9/Berlin_Montage.png">http://upload.wikimedia.org/wikipedia/commons/a/a9/Berlin_Montage.png</a></span></li>
+</ul></td></tr><tr class="odd"><td class="property"><a class="uri" href="http://xmlns.com/foaf/0.1/homepage"><small>foaf:</small>homepage</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="foaf:homepage" xmlns:foaf="http://xmlns.com/foaf/0.1/" href="http://www.berlin.de/international/index.en.php">http://www.berlin.de/international/index.en.php</a></span></li>
+</ul></td></tr><tr class="even"><td class="property"><a class="uri" href="http://xmlns.com/foaf/0.1/page"><small>foaf:</small>page</a>
+</td><td><ul>
+	<li><span class="literal"><a class="uri" rel="foaf:page" xmlns:foaf="http://xmlns.com/foaf/0.1/" href="http://en.wikipedia.org/wiki/Berlin">http://en.wikipedia.org/wiki/Berlin</a></span></li>
+</ul></td></tr><tr class="odd"><td class="property">is <a class="uri" href="http://dbpedia.org/ontology/academicAdvisor"><small>dbpedia-owl:</small>academicAdvisor</a>
+ of</td><td><ul>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:academicAdvisor" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Otto_Hahn"><small>dbpedia</small>:Otto_Hahn</a></span></li>
+</ul></td></tr><tr class="even"><td class="property">is <a class="uri" href="http://dbpedia.org/ontology/almaMater"><small>dbpedia-owl:</small>almaMater</a>
+ of</td><td><ul>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:almaMater" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Paul_S._Allen"><small>dbpedia</small>:Paul_S._Allen</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:almaMater" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Philip_A._Herfort"><small>dbpedia</small>:Philip_A._Herfort</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:almaMater" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Jan_Philipp_Albrecht"><small>dbpedia</small>:Jan_Philipp_Albrecht</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:almaMater" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Pahor_Labib"><small>dbpedia</small>:Pahor_Labib</a></span></li>
+</ul></td></tr><tr class="odd"><td class="property">is <a class="uri" href="http://dbpedia.org/ontology/assembly"><small>dbpedia-owl:</small>assembly</a>
+ of</td><td><ul>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:assembly" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Mercedes-Benz_S-Class"><small>dbpedia</small>:Mercedes-Benz_S-Class</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:assembly" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Ford_Model_T"><small>dbpedia</small>:Ford_Model_T</a></span></li>
+</ul></td></tr><tr class="even"><td class="property">is <a class="uri" href="http://dbpedia.org/ontology/award"><small>dbpedia-owl:</small>award</a>
+ of</td><td><ul>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:award" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Richard_Grayson_%28artist%29"><small>dbpedia</small>:Richard_Grayson_(artist)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:award" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Anton_Graff"><small>dbpedia</small>:Anton_Graff</a></span></li>
+</ul></td></tr><tr class="odd"><td class="property">is <a class="uri" href="http://dbpedia.org/ontology/battle"><small>dbpedia-owl:</small>battle</a>
+ of</td><td><ul>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:battle" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/39th_Guards_Rifle_Division"><small>dbpedia</small>:39th_Guards_Rifle_Division</a></span></li>
+</ul></td></tr><tr class="even"><td class="property">is <a class="uri" href="http://dbpedia.org/ontology/billed"><small>dbpedia-owl:</small>billed</a>
+ of</td><td><ul>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:billed" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Wesna"><small>dbpedia</small>:Wesna</a></span></li>
+</ul></td></tr><tr class="odd"><td class="property">is <a class="uri" href="http://dbpedia.org/ontology/birthPlace"><small>dbpedia-owl:</small>birthPlace</a>
+ of</td><td><ul>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Erich_H%C3%BCckel"><small>dbpedia</small>:Erich_Hückel</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Wilhelm_II,_German_Emperor"><small>dbpedia</small>:Wilhelm_II,_German_Emperor</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Hannelore_Kohl"><small>dbpedia</small>:Hannelore_Kohl</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Andreas_Wisniewski"><small>dbpedia</small>:Andreas_Wisniewski</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Paul_Lincke"><small>dbpedia</small>:Paul_Lincke</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Max_Delbr%C3%BCck"><small>dbpedia</small>:Max_Delbrück</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Klaus_Voormann"><small>dbpedia</small>:Klaus_Voormann</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Edmund_Landau"><small>dbpedia</small>:Edmund_Landau</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Harry_Benjamin"><small>dbpedia</small>:Harry_Benjamin</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Erich_Mielke"><small>dbpedia</small>:Erich_Mielke</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Klaus_Wowereit"><small>dbpedia</small>:Klaus_Wowereit</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Emil_du_Bois-Reymond"><small>dbpedia</small>:Emil_du_Bois-Reymond</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Reinhard_Mey"><small>dbpedia</small>:Reinhard_Mey</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Nadja_Auermann"><small>dbpedia</small>:Nadja_Auermann</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Nicolette_Krebitz"><small>dbpedia</small>:Nicolette_Krebitz</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Wolfgang_Heidenfeld"><small>dbpedia</small>:Wolfgang_Heidenfeld</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Hans_Luther"><small>dbpedia</small>:Hans_Luther</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Joachim_Peiper"><small>dbpedia</small>:Joachim_Peiper</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Tassilo_von_Heydebrand_und_der_Lasa"><small>dbpedia</small>:Tassilo_von_Heydebrand_und_der_Lasa</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Ivan_Rebroff"><small>dbpedia</small>:Ivan_Rebroff</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Ludwig_Adolf_Wilhelm_von_L%C3%BCtzow"><small>dbpedia</small>:Ludwig_Adolf_Wilhelm_von_Lützow</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Ludwig_Achim_von_Arnim"><small>dbpedia</small>:Ludwig_Achim_von_Arnim</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Taygun_Kuru"><small>dbpedia</small>:Taygun_Kuru</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Louisa_Ulrika_of_Prussia"><small>dbpedia</small>:Louisa_Ulrika_of_Prussia</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Richard_Rado"><small>dbpedia</small>:Richard_Rado</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Joseph_Mendelssohn"><small>dbpedia</small>:Joseph_Mendelssohn</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Wilhelmina_of_Prussia,_Princess_of_Orange"><small>dbpedia</small>:Wilhelmina_of_Prussia,_Princess_of_Orange</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Andrew_Sachs"><small>dbpedia</small>:Andrew_Sachs</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Rudolph_Schoenheimer"><small>dbpedia</small>:Rudolph_Schoenheimer</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Prince_Wilhelm_of_Prussia_%281783%E2%80%931851%29"><small>dbpedia</small>:Prince_Wilhelm_of_Prussia_(1783–1851)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Ludwig_Berger_%28composer%29"><small>dbpedia</small>:Ludwig_Berger_(composer)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Princess_Louise_of_Prussia_%281808%E2%80%931870%29"><small>dbpedia</small>:Princess_Louise_of_Prussia_(1808–1870)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Carl_Ludvig_Engel"><small>dbpedia</small>:Carl_Ludvig_Engel</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/David_Sch%C3%BCtz"><small>dbpedia</small>:David_Schütz</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Prince_Waldemar_of_Prussia_%281868%E2%80%931879%29"><small>dbpedia</small>:Prince_Waldemar_of_Prussia_(1868–1879)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Heike_Faber"><small>dbpedia</small>:Heike_Faber</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Louise-Rosalie_Lefebvre"><small>dbpedia</small>:Louise-Rosalie_Lefebvre</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Julia_Franck"><small>dbpedia</small>:Julia_Franck</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Magda_Goebbels"><small>dbpedia</small>:Magda_Goebbels</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Otto_von_Gerlach"><small>dbpedia</small>:Otto_von_Gerlach</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Dora_Gerson"><small>dbpedia</small>:Dora_Gerson</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Claus_Westermann"><small>dbpedia</small>:Claus_Westermann</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Eugen_Bamberger"><small>dbpedia</small>:Eugen_Bamberger</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Horst_Wolter"><small>dbpedia</small>:Horst_Wolter</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Heinz_Schubert_%28actor%29"><small>dbpedia</small>:Heinz_Schubert_(actor)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Lucie_Mannheim"><small>dbpedia</small>:Lucie_Mannheim</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Heinz_Wolff"><small>dbpedia</small>:Heinz_Wolff</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Hakan_Balta"><small>dbpedia</small>:Hakan_Balta</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Andreas_Menger"><small>dbpedia</small>:Andreas_Menger</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Leonor_Michaelis"><small>dbpedia</small>:Leonor_Michaelis</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Eduard_Hitzig"><small>dbpedia</small>:Eduard_Hitzig</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Dmitri_Borgmann"><small>dbpedia</small>:Dmitri_Borgmann</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Georg_Dertinger"><small>dbpedia</small>:Georg_Dertinger</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Fritz_Klein_%28historian%29"><small>dbpedia</small>:Fritz_Klein_(historian)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Adam_M%C3%BCller"><small>dbpedia</small>:Adam_Müller</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Heinrich_Rudolf_Hermann_Friedrich_von_Gneist"><small>dbpedia</small>:Heinrich_Rudolf_Hermann_Friedrich_von_Gneist</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Peter_Lilienthal"><small>dbpedia</small>:Peter_Lilienthal</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Hilde_Coppi"><small>dbpedia</small>:Hilde_Coppi</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Erwin_Hillier"><small>dbpedia</small>:Erwin_Hillier</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Senetta_Yoseftal"><small>dbpedia</small>:Senetta_Yoseftal</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Prince_Henry_of_Prussia_%281862%E2%80%931929%29"><small>dbpedia</small>:Prince_Henry_of_Prussia_(1862–1929)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Gotthold_Eisenstein"><small>dbpedia</small>:Gotthold_Eisenstein</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Princess_Alexandrine_of_Prussia"><small>dbpedia</small>:Princess_Alexandrine_of_Prussia</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Laura_Brosius"><small>dbpedia</small>:Laura_Brosius</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Hans-J%C3%BCrgen_Papier"><small>dbpedia</small>:Hans-Jürgen_Papier</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Louis_Adlon"><small>dbpedia</small>:Louis_Adlon</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Karl_Friedrich_August_Rammelsberg"><small>dbpedia</small>:Karl_Friedrich_August_Rammelsberg</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Princess_Frederica_Wilhelmina_of_Prussia"><small>dbpedia</small>:Princess_Frederica_Wilhelmina_of_Prussia</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Herluf_Bidstrup"><small>dbpedia</small>:Herluf_Bidstrup</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Gunther_E._Rothenberg"><small>dbpedia</small>:Gunther_E._Rothenberg</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Karaja_%28singer%29"><small>dbpedia</small>:Karaja_(singer)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Regina_Jonas"><small>dbpedia</small>:Regina_Jonas</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Abdoul_Thiam"><small>dbpedia</small>:Abdoul_Thiam</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Volkan_Alt%C4%B1n"><small>dbpedia</small>:Volkan_Altın</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Dana_Wynter"><small>dbpedia</small>:Dana_Wynter</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Heinrich_Rose"><small>dbpedia</small>:Heinrich_Rose</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Thorsten_Wittek"><small>dbpedia</small>:Thorsten_Wittek</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Siegmund_Freiherr_von_Schleinitz"><small>dbpedia</small>:Siegmund_Freiherr_von_Schleinitz</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Klaus_Doldinger"><small>dbpedia</small>:Klaus_Doldinger</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Wolfgang_Schomburg"><small>dbpedia</small>:Wolfgang_Schomburg</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Hans_Hahne_%28General%29"><small>dbpedia</small>:Hans_Hahne_(General)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Hansj%C3%B6rg_Felmy"><small>dbpedia</small>:Hansjörg_Felmy</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Detlef_Gromoll"><small>dbpedia</small>:Detlef_Gromoll</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Fler"><small>dbpedia</small>:Fler</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Landgravine_Louise_of_Hesse-Darmstadt_%281757%E2%80%931830%29"><small>dbpedia</small>:Landgravine_Louise_of_Hesse-Darmstadt_(1757–1830)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Michael_Ballhaus"><small>dbpedia</small>:Michael_Ballhaus</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Hardy_Kr%C3%BCger"><small>dbpedia</small>:Hardy_Krüger</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Charlotte_von_Mahlsdorf"><small>dbpedia</small>:Charlotte_von_Mahlsdorf</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Jasmin_Gerat"><small>dbpedia</small>:Jasmin_Gerat</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Viktor_Meyer"><small>dbpedia</small>:Viktor_Meyer</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Michael_Fu%C3%9F"><small>dbpedia</small>:Michael_Fuß</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/G%C3%BCnter_de_Bruyn"><small>dbpedia</small>:Günter_de_Bruyn</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Klaus-J%C3%BCrgen_Bathe"><small>dbpedia</small>:Klaus-Jürgen_Bathe</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Erwin_Wilhelm_M%C3%BCller"><small>dbpedia</small>:Erwin_Wilhelm_Müller</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Kotaro_Yanagi"><small>dbpedia</small>:Kotaro_Yanagi</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Charles_Albert_Tindley"><small>dbpedia</small>:Charles_Albert_Tindley</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Charlotte_Bischoff"><small>dbpedia</small>:Charlotte_Bischoff</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Arya_Mitra_Sharma"><small>dbpedia</small>:Arya_Mitra_Sharma</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Anna_Maria_M%C3%BChe"><small>dbpedia</small>:Anna_Maria_Mühe</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Helmut_Hauptmann"><small>dbpedia</small>:Helmut_Hauptmann</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Prince_Friedrich_Sigismund_of_Prussia_%281891%E2%80%931927%29"><small>dbpedia</small>:Prince_Friedrich_Sigismund_of_Prussia_(1891–1927)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Achmed_Khammas"><small>dbpedia</small>:Achmed_Khammas</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Julius_Rietz"><small>dbpedia</small>:Julius_Rietz</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Alfred_Bengsch"><small>dbpedia</small>:Alfred_Bengsch</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Benjamin_Trinks"><small>dbpedia</small>:Benjamin_Trinks</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Shervin_Radjabali-Fardi"><small>dbpedia</small>:Shervin_Radjabali-Fardi</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Arno_Steffenhagen"><small>dbpedia</small>:Arno_Steffenhagen</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Richard_Golz"><small>dbpedia</small>:Richard_Golz</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Erwin_Casmir"><small>dbpedia</small>:Erwin_Casmir</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Axel_Anderson"><small>dbpedia</small>:Axel_Anderson</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Ernest_J._Sternglass"><small>dbpedia</small>:Ernest_J._Sternglass</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Tanja_Kolbe"><small>dbpedia</small>:Tanja_Kolbe</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Ferid_Heider"><small>dbpedia</small>:Ferid_Heider</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Adelbert_Schulz"><small>dbpedia</small>:Adelbert_Schulz</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Harry_Polewacz"><small>dbpedia</small>:Harry_Polewacz</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Rudolf_Cleve"><small>dbpedia</small>:Rudolf_Cleve</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Heinz_Lehmann"><small>dbpedia</small>:Heinz_Lehmann</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/C%C3%A4cilia_Rentmeister"><small>dbpedia</small>:Cäcilia_Rentmeister</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Theodore_Motzkin"><small>dbpedia</small>:Theodore_Motzkin</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Markus_Hoffmann"><small>dbpedia</small>:Markus_Hoffmann</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Tim_Gerresheim"><small>dbpedia</small>:Tim_Gerresheim</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Hans_Bernd_von_Haeften"><small>dbpedia</small>:Hans_Bernd_von_Haeften</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Edith_Andreae"><small>dbpedia</small>:Edith_Andreae</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Valeska_Gert"><small>dbpedia</small>:Valeska_Gert</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Klaus_Landsberg"><small>dbpedia</small>:Klaus_Landsberg</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Erwin_Sander"><small>dbpedia</small>:Erwin_Sander</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Robert_Remak_%28mathematician%29"><small>dbpedia</small>:Robert_Remak_(mathematician)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Kurt_Bundrock"><small>dbpedia</small>:Kurt_Bundrock</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Manuel_Brehmer"><small>dbpedia</small>:Manuel_Brehmer</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Nicole_Banecki"><small>dbpedia</small>:Nicole_Banecki</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Erwin_Leiser"><small>dbpedia</small>:Erwin_Leiser</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Kevin_Stephan"><small>dbpedia</small>:Kevin_Stephan</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Max_von_Brandt"><small>dbpedia</small>:Max_von_Brandt</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Fritz_Albrecht"><small>dbpedia</small>:Fritz_Albrecht</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Jakob_Tiedtke"><small>dbpedia</small>:Jakob_Tiedtke</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Bernd_Patzke"><small>dbpedia</small>:Bernd_Patzke</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Toni_Packer"><small>dbpedia</small>:Toni_Packer</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Hanan_Rubin"><small>dbpedia</small>:Hanan_Rubin</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Olaf_Kapagiannidis"><small>dbpedia</small>:Olaf_Kapagiannidis</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Julius_Falkenstein"><small>dbpedia</small>:Julius_Falkenstein</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Princess_Anna_of_Prussia"><small>dbpedia</small>:Princess_Anna_of_Prussia</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Theodor_Plievier"><small>dbpedia</small>:Theodor_Plievier</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Hans-J%C3%BCrgen_Schatz"><small>dbpedia</small>:Hans-Jürgen_Schatz</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Andreas_Biermann"><small>dbpedia</small>:Andreas_Biermann</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Edzard_Schmidt-Jortzig"><small>dbpedia</small>:Edzard_Schmidt-Jortzig</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Andrea_Pozzato"><small>dbpedia</small>:Andrea_Pozzato</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Jutta_Wachowiak"><small>dbpedia</small>:Jutta_Wachowiak</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Norbert_Janzon"><small>dbpedia</small>:Norbert_Janzon</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Andreas_Neuendorf"><small>dbpedia</small>:Andreas_Neuendorf</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Werner_Stumpf"><small>dbpedia</small>:Werner_Stumpf</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Eser_Ya%C4%9Fmur"><small>dbpedia</small>:Eser_Yağmur</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Peter_Simon_Pallas"><small>dbpedia</small>:Peter_Simon_Pallas</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Herbert_Marcuse"><small>dbpedia</small>:Herbert_Marcuse</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Karl_D%C3%B6nitz"><small>dbpedia</small>:Karl_Dönitz</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Leni_Riefenstahl"><small>dbpedia</small>:Leni_Riefenstahl</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Otto_Wilhelm_Hermann_von_Abich"><small>dbpedia</small>:Otto_Wilhelm_Hermann_von_Abich</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Frederick_Loewe"><small>dbpedia</small>:Frederick_Loewe</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Baldur_von_Schirach"><small>dbpedia</small>:Baldur_von_Schirach</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Fritz_Perls"><small>dbpedia</small>:Fritz_Perls</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Johann_Christoph_Pepusch"><small>dbpedia</small>:Johann_Christoph_Pepusch</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Walther_Rathenau"><small>dbpedia</small>:Walther_Rathenau</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Frank_Auerbach"><small>dbpedia</small>:Frank_Auerbach</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Ludwig_Tieck"><small>dbpedia</small>:Ludwig_Tieck</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Erich_von_Manstein"><small>dbpedia</small>:Erich_von_Manstein</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Moritz_Schlick"><small>dbpedia</small>:Moritz_Schlick</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Lucian_Freud"><small>dbpedia</small>:Lucian_Freud</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Katarina_Witt"><small>dbpedia</small>:Katarina_Witt</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/J%C3%BCrgen_Prochnow"><small>dbpedia</small>:Jürgen_Prochnow</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Alexander_Gottlieb_Baumgarten"><small>dbpedia</small>:Alexander_Gottlieb_Baumgarten</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Peter_Popoff"><small>dbpedia</small>:Peter_Popoff</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Russell_William_Thaw"><small>dbpedia</small>:Russell_William_Thaw</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Henry_Koster"><small>dbpedia</small>:Henry_Koster</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Erich_Auerbach"><small>dbpedia</small>:Erich_Auerbach</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Heinrich_Louis_d%27Arrest"><small>dbpedia</small>:Heinrich_Louis_d'Arrest</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Carl_Wilhelm_Borchardt"><small>dbpedia</small>:Carl_Wilhelm_Borchardt</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Fritz_Kolbe"><small>dbpedia</small>:Fritz_Kolbe</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Prince_Friedrich_Karl_of_Prussia_%281828%E2%80%931885%29"><small>dbpedia</small>:Prince_Friedrich_Karl_of_Prussia_(1828–1885)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Paul_Richard_Heinrich_Blasius"><small>dbpedia</small>:Paul_Richard_Heinrich_Blasius</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Roger_Cicero"><small>dbpedia</small>:Roger_Cicero</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Paul_Gustav_Heinrich_Bachmann"><small>dbpedia</small>:Paul_Gustav_Heinrich_Bachmann</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Henri_Berger"><small>dbpedia</small>:Henri_Berger</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Christian_Wolff_%28actor%29"><small>dbpedia</small>:Christian_Wolff_(actor)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Erich_Neumann_%28psychologist%29"><small>dbpedia</small>:Erich_Neumann_(psychologist)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Leo_Frobenius"><small>dbpedia</small>:Leo_Frobenius</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Luise_K%C3%A4hler"><small>dbpedia</small>:Luise_Kähler</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Princess_Louise_of_Prussia_%281770%E2%80%931836%29"><small>dbpedia</small>:Princess_Louise_of_Prussia_(1770–1836)</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Martin_Fischer-Dieskau"><small>dbpedia</small>:Martin_Fischer-Dieskau</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Caspar_Friedrich_Wolff"><small>dbpedia</small>:Caspar_Friedrich_Wolff</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Walther_von_Brauchitsch"><small>dbpedia</small>:Walther_von_Brauchitsch</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Carl-Heinrich_von_St%C3%BClpnagel"><small>dbpedia</small>:Carl-Heinrich_von_Stülpnagel</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Christian_Lorenz"><small>dbpedia</small>:Christian_Lorenz</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Adolf_von_Baeyer"><small>dbpedia</small>:Adolf_von_Baeyer</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Paul_Landers"><small>dbpedia</small>:Paul_Landers</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Veit_Harlan"><small>dbpedia</small>:Veit_Harlan</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org/ontology/" href="http://dbpedia.org/resource/Trude_Berliner"><small>dbpedia</small>:Trude_Berliner</a></span></li>
+	<li><span class="literal"><a class="uri" rev="dbpedia-owl:birthPlace" xmlns:dbpedia-owl="http://dbpedia.org

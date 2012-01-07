@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xml:lang="en"
+      xml:base="http://www.example.org">
+  <id>http://www.example.org/myfeed</id>
+  <title>My Simple Feed</title>
+  <updated>2005-07-15T12:00:00Z</updated>
+  <link href="/blog" />
+  <link rel="self" href="/myfeed" />
+  <author><name>Uche Ogbuji</name></author>
+  <entry>
+    <id>http://www.example.org/entries/1</id>
+    <title>A simple blog entry</title>
+    <link href="/blog/2005/07/1" />
+    <updated>2005-07-14T12:00:00Z</updated>
+    <summary>This is a simple blog entry</summary>
+  </entry>
+  <entry>
+    <id>http://www.example.org/entries/2</id>
+    <title />
+    <link href="/blog/2005/07/2" />
+    <updated>2005-07-15T12:00:00Z</updated>
+    <summary>This is simple blog entry without a title</summary>
+  </entry>
+</feed>

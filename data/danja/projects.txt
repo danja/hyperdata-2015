@@ -1,3 +1,8 @@
+Datastore : Seki
+(post-data: add, post-data: remove - Talis changesets?, sync data)
+
+next/previous into blog data
+
 No.10
 
 Maze
@@ -20,16 +25,29 @@ Manuel (dsl)
 
 Seki
 
-semtext.org
+Guides
+
+----------- old stuff
+java media
+csv2xml
+fisheye
+
+----------------------
+semtext.org - quasi-aggregator, danny-reposted pieces from other blogs
 danny.ayers.name
 ideagraph.org
 lankamasks.org
 dannyayers.com
 pragmatron.org
 micromodels.org
-hyperdata.org
+hyperdata.org - Web R&D (community?)
 spikeandwave.com
 atone.it
+
+glossary (SKOS+display)
+http://www.w3.org/2003/03/glossary-project/data/glossaries/
+http://purl.org/vocabularies/princeton/wn30/synset-flute-noun-3
+
 
 Old Projects..?
 

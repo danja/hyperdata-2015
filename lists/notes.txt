@@ -10,7 +10,15 @@ draggable editor
 to RDF
 to HTML
 
-
 Tidy
+
+=== To DO ===
+
+Add li
+[Delete]
+Save
+Restore
+
+
 
 
