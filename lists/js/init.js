@@ -9,6 +9,15 @@ $(document)
 			});
 
 			$.editableFactory = {
+				'listtitle' : {
+					toEditable : function($this, options) {
+						$this.append('<input value="'
+							+ $this.data('editable.current') + '"/>');
+					},
+					getValue : function($this, options) {
+						return $this.children().val();
+					}
+				},
 				'textitem' : {
 					toEditable : function($this, options) {
 						$this.append('<input value="'
@@ -20,6 +29,7 @@ $(document)
 				},
 
 				'linkitem' : {
+					
 					toEditable : function($this, options) {
 
 						var li = $($this.data('editable.current'));
@@ -44,25 +54,47 @@ $(document)
 
 					getValue : function($this, options) {
 						var inputs = $($this.children());
-						var value = "";
+						var url = "";
+						var title = "";
+						var text = "";
+						var description = "";
 						inputs.each(function() {
-							value += $(this).val() + " * ";
-						})
+							if ($(this).attr('name') == 'url') {
+							    url = $(this).attr('value');
+							}
+							if ($(this).attr('name') == 'title') {
+							    title = $(this).attr('value');
+							}
+							if ($(this).attr('name') == 'text') {
+							    text = $(this).attr('value');
+							}
+							if ($(this).attr('name') == 'description') {
+							    description = $(this).attr('value');
+							}
+						});
+						value = '<div class="link">';
+						value += '<a href="'+url+'" title="'+title+'">'+text+'</a>';
+						value += ' - <span class="description">'+description+'</span>';
+						value += '</div>';
 						return value;
 					}
 				}
 			}
-			$('li.textitem').editable({
-				type : 'textitem'
+			
+			$('div.listtitle').editable({
+				type : 'listtitle',
+				editBy : 'dblclick',
+				submit:'OK'
+			});
+			$('div.textitem').editable({
+				type : 'textitem',
+				editBy : 'dblclick',
+				submit:'OK'
 			});
 			$('li.linkitem').editable({
 				type : 'linkitem',
-				/*
-				 * as: $('li.link').children("a"), linktext:
-				 * $('li.link').children("a").text(), title:
-				 * $('li.link').attr("title")
-				 */
-				editBy : 'dblclick'
+				editBy : 'dblclick',
+				submit:'OK'
 			});
 
 			// //////////////////////////////////////

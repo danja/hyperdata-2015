@@ -47,7 +47,7 @@
 	</xsl:template>
 
 	<xsl:template match="h3">
-		<div class="description">
+		<div class="listtitle">
 			<xsl:value-of select="./text()" />
 		</div>
 
