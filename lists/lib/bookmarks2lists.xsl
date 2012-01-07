@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 
+<!--  Converts Bookmarks file dumped from browser, after applying Tidy/XML to ul/li -->
+
+<!--  danja 2011-01-07 -->
+
 <xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
    <xsl:output indent="yes" omit-xml-declaration="yes" method="xml"/>
    <xsl:template match="/html">
@@ -14,13 +18,6 @@
 <xsl:template name="head">
 <head>
 <xsl:copy-of select="head/*" />
-<script type="text/javascript" src="j/jquery-1.5.2.min.js"></script>
-
-<script type="text/javascript" src="j/jquery.editable-1.3.3.min"></script>
-
-<script type="text/javascript" src="j/jquery-ui-1.8.11.custom.min.js"></script>
-<script type="text/javascript" src="j/jquery.ui.nestedSortable.js"></script>
-<script type="text/javascript" src="j/init.js"></script>
 </head>
 </xsl:template>
 
