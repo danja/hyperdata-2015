@@ -1,0 +1,16 @@
+
+.gallery li {
+        display: inline;
+        list-style: none;
+        width: 150px;
+        min-height: 175px;
+        float: left;
+        margin: 0 10px 10px 0;
+        text-align: center;
+	}
+
+/* danny classes
+header
+section
+footer
+*/

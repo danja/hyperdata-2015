@@ -1,0 +1,25 @@
+#container {
+width: 100%;
+background: #00f;
+}
+
+.content {
+width: 950px;
+float: right;
+padding: 10px;
+height: 100%;
+background: #0f0;
+}
+
+.sidebar {
+width: 220px;
+float: left;
+height: 100%;
+padding: 5px;
+background: #0ff;
+}
+
+#footer {
+clear:both;
+background:#f00;
+}
