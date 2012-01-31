@@ -1,18 +1,16 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <!-- meta charset="utf-8" / -->
   <title>Links are Data</title>
   <meta name="description" content="Various things from Danny Ayers">
   <meta name="author" content="Danny Ayers">
-  <link rel="stylesheet" href="css/lightbox.css" type="text/css"
-  media="screen">
+  <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
   <!-- link rel="stylesheet" href="css/font.css" type="text/css"
   media="screen" -->
-  <link rel="stylesheet" href="css/stuff.css" type="text/css"
-  media="Screen">
-  <link rel="stylesheet" href="css/tabs.css" type="text/css"
-  media="Screen">
+  <link rel="stylesheet" href="css/stuff.css" type="text/css" media="Screen">
+  <link rel="stylesheet" href="css/tabs.css" type="text/css" media="Screen">
   <!-- link rel="stylesheet" href="/css/handheld.css" type="text/css" media="handheld" / -->
   <script type="text/javascript" src="js/prototype.js">
  </script>
@@ -26,7 +24,6 @@
   <!-- link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" -->
   <!-- link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" -->
   <!-- script type="text/javascript" src="../../js/CollapsibleLists.js" -->
- </script>
 </head>
 
 <body id="tab1">
@@ -82,7 +79,7 @@
 <div class="sidebar-right">
 <h3>Links - nearby</h3>
 <ul>
-  <li><a href="#">Link</a> </li>
+  <li><a href="http://www.w3.org/2001/sw/rdb2rdf/">RDB2RDF</a> </li>
   <li><a href="#">Link</a> </li>
   <li><a href="#">Link</a> </li>
   <li><a href="#">Link</a> </li>
@@ -127,8 +124,17 @@ relationship between two resources.</strong></p>
 <p></p>
 
 <p>Relationships can be resources too</p>
-
-<p></p>
+<pre><code>
+&lt;div itemscope itemtype="http://schema.org/Product"&gt;</code></pre>
+<pre><code>    &lt;a itemprop="url" href="http://dannyayers.com/stuff/vinocaster"&gt;
+        &lt;div itemprop="name"&gt;&lt;strong&gt;The Vinocaster&lt;/strong&gt;&lt;/div&gt;</code></pre>
+<pre><code>    &lt;/a&gt;</code></pre>
+<pre><code>    &lt;div itemprop="description"&gt;A custom guitar&lt;/div&gt;</code></pre>
+<pre><code>    &lt;div itemprop="manufacturer" itemscope itemtype="http://schema.org/Person"&gt;</code></pre>
+<pre><code>    &lt;a itemprop="url" href="http://dannyayers.com/stuff/vinocaster"&gt;
+        &lt;div itemprop="name"&gt;&lt;strong&gt;The Vinocaster&lt;/strong&gt;&lt;/div&gt;    &lt;/a&gt;
+    &lt;/div&gt;</code></pre>
+<pre><code>&lt;/div&gt;</code></pre>
 
 <p>Links are data</p>
 
