@@ -192,24 +192,32 @@ Turtle </p>
 <code>http:/example.org/example.txt</code> :</p>
 
 <p></p>
-<pre>#!/usr/bin/turtle
 
-# This is Turtle
-@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; .
+<pre>#!/usr/bin/turtle 
 
-#!</pre>
-<pre>But now here some ordinary text, it may</pre>
-<pre>flow over several lines as usual.</pre>
-<pre>#!</pre>
-<pre># now back to Turtle</pre>
-<pre>@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .</pre>
-<pre>&lt;&gt; a foaf:Document ;</pre>
-<pre>dc:title "Example" ;</pre>
-<pre>#!</pre>
-<pre>this is now text.</pre>
-<pre>#!</pre>
-<pre># Turtle again.</pre>
-<pre>dc:description "a little example" .</pre>
+# This is Turtle 
+@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; . #!
+But now here some ordinary text, it may
+appear on several lines as usual.
+
+#!
+
+# now back to Turtle
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+
+&lt;&gt; a foaf:Document ;
+
+dc:title "Example" ;
+
+#!
+
+this is now text.
+
+#!
+
+# Turtle again.
+
+dc:description "a little example" .</pre>
 
 <p></p>
 
@@ -229,7 +237,7 @@ flow over several lines as usual.</pre>
 <pre>this is now text.</pre>
 <pre>""" .</pre>
 
-<p>Note that relative URIs are interpretated from the source TET document
+<p>Note that relative URIs are interpreted from the source TET document
 (&lt;&gt;) and that Turtle statements may be interrupted by blocks of
 none-Turtle text, although in practice this is probably best avoided.</p>
 
