@@ -109,15 +109,18 @@ language for connecting web components</p>
 
 <h2><a name="Introducti" id="Introducti">Introduction</a></h2>
 
-<p><em>Manuel is a waiter. His English isn't very good. His main duties are
-preparing tables and taking customers' orders.</em></p>
-
 <p>use case driven dev - make it up as I need it</p>
 
 <p>initial implementation running in node.js, using Jison</p>
 
 <p>once reasonably defined, port to Java for use in Scute (via Rhino/JS? or
 from scratch? Scala? check http://jflex.de/)</p>
+
+<p><strong>New Justification!</strong></p>
+
+<p><em>Something like:</em> if I had no choice other than use MS Windows, the
+first thing I'd do is install <a href="http://cygwin.com/">Cygwin</a>. But I do
+have a choice. Now what can I install...  </p>
 
 <h2>Status</h2>
 
@@ -142,6 +145,13 @@ shortcuts to access it.</p>
 <p>@@todo - split these out to a separate doc</p>
 
 <h1><a name="Proposed" id="Proposed">Proposed Conventions</a></h1>
+
+<p><strong>Changes</strong></p>
+
+<p>2012-02-02T18:00+01 added <strong>--delete</strong>, changed text markers to
+<strong>/* */</strong> (following <a
+href="http://lists.w3.org/Archives/Public/semantic-web/2012Feb/0022.html">feedback
+from semweb list</a>)</p>
 
 <h2><a name="System" id="System">System Triplestore</a></h2>
 
@@ -180,11 +190,15 @@ the named graph in the System Store<strong></strong></p>
 <p><strong>-x, --extract</strong> set the input format to Lax Text Embedded
 Turtle </p>
 
+<p><strong>--delete</strong> delete the (default or named) graph prior to other
+operations</p>
+
 <p></p>
 
 <h2><a name="Text" id="Text">Text Embedded Turtle </a></h2>
 
-<p>A simple way of including chunks of Turtle in text documents.</p>
+<p>A simple way of including chunks of Turtle in text documents. (Add long text
+comments).</p>
 
 <h3>Example</h3>
 
@@ -192,15 +206,15 @@ Turtle </p>
 <code>http:/example.org/example.txt</code> :</p>
 
 <p></p>
-
 <pre>#!/usr/bin/turtle 
 
 # This is Turtle 
-@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; . #!
+@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt; . 
+/*
 But now here some ordinary text, it may
 appear on several lines as usual.
 
-#!
+*/
 
 # now back to Turtle
 @prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
@@ -209,11 +223,11 @@ appear on several lines as usual.
 
 dc:title "Example" ;
 
-#!
+/*
 
 this is now text.
 
-#!
+*/
 
 # Turtle again.
 
@@ -260,54 +274,17 @@ differences:</p>
 
 <p></p>
 
-<p>TET has a delimiter string, defined as:</p>
-
-<p><code><strong>tetSwitch :</strong> '#!' ('\n' | '\r')</code></p>
-
-<p></p>
-
-<p>Two states are defined for a TET parser (in addition to any defined
-elsewhere) :</p>
-
-<p><code><strong>IN_TURTLE = true | false</strong></code></p>
-
-<p></p>
-
-<p>Interpretation of a TET document begins in the state <code>IN_TURTLE =
-true</code></p>
-
-<p></p>
-
-<p>Every time a <code>tetSwitch</code> token is encountered, the state of
-<code>IN_TURTLE</code> should be inverted.</p>
-
-<p></p>
-
 <p>A TET document should begin with the line:</p>
 
 <p><code>#!/usr/bin/turtle</code></p>
 
 <p></p>
 
-<p>(Note that the <code>#!</code> in this line isn't interpreted as a
-<code>tetSwitch</code>)</p>
+<p>Multi-line text comments may be included using the syntax:</p>
 
-<p></p>
+<p>/* </p>
 
-<p>If this line isn't included, the document <em>may</em> be considered
-<strong>Lax Text Embedded Turtle</strong> in which case <strong>the document
-begins in the state <code>IN_TURTLE = false</code></strong></p>
-
-<p></p>
-
-<p>Interpretation should follow the procedure -</p>
-
-<p></p>
-
-<p><strong>if</strong> <code>IN_TURTLE == true</code> : what follows is Turtle
-</p>
-
-<p><strong>else</strong> what follows should be ignored</p>
+<p>*/</p>
 
 <p></p>
 

@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- meta charset="utf-8" / -->
+  <title>hyperdata reference</title>
+  <meta name="description" content="hyperdata">
+  <meta name="author" content="Danny Ayers">
+  <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
+  <!-- link rel="stylesheet" href="../../css/font.css" type="text/css"
+  media="screen" -->
+  <link rel="stylesheet" href="css/stuff.css" type="text/css" media="Screen">
+  <link rel="stylesheet" href="css/tabs.css" type="text/css" media="Screen">
+  <!-- link rel="stylesheet" href="/css/handheld.css" type="text/css" media="handheld" / -->
+  <script type="text/javascript" src="js/prototype.js">
+ </script>
+  <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder">
+ </script>
+  <script type="text/javascript" src="js/lightbox.js">
+ </script>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- link rel="apple-touch-icon" href="images/apple-touch-icon.png" -->
+  <!-- link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" -->
+  <!-- link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" -->
+  <script type="text/javascript" src="../../js/CollapsibleLists.js">
+ </script>
+</head>
+
+<body id="tab1">
+<ul id="topnav">
+  <li class="xtab1"><a href="/" title="Danny Ayers' Blog">Raw Blog</a> </li>
+  <li class="xtab2"><a href="http://hyperdata.org/danja/"
+    title="my updates on various social sites">Planet Danja</a> </li>
+  <li class="xtab3"><a href="http://hyperdata.org/planet/"
+    title="stuff I'm watching">Planet Raw</a> </li>
+  <li class="xtab4"><a href="http://hyperdata.org/"
+    title="Linked Data related material">hyperdata.org</a> </li>
+  <li class="xtab5"><a href="http://hyperdata.org/wiki/"
+    title="on my personal wiki">Stuff</a> </li>
+  <li class="xtab6"><a href="http://hyperdata.org/xmlns/"
+    title="various namespaces/ontologies">Vocabs</a> </li>
+  <li class="xtab7"><a href="http://dannyayers.com/about.html"
+    title="About">About</a> </li>
+</ul>
+<br>
+<br>
+
+<ul id="tabnav">
+  <li class="tab1"><a href="." title="Contents">Contents</a> </li>
+  <li class="tab2"><a href="gallery" title="Photos of craftwork">Gallery</a>
+  </li>
+  <li class="tab3"><a href="http://hyperdata.org/danja/"
+    title="my updates on various social sites">Carving</a> </li>
+  <li class="tab4"><a href="http://dannyayers.com/about.html"
+    title="About">About Stuff</a> </li>
+</ul>
+
+<div id="header">
+<h1 id="page-title">hyperdata</h1>
+
+<p id="description">reference documents</p>
+</div>
+
+<div class="container">
+
+<div class="sidebar-left">
+<ul class="gallery">
+  <li><br>
+    Sketch <br>
+    <a href="images/preferred/sketch.jpg" rel="lightbox"
+    title="A rough sketch that saved me from a big mistake"><img
+    alt="rough sketch" src="images/thumbs/sketch.jpg" width="100" height="78">
+    </a></li>
+</ul>
+</div>
+
+<div class="container">
+
+<div class="sidebar-right">
+<h3>Links - nearby</h3>
+<ul>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+</ul>
+
+<h3>Links - elsewhere</h3>
+<ul>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+</ul>
+</div>
+
+<div class="content">
+<h1>HOWTO : Microdata in Feeds</h1>
+
+<p><em>I was looking for new syndication tech and danbri suggested there might
+be a role for schema.org. A quick Google didn't reveal any existing material.
+The following is what falls out of the RSS+schema.org combination. This is
+really just a provisional proposal in lieu of a spec.</em></p>
+
+<h2>0. Forget the History</h2>
+
+<p>It is already possible to syndicate arbitrary data in <a
+href="http://web.resource.org/rss/1.0/">RSS 1.0</a> thanks to its <a
+href="http://www.w3.org/TR/rdf-primer/">RDF</a> support. But for typical
+<strong>content</strong> syndication <a
+href="http://cyber.law.harvard.edu/rss/rss.html">RSS 2.0</a> and <a
+href="http://tools.ietf.org/html/rfc4287">Atom</a> have pretty much superceded
+RSS 1.0. Given an existing system based on one of these specs, it's possible to
+supplement the content with data. Rather than embedding <a
+href="http://www.w3.org/TR/html5/microdata.html">HTML5 Microdata</a> in HTML
+content, an easier, more direct method is possible, as demonstrated here. (For
+general-purpose data publishing, RDF is a better bet, check the material on <a
+href="http://linkeddata.org/">linked data</a>).</p>
+
+<h2>1. Examples</h2>
+
+<p>To publish data in feeds at least two vocabularies are required, those of
+HTML (for relational terms) and <a href="http://schema.org/">Schema.org</a>
+(for descriptive terms). Only the HTML namespace is necessary.</p>
+
+<p>Here's an example:</p>
+<pre>&lt;rss version="2.0" xmlns:html="http://www.w3.org/1999/xhtml"&gt;</pre>
+
+<p>...</p>
+<pre>&lt;item&gt;   
+   &lt;title&gt;Gibson Les Paul&lt;/title&gt;
+   &lt;link&gt;http://www2.gibson.com/Products/Electric-Guitars/Les-Paul.aspx&lt;/link&gt;
+   &lt;description&gt;A classic electric guitar.&lt;/description&gt;
+   &lt;pubDate&gt;Wed, 08 Feb 2012 14:35:21 GMT&lt;/pubDate&gt;
+   &lt;guid&gt;http://hyperdata.org/docs/microdata-feeds.html#les-paul&lt;/guid&gt;
+
+   &lt;html:itemtype ="http://schema.org/Product" /&gt;
+&lt;/item&gt;
+
+&lt;/rss&gt;</pre>
+
+<p>Unlike typical RSS which describes chunks of text or documents on the Web -
+<strong>content</strong>, this is describing a product (not a document about
+the product). It's <strong>data</strong> describing a real-world
+<strong><em>thing</em></strong> - which is identified with the URL in the
+<code>&lt;link&gt;</code> element. The content of the RSS item (the
+<code>&lt;title&gt;</code>, <code>&lt;description&gt;</code>,
+<code>&lt;pubDate&gt;</code> elements) is identified using the
+<code>&lt;guid&gt;</code> element.</p>
+
+<p>To summarise -</p>
+<ul>
+  <li><strong>thing</strong> : <code>&lt;link&gt;</code> URL</li>
+  <li><strong>content</strong> : <code>&lt;guid&gt;</code> URL</li>
+</ul>
+
+<p>Here's a the same example, made a little richer:</p>
+
+<p></p>
+<pre>&lt;item&gt;  
+   &lt;title&gt;Gibson Les Paul&lt;/title&gt;
+   &lt;link&gt;http://www2.gibson.com/Products/Electric-Guitars/Les-Paul.aspx&lt;/link&gt;
+   &lt;description&gt;A classic electric guitar.&lt;/description&gt;
+   &lt;pubDate&gt;Wed, 08 Feb 2012 14:35:21 GMT&lt;/pubDate&gt;
+   &lt;guid&gt;http://hyperdata.org/docs/microdata-feeds.html#les-paul&lt;/guid&gt;
+
+   &lt;html:itemtype ="http://schema.org/Product"&gt;
+      &lt;html:itemprop ="http://schema.org/manufacturer"&gt;
+         &lt;html:itemtype="http://schema.org/Organization"&gt;
+            &lt;html:url html:href="http://www2.gibson.com/" /&gt;
+         &lt;/html:itemtype&gt;
+      &lt;/html:itemprop&gt;
+   &lt;/html:itemtype&gt;
+
+&lt;/item&gt;</pre>
+
+<p>In English, this means:</p>
+
+<p><code>http://www2.gibson.com/Products/Electric-Guitars/Les-Paul.aspx</code>
+is a product manufactured by an organization identified as
+<code>http://www2.gibson.com/</code>.</p>
+
+<p></p>
+
+<p><strong>@@TODO</strong></p>
+
+<p>more!</p>
+<ul>
+  <li>I don't think itemscope is needed...is it?</li>
+  <li>the item needs to be associated with the subject of the data - works ok
+    rough &amp; ready as above, but with Atom would this need to be a Complex
+    Extension?</li>
+  <li>ideally a parser designed to extract data from HTML5 would,with minimal
+    tweaks be able to extract data from the above - how does that stand?</li>
+  <li>mapping to RDF, check <a
+    href="http://schema.rdfs.org/">schema.rdfs.org</a> </li>
+</ul>
+
+<p></p>
+
+<p><em>work in progress...</em></p>
+
+<p></p>
+
+<div id="footer">
+<p><a href="http://danny.ayers.name">Danny Ayers</a> 2012</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
