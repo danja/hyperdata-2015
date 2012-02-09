@@ -329,21 +329,19 @@ alternative name for the World Wide Web - the "<a
 href="http://dig.csail.mit.edu/breadcrumbs/node/215">Giant Global Graph</a>"</p>
 
 <p>But, though this Giant Global Graph be considered one big database, it can't
-exactly be queried like a SQL Server installation.</p>
-
-<p>However a particular RDF format file (like the bit of Turtle above) or bunch
-of RDF files can be treated as a subset of all the GGG and can be worked on in
-isolation. </p>
+exactly be queried like a SQL Server installation. However a particular RDF
+format file (like the bit of Turtle above) or bunch of RDF files can be treated
+as a subset of all the GGG and can be worked on in isolation. </p>
 
 <p>Fairly early in the history of RDF developers noticed that it wasn't
 convenient to work with such material directly, so started building RDF stores
 (often known as triplestores) which allowed programmatic access to the data.
 After those were around for a little while it became apparent that using
 programmatic access was a clunky approach and the SPARQL query language was
-born.</p>
+born. SPARQL works over an RDF store very much like SQL works over a relational
+DB, in many ways it's quite similar. </p>
 
-<p>SPARQL works over an RDF store very much like SQL works over a relational
-DB, in many ways it's quite similar. Here's a SPARQL query:</p>
+<p>Here's a SPARQL query:</p>
 
 <p></p>
 
