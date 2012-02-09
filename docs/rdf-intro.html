@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- meta charset="utf-8" / -->
+  <title>hyperdata reference</title>
+  <meta name="description" content="hyperdata">
+  <meta name="author" content="Danny Ayers">
+  <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen">
+  <!-- link rel="stylesheet" href="../../css/font.css" type="text/css"
+  media="screen" -->
+  <link rel="stylesheet" href="css/stuff.css" type="text/css" media="Screen">
+  <link rel="stylesheet" href="css/tabs.css" type="text/css" media="Screen">
+  <!-- link rel="stylesheet" href="/css/handheld.css" type="text/css" media="handheld" / -->
+  <script type="text/javascript" src="js/prototype.js">
+ </script>
+  <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder">
+ </script>
+  <script type="text/javascript" src="js/lightbox.js">
+ </script>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- link rel="apple-touch-icon" href="images/apple-touch-icon.png" -->
+  <!-- link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png" -->
+  <!-- link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png" -->
+  <script type="text/javascript" src="../../js/CollapsibleLists.js">
+ </script>
+</head>
+
+<body id="tab1">
+<ul id="topnav">
+  <li class="xtab1"><a href="/" title="Danny Ayers' Blog">Raw Blog</a> </li>
+  <li class="xtab2"><a href="http://hyperdata.org/danja/"
+    title="my updates on various social sites">Planet Danja</a> </li>
+  <li class="xtab3"><a href="http://hyperdata.org/planet/"
+    title="stuff I'm watching">Planet Raw</a> </li>
+  <li class="xtab4"><a href="http://hyperdata.org/"
+    title="Linked Data related material">hyperdata.org</a> </li>
+  <li class="xtab5"><a href="http://hyperdata.org/wiki/"
+    title="on my personal wiki">Stuff</a> </li>
+  <li class="xtab6"><a href="http://hyperdata.org/xmlns/"
+    title="various namespaces/ontologies">Vocabs</a> </li>
+  <li class="xtab7"><a href="http://dannyayers.com/about.html"
+    title="About">About</a> </li>
+</ul>
+<br>
+<br>
+
+<ul id="tabnav">
+  <li class="tab1"><a href="." title="Contents">Contents</a> </li>
+  <li class="tab2"><a href="gallery" title="Photos of craftwork">Gallery</a>
+  </li>
+  <li class="tab3"><a href="http://hyperdata.org/danja/"
+    title="my updates on various social sites">Carving</a> </li>
+  <li class="tab4"><a href="http://dannyayers.com/about.html"
+    title="About">About Stuff</a> </li>
+</ul>
+
+<div id="header">
+<h1 id="page-title">hyperdata</h1>
+
+<p id="description">reference documents</p>
+</div>
+
+<div class="container">
+
+<div class="sidebar-left">
+<ul class="gallery">
+  <li><br>
+    <a href="images/preferred/sketch.jpg" rel="lightbox"
+    title="A rough sketch that saved me from a big mistake"></a></li>
+</ul>
+</div>
+
+<div class="container">
+
+<div class="sidebar-right">
+<h3>Links - todo</h3>
+<ul>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+</ul>
+
+<h3>Links - elsewhere</h3>
+<ul>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+  <li><a href="#">Link</a> </li>
+</ul>
+</div>
+
+<div class="content">
+<h1>An Introduction to RDF, the Semantic Web and Linked Data that isn't very
+much longer than it's title</h1>
+
+<p><em>This was originally in response to an email, it got rather longer than
+I'd planned so I decided to recycle it here.</em></p>
+
+<p></p>
+
+<p>This field (RDF, Semantic Web, Linked Data, call it what you will) starts
+with one or two little <em><strong>conceptual shifts</strong></em> that
+aren't</p>
+
+<p>obvious to regular Web and/or data users. Unfortunately they're taken as
+read by most people writing about this stuff...</p>
+
+<p></p>
+
+<p>So, starting with the statement:</p>
+
+<p><strong>"my dog's name is Basil"</strong></p>
+
+<p>A traditional database table containing this info might look like:</p>
+
+<table border="0">
+  <col>
+  <col>
+  <tbody>
+    <tr>
+      <td>
+        <table border="2">
+          <col>
+          <col>
+          <tbody>
+            <tr>
+              <td colspan="2"
+              style="text-align:center;margin-left:auto;margin-right:auto;"><em><strong>Pets</strong></em></td>
+            </tr>
+            <tr>
+              <td
+                style="text-align:center;margin-left:auto;margin-right:auto;"><strong>ID</strong></td>
+              <td
+                style="text-align:center;margin-left:auto;margin-right:auto;"><strong>Name</strong></td>
+            </tr>
+            <tr>
+              <td
+                style="text-align:center;margin-left:auto;margin-right:auto;">123</td>
+              <td
+                style="text-align:center;margin-left:auto;margin-right:auto;">Basil</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The actual name of my dog is just a simple string "Basil".</p>
+
+<p>The ID of the critter in question will be unique in the local database, but
+for data like this to work on the Web, a truly global ID</p>
+
+<p>is needed for the critter. The Web uses URLs to locate pages. But URLs can
+also be considered identifiers for those pages.</p>
+
+<p>So why not use URLs to identify things other than pages: people, places,
+cars and...dogs. (<strong><em>conceptual shift</em></strong>).</p>
+
+<p></p>
+
+<p>So here's a URL to identify the hound in question:</p>
+
+<p><code>http://dannyayers.com/pets/Basil</code></p>
+
+<p>I own the domain "dannyayers.com" and so I can use the URLs there as I
+please (see <a
+href="http://www.w3.org/TR/webarch/#uri-ownership">WebArch</a>).</p>
+
+<p></p>
+
+<p>Other information in the database is also local, the concepts of "Pets" and
+"Name". Things can have URLs, so why not concepts and relations? I could define
+my own identifiers for those concepts (as with the concept of my dog) but I
+happen to know there are existing definitions I can use:</p>
+
+<p>For the local term "<strong>Pets</strong>" I'll use:</p>
+
+<p><code>http://purl.org/stuff/pets/Pet</code></p>
+
+<p>and for the local term "<strong>name</strong>" I'll use:</p>
+
+<p><code>http://xmlns.com/foaf/0.1/name</code></p>
+
+<p></p>
+
+<p>I don't own those domains, but the definitions there are the same as those
+I'm using in the DB:</p>
+
+<p><strong>foaf:name</strong> - A name for some thing.</p>
+
+<p><strong>pets:Pet</strong> - The class of animals kept for pleasure rather
+than utility.</p>
+
+<p><em>(slight cheating here - I set up http://purl.org/stuff/pets/ :)</em></p>
+
+<p></p>
+
+<p>These are examples of (RDF) vocabularies, collections of terms people have
+defined for particular domains. Lots of these are available, and it's
+straightforward to define your own The terms have URLs so are globally
+reusable.</p>
+
+<p>Now to glue these bits together, which is where the Resource Description
+Framework (RDF) comes in. It allows statements to be made of the form (known as
+triples) :</p>
+
+<p><em><strong>subject property object</strong></em></p>
+
+<p>Where <strong>subject</strong> is the thing being talked about,
+<strong>property</strong> is some characteristic of the thing and
+<strong>object</strong> is the value of the</p>
+
+<p>characteristic. These are formal logical statements, comparable to the
+relational logic of traditional databases or predicates of logical languages
+(e.g. Prolog does it like <code>property(subject, object)</code> ).</p>
+
+<p></p>
+
+<p>In this example it's:</p>
+
+<p><strong>subject</strong> : <code>http://dannyayers.com/pets/Basil</code></p>
+
+<p><strong>property</strong> : <code>http://xmlns.com/foaf/0.1/name</code></p>
+
+<p><strong>object</strong> : <code>"Basil"</code></p>
+
+<p>There's a little more information available too, my dog was in the Pets
+table, it's saying he's a member of the class Pet.</p>
+
+<p>Class membership is expressed in RDF as another triple, here it would be:</p>
+
+<p></p>
+
+<p><strong>subject</strong> : <code>http://dannyayers.com/pets/Basil</code></p>
+
+<p><strong>property</strong> :
+<code>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</code></p>
+
+<p><strong>object</strong> : <code>http://purl.org/stuff/pets/Pet</code></p>
+
+<p></p>
+
+<p>RDF (which is really a kind of entity-relationship data model) can be
+expressed in various formats, the most readable being Turtle. The triples above
+could look like this:</p>
+
+<p></p>
+
+<p><code>@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+.</code></p>
+
+<p><code>@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .</code></p>
+
+<p><code>@prefix pets: &lt;http://purl.org/stuff/pets/&gt; .</code></p>
+
+<p><code></code></p>
+
+<p><code>&lt;http://dannyayers.com/pets/Basil&gt; rdf:type pets:Pet .</code></p>
+
+<p><code>&lt;http://dannyayers.com/pets/Basil&gt; foaf:name "Basil" .</code></p>
+
+<p></p>
+
+<p>(It can be written more concisely than this, but this way it's easier to see
+what's going on).</p>
+
+<p></p>
+
+<p>Ok, time for another little <em><strong>conceptual shift</strong></em>.</p>
+
+<p>When we publish documents on the Web we are making statements about things,
+in whatever language we speak. The same can apply to logical statements
+expressed in a formal language - like RDF. By publishing statements like this
+the Web can be used as a (very big) database. If I put the Turtle above in a
+file and publish that on the Web I'm effectively adding to the global
+database.</p>
+
+<p></p>
+
+<p>Because RDF is based around URLs, the component parts of statements can be
+treated as links. What's more, each statement can be considered a (typed) link
+:</p>
+
+<p><strong>subject --property--&gt; object</strong></p>
+
+<p>- this is the idea behind Linked Data.</p>
+
+<p></p>
+
+<p>With information on the Web, if we see a link on a page we can click on it
+and do a "<strong>follow your nose</strong>" to related information. One huge
+advantage of expressing data as RDF on the Web is that because entities and
+relationships are expressed as URLs, to find out more information an agent can
+do the "follow your nose" thing from statements to discover more
+information.</p>
+
+<p>HTML already does something very similar, if I had a page containing a link
+like:</p>
+
+<p></p>
+
+<p><code>&lt;a href="http://dannyayers.com" rel="home"&gt;My Home
+Page&lt;/a&gt;</code></p>
+
+<p></p>
+
+<p>it's expressing a relationship between the current page and the linked</p>
+
+<p>page which could be interpreted as a triple:</p>
+
+<p></p>
+
+<p><code>&lt;thispage&gt; x:hasHomePage &lt;http://dannyayers.com&gt;
+.</code></p>
+
+<p></p>
+
+<p>- except the interpretation isn't really formally defined. </p>
+
+<p>(The Microformats initiative has conventions for such statements in HTML,
+RDFa is a way of expressing any RDF in HTML, and Microdata can be seen as a
+cut-down version of RDFa included in HTML5)</p>
+
+<p></p>
+
+<p>So data can be expressed "natively" on the Web. Mathematically speaking, the
+Web as a whole has a graph structure. Tim Berners-Lee in fact offered an
+alternative name for the World Wide Web - the "<a
+href="http://dig.csail.mit.edu/breadcrumbs/node/215">Giant Global Graph</a>"</p>
+
+<p>But, though this Giant Global Graph be considered one big database, it can't
+exactly be queried like a SQL Server installation.</p>
+
+<p>However a particular RDF format file (like the bit of Turtle above) or bunch
+of RDF files can be treated as a subset of all the GGG and can be worked on in
+isolation. </p>
+
+<p>Fairly early in the history of RDF developers noticed that it wasn't
+convenient to work with such material directly, so started building RDF stores
+(often known as triplestores) which allowed programmatic access to the data.
+After those were around for a little while it became apparent that using
+programmatic access was a clunky approach and the SPARQL query language was
+born.</p>
+
+<p>SPARQL works over an RDF store very much like SQL works over a relational
+DB, in many ways it's quite similar. Here's a SPARQL query:</p>
+
+<p></p>
+
+<p><code>PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;</code></p>
+
+<p></p>
+
+<p><code>SELECT ?x ?y WHERE {</code></p>
+
+<p><code>?x foaf:name ?y .</code></p>
+
+<p><code>}</code></p>
+
+<p></p>
+
+<p>If you look back to the Turtle example, the bit inside the { } part here is
+a similar shape. SPARQL operates through a kind of pattern matching, if you ran
+this query over the data above the structures would be matched and the variable
+<strong>?x</strong> would get the value
+<code>&lt;http://dannyayers.com/pets/Basil&gt;</code> and <strong>?y</strong>
+the value <code>"Basil"</code>.</p>
+
+<p>The example data above is only talking about one dog, but on the Web at
+large there could be millions of named things that would match that query. The
+triplestore contains just a little chunk of the (Semantic) Web. I think it's
+useful to think of triplestores as being data caches - they aren't the
+"original" data, just some bits of it pulled out for local analysis.</p>
+
+<p>Another little <em><strong>conceptual shift</strong></em> is needed at this
+point. If we want to be able to work with little pieces of the world's data in
+this way, we need to take into consideration that there is other information
+out there. </p>
+
+<p>Say we wanted to ask <em>"is there a dog called Sasha"</em>. Given the data
+above, a traditional database would reply <em>"no"</em> (and a SPARQL query on
+a triplestore would return no results). But it may well be that there is a dog
+somewhere called Sasha (there is, and she's currently biting my jumper because
+I haven't taken them out yet), we just don't know about it. So to reflect the
+way things are in reality, the "open world model" is used, that is to say facts
+are either true or unknown, rather than the usual database and logic-based
+language "closed world model" where things are either true or false.</p>
+
+<p>Using the Web as a huge database is an extremely powerful idea, but not
+without its problems. Unlike most databases, on the Web anyone can say what
+they want about anything, whether it's true or false. Someone might even
+state:</p>
+
+<p><code>&lt;http://dannyayers.com/pets/Basil&gt; foaf:name "Sasha" .</code></p>
+
+<p>RDF itself doesn't deal with such issues. As far as RDF is concerned the dog
+now has two names. There is no notion in the language of deleting statements,
+and changing a statement somewhere is conceptually the same as adding a new
+statement. But in practice a system will work with information that's a recent
+as possible from trustworthy sources (trust and provenance on the Web are big
+issues!).</p>
+
+<p></p>
+
+<p>One last question : "How do I explore links?" - in principle the answer is
+"use HTTP", in practice it depends on what tools people have built. One tool is
+SNORQL:</p>
+
+<p>http://wiki.dbpedia.org/OnlineAccess#h28-5</p>
+
+<p>if you click on one of the examples it builds a corresponding SPARQL query.
+The links in the results can be followed.</p>
+
+<p></p>
+
+<div id="footer">
+<p><a href="http://danny.ayers.name">Danny Ayers</a> 2012</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
