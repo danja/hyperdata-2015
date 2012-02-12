@@ -9,46 +9,332 @@
 </head>
 
 <body>
-<h1>Web Beeps</h1>
+<h1>Web Beeps, and a Strategy for Optimizing Web Systems</h1>
+
+<p style="text-align:right;margin-left:auto;margin-right:0;"><a
+href="http://dannyayers.com">Danny Ayers</a> (independent R&amp;D)</p>
+
+<p style="text-align:right;margin-left:auto;margin-right:0;"><a
+href="mailto:danny.ayers@gmail.com">danny.ayers@gmail.com</a> </p>
+
+<p style="text-align:right;margin-left:auto;margin-right:0;">2012-02-09</p>
+
+<p>The proposed presentation will have the following sections, with
+approximately the same time devoted to each:</p>
+<ul>
+  <li><a href="#Works">how it works</a> : the anatomy of the Web Beeps
+  service</li>
+  <li><a href="#Developmen">how it happened</a> : development process outline,
+    in particular: 
+    <ul>
+      <li>how a declarative description was derived and used for for
+        configuration</li>
+    </ul>
+    <ul>
+      <li>how the system was optimized using a <a
+        href="http://en.wikipedia.org/wiki/Genetic_algorithm">genetic
+        algorithm</a></li>
+    </ul>
+  </li>
+  <li><a href="#Generaliza">generalization</a> of the overall technique to
+    other problems (e.g. optimization of Web Services) 
+    <ul>
+      <li>utilities to aid that generalization</li>
+    </ul>
+  </li>
+</ul>
+
+<p>These sections are briefly described below. (The presentation will have
+diagrams :)</p>
+
+<h2>Introduction</h2>
 
 <p>On the 31st December 2011, while everyone else was out celebrating, I
 switched on a service at <a href="http://webbeep.it">http://webbeep.it</a>.
-From the site blurb:</p>
+From the site:</p>
 
 <p><strong>Web Beeps are short, quasi-musical sounds which encode text. They
 can be thought of as sonic <a href="http://en.wikipedia.org/wiki/QR_code">QR
 Codes</a>. You can use them to create audio representation of Web links and
-identify things with tones. They are easy to <a href="#Make">create</a>, <a
-href="#Decode">decode</a> and <a href="implementation.html">use</a> and backed
-by an <a href="spec.html">open specification</a> together with an <a
+identify things with tones. They are easy to <a
+href="http://webbeep.it/index.html#Make">create</a>, <a
+href="http://webbeep.it/index.html#Decode">decode</a> and <a
+href="http://webbeep.it/implementation.html">use</a> and backed by an <a
+href="http://webbeep.it/spec.html">open specification</a> together with an <a
 href="https://github.com/danja/WebBeep">open source implementation</a>.
 </strong></p>
 
 <p>The project started as an experiment to see if it could be done, and from
-that perspective the project is effectively finished, goal achieved. </p>
+that perspective the project is effectively finished, goal achieved. But the
+development process was interesting and suggests possible approaches to a broad
+class of problems likely to be encountered when developing Web systems. In
+other words, although conceived as a fun project, it turned out to be (IMHO) a
+useful piece of research.</p>
 
-<p>QR Codes</p>
+<h2><a id="Works">How It Works</a></h2>
 
-<p>i18n</p>
+<p><strong>Encoding</strong></p>
+<ul>
+  <li>Unicode text input is converted into ASCII (Punycode with a checksum)</li>
+  <li>each character is mapped to a high note, low note and duration (notes
+    taken from a pentatonic scale)</li>
+  <li>pure tones are generated and shaped according to the mapping</li>
+  <li>the tones are mixed and rendered as mp3 files</li>
+</ul>
 
-<p>another way to express URIs</p>
+<p><strong>Decoding</strong></p>
+<ul>
+  <li>incoming tone is trimmed</li>
+  <li>tone is split into chunks, each corresponding to one character</li>
+  <li>each chunk is analysed to find tones present and durations (using <a
+    href="http://en.wikipedia.org/wiki/Goertzel_algorithm">Goertzel
+    algorithm</a>)</li>
+  <li>tones mapped to ASCII characters</li>
+  <li>text reassembled and converted back to Unicode</li>
+</ul>
 
-<p></p>
+<p>More detailed description is available <a
+href="http://webbeep.it/implementation.html">online</a> (I'll make this more
+concise and hopefully more coherent for presentation :)</p>
 
-<p>the Digital Signal Processing involved in generating/decoding Web Beeps</p>
+<h2><a id="Developmen">Development Process</a></h2>
 
-<p>the dev process</p>
+<h3>"Spike" Solutions</h3>
 
-<p>GA </p>
+<p>Initially, for <strong>encoding</strong> Web Beeps, an algorithm was chosen
+that fitted the "quasi-musical" requirement but was otherwise fairly arbitrary.
+Because the audio encoding within messages was relatively simple (a sequence of
+pairs of tones) it was assumed that <strong>decoding</strong> <em>would</em> be
+possible, but the choice of algorithms was not determined in advance. A general
+idea of which digital signal processing algorithms might be useful was was
+sketched out, and the algorithms implemented/obtainined. Various hard-coded
+experiments were made to explore the problem, roughly corresponding to what the
+Extreme Programmers call <a
+href="http://www.extremeprogramming.org/rules/spike.html">spike
+solutions</a>.</p>
 
-<p>representing processing on the Web</p>
+<p>A small set of algorithms were found that could decode the signal <em>some
+of the time</em>. The difficult part of the problem was, given a signal
+composed of a mix of one or two sine waves, identify the frequency of those
+sine waves. The process used centered around <a
+href="http://en.wikipedia.org/wiki/Fast_Fourier_transform">Fast Fourier
+Transform</a>-based spectral analysis.</p>
 
-<p>key optimizing systems on the Web?</p>
+<p>It was quite dependent on the specific characters in the text message being
+transmitted. However, each algorithm relied on two or three numeric parameters,
+the values of which impacted the overall accuracy. Although the processing was
+built as a pipeline of discrete, independently controlled modules, there was
+some interdependence between the parameters of the modules. The target system
+viewed as a whole not only comprised a signal generator and decoder but also
+transfer across external systems - lossy (mp3) codecs and potentially
+real-world acoustic transfer between a loudspeaker and a microphone.
+Degradation of the signal through this transfer would occur due to noise and
+distortion. As result, it seemed reasonable to view the system as a whole as
+nondeterministic, which would have additional impact on the interdependence of
+the control parameters.</p>
 
-<p></p>
+<p>At this point is seemed possible that selection of the right parameters
+would solve the problem : 100% fidelity of message transmission when the
+encoder was connected directly to the decoder, and maintenance of 100% fidelity
+for "most" real-world scenarios. But there were a lot of parameters. Some kind
+of automatic optimization seemed like a good idea.</p>
 
-<p></p>
+<h3>Module Parameterization</h3>
 
-<p></p>
+<p>To address the problem of manipulating many values at once it was decided to
+refactor the code, allowing configuration through a set of parameters expressed
+in a consistent manner. The code already had fairly systematic print statements
+expressing the configuration for debugging purposes, and the output of these
+were used as a basis for an ad hoc configuration format. Although this step
+occurred as a simple consequence of how the development had proceeded so far,
+in retrospect it is believed to be powerful technique (if approached
+systematically).</p>
+
+<h3>System Modelling</h3>
+
+<p>In the process of refactoring, the individual modules of the system were
+modified to expose consistent interfaces (essentially signal in, signal out and
+a set of named numeric parameters). The real-world part of the system as a
+whole was simulated by building modules of the same form, placed in the audio
+part of the pipeline between the encoder and decoder (adding noise, harmonic
+distortion and reverberation). Text messages were simulated in a random fashion
+(weighted to favour messages that seemed likely, e.g. those beginning
+"http://").</p>
+
+<p>As a result the system configuration as a whole could be defined
+declaratively (there were some compromises to the convenience of hard-coding,
+but the pieces under investigation were all exposed).</p>
+
+<h3>Optimization</h3>
+
+<p>In addition to the parameterization of the controls of the modules in the
+system, there was another factor of critical significance: the accuracy of the
+results. This was very easy to measure, simply taking the proportion of the
+output characters that matched the input characters. </p>
+
+<p>Given a system like this, a large variety of optimization strategies and
+algorithms are possible. Because of the way the system was componentized, it
+was felt that a Genetic Algorithm might be a good choice.</p>
+
+<p>An estimate was then made of a system that would contain a subsystem that
+would be optimal. For example, it seemed likely that both low- and high-pass
+filtering of the signal going into the decoder would be desirable, although the
+exact shape of the filters was unknown. So several filters were put in series
+in the pipeline. In addition to their control parameters (FIR filters were used
+with parameters for the number of stages and cutoff frequency) an "on/off"
+parameter was added. When this parameter had the value "off", the filter wasn't
+used, the signal passed through that stage unmodified.</p>
+
+<p><em>(Sorry, a diagram or two would help a lot here but I don't yet have one
+prepared and the submission deadline is approaching...)</em></p>
+
+<p>An organism for the algorithm was genetically encoded as an ordered list of
+the parameters of each of the modules in the encoding and decoding pipelines
+(including "on/off" switches). Each organism was a whole <strong>(encoder)
+-&gt; (real-world degradation simulation) -&gt; (decoder)</strong> system. </p>
+
+<p>At this stage in the development process the prototype system was taking
+significant time to encode and decode the messages (of the order of a second)
+so the total time taken for this processing was factored into the overall
+fitness measure.</p>
+
+<p>Population behaviour for crossover and mutation of each generation was
+initially set up as a rough guess of what might work (based on the literature)
+which was subsequently modified based on observation of how the optimization
+progressed.</p>
+
+<p>The algorithm was run with a total population of around 200 organisms. The
+code included a serializer/parser for the ad hoc configuration format so it was
+possible to persist a set of organisms across runs. Even when the fitness
+measure and other aspects of the setup were modified, this was found to provide
+a seed of "fairly good" candidates.</p>
+
+<p>However the system when using the FFT-based tone extraction algorithm
+<strong>fell short of the requirements</strong>. Although it appeared to get to
+a 100% encoding/decoding success rate with a direct encoder-decoder signal
+path, even a small amount of "real-world" signal degradation made the accuracy
+drop sharply.</p>
+
+<h3>Plan B (and some validation of the optimization technique)</h3>
+
+<p>The failure of the core algorithm at this point led to a return to the
+literature. Fortunately, although it had somehow been overlooked initially,
+there was an algorithm available that was a perfect match for the kind of
+processing required: the <a
+href="http://en.wikipedia.org/wiki/Goertzel_algorithm">Goertzel Algorithm</a>.
+Where the FFT technique will reveal any component sine waves in a signal (and
+for this application the peaks need to be detected), the Goertzel algorithm
+will check the amplitude of a single, known-frequency component. Because the
+encoder only uses tones with certain frequencies, testing for these with
+Goertzel was not only much more accurate, it was also significantly faster (at
+least an order of magnitude). What's more it was trivial to implement.</p>
+
+<p>So the tone detection module of the decoder was replaced with a
+Goertzel-based one, with everything else left as it was for the FFT version.
+</p>
+
+<p>Running the genetic algorithm over this new kind of organism was very
+revealing. Many of the modules in the "guesstimate" pipeline (notably the
+filters) were optimised to the "off" position. This can be explained by the
+fact that a focused measure of a single frequency isn't dependent on the levels
+of other frequencies, in a sense it is already optimally filtered.</p>
+
+<h2><a id="Generaliza">Generalization of the approach to other problems</a></h2>
+
+<p>While the system optimized here was for digital signal processing, it shares
+many characteristics with other systems encountered around the Web:</p>
+<ul>
+  <li>composed of interconnected processing components (pipelines being a
+    common case)</li>
+  <li>the components have adjustable parameters (even if it's just
+  "on/off")</li>
+  <li>a fitness measure is available (performance and scale are common
+  measures)</li>
+</ul>
+
+<p>The primary thing needed to apply the optimization technique as described
+here, whether using a genetic algorithm or one of the many others available, is
+a declarative codification of the system configuration. </p>
+
+<p>The way this codification was derived for the Web Beeps system was through
+directly exploiting the prototype system itself. The components, actually
+objects in the running code (it was written in Java) were in effect asked to
+describe themselves and their subcomponents recursively. </p>
+
+<h3>"dork" Utilities</h3>
+
+<p>For Web Beeps the declarative language used was ad hoc and
+application-specific. However work is ongoing to generalise this. Structurally,
+in general, the system in question can be described as a graph, and the
+Resource Description Framework (RDF) is an eminently suitable language for
+expressing this, especially when dealing with systems that are to be deployed
+on the Web. </p>
+
+<p>To this end a small utility library, <a
+href="https://github.com/danja/dork">dork</a> ("Description of Runtime
+Klasses") is under development in which a description of objects may be
+obtained from the objects themselves (by implementing a <code>describe()</code>
+method or via reflection). The output from these utilities is in the
+human-friendly Turtle format. (Where the <code>describe()</code> method is used
+it can be seen as a machine-friendly output version of the standard
+<code>toString()</code> method of Java objects).</p>
+
+<p>Essentially the assumption is that, to get a system description "the code
+knows best".</p>
+
+<p>An aim for dork is for it to be an easy, lightweight supplement to existing
+systems (it doesn't depend on any other RDF libraries, it treat Turtle as
+simple strings). To ensure it will work in practice, the current Web Beep
+parameterization/configuration serialization setup is being refactored to use
+it. <em>(Work in progress, about half done at the time of writing). </em></p>
+
+<p>The application of the genetic algorithm to the system parameters of Web
+Beeps was straightforward. All it really demanded codewise was the ability to
+express them as an ordered list (which was implemented as an
+<code>ArrayList</code> of <code>Parameter</code> objects), together with a
+variable to retain the value of each organism's derived fitness. No significant
+problems are anticipated translating this to RDF data structures so the
+optimization can be fully decoupled from the implementation. However more work
+will be required to generalise beyond pipeline-based processing and to support
+other optimization algorithms, but that too should be reasonably
+straightforward (probably via declarative transformations in both cases).</p>
+
+<p>The proposed strategy for system optimization currently looks like this:</p>
+<ol>
+  <li>build a prototype</li>
+  <li>have the prototype describe itself</li>
+  <li>refactor the prototype to use the description for system
+  configuration</li>
+  <li>encode the description in a suitable form for an algorithm (such as the
+    genetic algorithm)</li>
+  <li>wrap the system in an optimization testbed and run it</li>
+  <li>take the "winning" configuration and plug it into the system</li>
+  <li><em>deploy</em></li>
+</ol>
+
+<p>With foresight, steps 1. 2. and 3. can be rolled into one: <em>build a
+prototype which supports declarative configuration</em>. (Systems are often
+built this way already - configured using text files with extensions like .xml,
+ .conf and .ini, though the potential for reuse of the data contained in these
+files is usually extremely limited).</p>
+
+<p>With a little more work it is believed it should be possible to drop step 4.
+and have at least one suitable optimization algorithm implemented such that it
+can operate directly on a broad range of systems.</p>
+
+<p>The "optimization testbed" part of 5. could take a variety of forms. In Web
+Beeps it has been implemented as a thin hardcoded wrapper which creates objects
+that are instances of the whole encode-degrade-decode system. For particularly
+heavyweight systems the instance under test could be run in its own virtual
+machine and observation of the VMs resource utilization could be used as
+factors in the fitness measure.</p>
+
+<p>An interesting, incidental observation about the RDF produced so far in
+modeling the Web Beep digital signal processing system is that it is largely
+isomorphic to the core of the <a
+href="http://www.w3.org/Submission/OWL-S/">OWL-S</a> ontology designed for the
+description of Web Services (so much so I'll probably use that vocab). While
+hardly strong evidence, it does favour the possibility that the kind of
+optimization described here can be applied to Web systems.</p>
 </body>
 </html>

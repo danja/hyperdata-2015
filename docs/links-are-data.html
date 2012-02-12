@@ -104,102 +104,79 @@ associated with the importance of a page, based on the idea that you can count
 a link to a page as a vote of support. This is a good example of how links can
 be used as data, but it's far from being the whole story.</p>
 
-<p>Traditional databases are usually built around tables, for example:</p>
+<h2>What are Links?</h2>
+
+<p>From the <cite><a href="http://www.w3.org/TR/html5/links.html">HTML5
+specification</a></cite> :</p>
 
 <p></p>
 
-<table border="2">
+<blockquote>
+  Links are a conceptual construct, created by <code>a</code>,
+  <code>area</code>, and <code>link</code> elements, that represent a
+  connection between two resources, one of which is the current Document.
+</blockquote>
+
+<p>The markup for the link above looks like this:</p>
+
+<p><code>&lt;a href="http://www.w3.org/TR/html5/links.html"&gt;HTML5
+specification&lt;/a&gt;</code></p>
+
+<p>The current document is
+<code>http://hyperdata.org/docs/links-are-data.html</code>, so the connection
+that link provides can be expressed visually as:</p>
+
+<p><img alt="Simple HTML Hyperlink" src="images/preferred/links1.png"
+width="344" height="275"></p>
+
+<p>As it stands, there is a connection between the two pages, but the diagram
+doesn't say anything about the nature of the connection. But the link in the
+text above is citing the HTML5 spec as the source for the quote. For a human
+reader this is obvious, and in fact the markup uses the
+<code>&lt;cite&gt;</code> tag to show it's a citation. </p>
+
+<p><img alt="typed link" src="images/preferred/links2.png" width="384"
+height="312"></p>
+
+<p>Another way of expressing this information would be in a table (as found in
+databases) :</p>
+
+<p></p>
+
+<table border="3">
   <col>
   <col>
-  <thead>
-    <tr>
-      <td><strong>ID</strong></td>
-      <td><strong>Name</strong></td>
-      <td><strong>Species</strong></td>
-      <td><strong>Town</strong></td>
-    </tr>
-  </thead>
   <tbody>
     <tr>
-      <td>1</td>
-      <td>Basil</td>
-      <td>Dog</td>
-      <td
-        style="text-align:center;margin-left:auto;margin-right:auto;">Mozzanella</td>
+      <td colspan="2"
+      style="text-align:center;margin-left:auto;margin-right:auto;"><strong>cite</strong></td>
     </tr>
     <tr>
-      <td>2</td>
-      <td>Sasha</td>
-      <td>Dog</td>
-      <td
-        style="text-align:center;margin-left:auto;margin-right:auto;">Mozzanella</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Sambuca</td>
-      <td>Cat</td>
-      <td
-        style="text-align:center;margin-left:auto;margin-right:auto;">Mozzanella</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Primo</td>
-      <td>Cat</td>
-      <td
-        style="text-align:center;margin-left:auto;margin-right:auto;">Mozzanella</td>
+      <td>http://hyperdata.org/docs/links-are-data.html</td>
+      <td>http://www.w3.org/TR/html5/links.html</td>
     </tr>
   </tbody>
 </table>
 
-<p></p>
+<p>So...</p>
 
-<p>Links are a foundation of the Web of documents, but by enriching links (in
-documents and elsewhere) the Web can support this kind of data about real
-things.</p>
+<p><strong>Links are Data.</strong></p>
 
-<h2>So what is a link anyway?</h2>
+<p>Great. So in principle at least I convert existing links into the kind of
+data my database understands. But how about converting data into links?</p>
 
-<p>HTML pages are representations of resources, and <strong>a link is a
-relationship between two resources.</strong></p>
+<p>There are a few problems here, the example above is a special case:</p>
+<ul>
+  <li>the <code>&lt;cite&gt;</code> element is in the HTML spec</li>
+  <li>the relationship is between two Web pages</li>
+</ul>
 
-<p>Links are access to information.</p>
+<p>What about relationships that aren't defined in HTML? What if the data is
+about e.g. products, not Web pages?</p>
 
-<p></p>
-
-<p></p>
-
-<p>There are different kinds of relationships</p>
-
-<p></p>
-
-<p>Relationships can be resources too</p>
-<pre><code>
-&lt;div itemscope itemtype="http://schema.org/Product"&gt;</code></pre>
-<pre><code>    &lt;a itemprop="url" href="http://dannyayers.com/stuff/vinocaster"&gt;
-        &lt;div itemprop="name"&gt;&lt;strong&gt;The Vinocaster&lt;/strong&gt;&lt;/div&gt;</code></pre>
-<pre><code>    &lt;/a&gt;</code></pre>
-<pre><code>    &lt;div itemprop="description"&gt;A custom guitar&lt;/div&gt;</code></pre>
-<pre><code>    &lt;div itemprop="manufacturer" itemscope itemtype="http://schema.org/Person"&gt;</code></pre>
-<pre><code>    &lt;a itemprop="url" href="http://dannyayers.com/stuff/vinocaster"&gt;
-        &lt;div itemprop="name"&gt;&lt;strong&gt;The Vinocaster&lt;/strong&gt;&lt;/div&gt;    &lt;/a&gt;
-    &lt;/div&gt;</code></pre>
-<pre><code>&lt;/div&gt;</code></pre>
-
-<p>Links are data</p>
-
-<p></p>
-
-<p>Links enable knowledge discovery</p>
-
-<p></p>
-
-<p></p>
-
-<p></p>
-
-<p></p>
-
-<p></p>
+<p>These questions can be answered by looking at the Web in a slightly
+different way, see this short <a href="rdf-intro.html">Introduction to
+RDF</a>.</p>
 
 <p><a href="http://danny.ayers.name">Danny Ayers</a> 2012</p>
 </div>

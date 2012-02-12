@@ -1,0 +1,20 @@
+cite
+http://hyperdata.org/docs/links-are-data.html
+http://www.w3.org/TR/html5/links.html
+Let's say 
+Links are access to information.
+There are different kinds of relationships
+Relationships can be resources too
+
+<div itemscope itemtype="http://schema.org/Product">
+    <a itemprop="url" href="http://dannyayers.com/stuff/vinocaster">
+        <div itemprop="name"><strong>The Vinocaster</strong></div>
+    </a>
+    <div itemprop="description">A custom guitar</div>
+    <div itemprop="manufacturer" itemscope itemtype="http://schema.org/Person">
+    <a itemprop="url" href="http://dannyayers.com/stuff/vinocaster">
+        <div itemprop="name"><strong>The Vinocaster</strong></div>    </a>
+    </div>
+</div>
+Links are data
+Links enable knowledge discovery
