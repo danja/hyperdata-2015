@@ -1,0 +1,187 @@
+- Emerging Solutions
+  - Danny Ayers
+  - License
+- changing reality
+- Contents
+  - A Brief History
+  - Core Semantic Web notions
+  - Emerging Systems
+- Prehistory 
+  - Neats
+  - Scruffies
+  - http://en.wikipedia.org/wiki/Neats_vs._scruffies
+- People, World, Software
+- Abraham Maslow [image] 1943
+  - http://en.wikipedia.org/wiki/Maslow's_hierarchy_of_needs
+- Knowledge Hierarchy, David Skyrme 1999 
+  - http://www.skyrme.com/
+- TimBL proposal 1989
+  - http://www.w3.org/History/1989/proposal.html
+- Jorge Luis Borges Library of Babel
+  - http://en.wikipedia.org/wiki/Library_of_Babel
+- All about the documents
+- Search
+- Sergey Brin, around 2002
+  - "Look, putting angle brackets around things is not a technology, by itself. I'd rather make progress by having computers understand what humans write, than by forcing humans to write in ways computers can understand."
+  - http://jonudell.net/udell/2002-09-19-googles-sergey-brin.html
+- Document metadata
+  - PICS [image]
+  - Platform for Internet Content Selection
+  - Rating for censorship
+  - Local interest
+  - Education level/value
+  - http://www.w3.org/PICS/
+- Briefly
+  - RDF as data language
+  - OWL etc.
+  - SPARQL
+  - Linked Data
+  - Doc metadata NG
+- "It's all about the docs"
+- "No, it's all about the things"
+  - birds flying into glass
+- "Ok, maybe the docs are important after all"
+- Synthesis
+- Semantic Web : Core Concepts
+- All models are wrong, but some are useful.
+  - http://en.wikipedia.org/wiki/George_E._P._Box
+- RDF
+- Language : Vocabulary, Grammar and Syntax
+- Knowledge Representation
+- Data Model
+  - Entity-Relationship
+- Triples
+  - subject property object
+- "my dog's name is Basil, he is a Hovawart"
+  - turtle
+- Open World Assumption
+  - Comparable to 404 Not Found
+  - Missing isn't broken 
+- Vocabs/Ontologies
+  - Hovawart subClassOf Dog
+- Vocab Specification
+  - language spec, e.g. HTML, Atom
+  - registry
+  - distributed
+  - 
+- Relaxation of constraints
+- schema.org : quasi-centralized
+  - Google Rich Snippets
+- Syntaxes
+  - ntriples/quads
+  - Turtle
+  - RDF/XML
+  - RDFa
+  - GRDDL
+  - Microformats
+  - Microdata
+  - JSON-LD
+- The Web
+  - state machine
+  - pages are states
+- Meaning Triangle
+  - http://en.wikipedia.org/wiki/Triangle_of_reference
+- Anything can be identified with a URI
+- Anything important should be identified with a URI
+  - globally unique
+  - express authority
+  - resolvable
+  - linkable
+- Floaty Web
+- Follow your nose
+- Named Graphs
+- Links are Data
+  - table
+  - silo
+- SPARQL
+  - example
+- Linked Data
+  - component parts of statements can be treated as links. 
+  - each statement can be considered a (typed) link :
+  - subject --property--> object
+  - http://linkeddatabook.com/book
+- Linked Open Data 5 Stars
+  - ★ make your stuff available on the Web (whatever format) under an open license
+  - ★★	make it available as structured data (e.g., Excel instead of image scan of a table)
+  - ★★★ use non-proprietary formats (e.g., CSV instead of Excel)
+  - ★★★★ use URIs to identify things, so that people can point at your stuff
+  - ★★★★★ link your data to other data to provide context
+  - http://5stardata.info/
+  - http://www.w3.org/DesignIssues/LinkedData.html
+- Linked Data Cloud
+- Other semantics - NLP, entity extraction
+- *******
+- Serendipity
+- Sundial
+- Astronomical Model - Orreries
+  - http://en.wikipedia.org/wiki/Orrery
+- For a language to be useful, it needs agents
+- agents
+- REST Constraints include:
+  - http://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+  - Chapters 5 and 6
+  - Web APIs Are Just Web Sites 
+  - see also Introduction to a REST API Style http://www.youtube.com/watch?v=6UXc71O7htc
+- Manipulation of resources through representations
+  - representations are Web Pages 
+  - note media type
+- Uniform Interface
+- Self-descriptive messages
+  - headers plus body
+- Identification of resources
+- Hypermedia as the engine of application state
+  - State Machines
+  - States are Web Pages
+  - Transitions are hyperlinks
+  - Web pages include links
+- Hypermedia needs links
+- Tyranny of the Browser
+  - probably ok for the future
+- Relaxation of constraints #2
+  - Rich Internet Applications
+  - "Apps" vs. hypermedia
+- Read/Write Web
+- POSTing
+  - form-encoded
+  - WebDAV
+  - Ajax/JSON
+  - Atom Publishing Protocol
+  - SPARQL 1.1 Update
+- Affordances 
+  - interaction model
+  - follow your nose
+  - Eric Wilde http://dret.typepad.com/
+  - Mike Amundsen http://www.amundsen.com/blog/
+- Separation of Concerns
+  - data model
+  - interaction model
+- Reducing friction
+- driven by Open Source
+  - get
+  - fork
+  - hack
+  - share
+  - danny vid http://www.youtube.com/watch?v=sGqJbB4lhvY
+  - github etc
+- *******
+- Interesting Initiatives
+- Read/Write Web
+- Federated Social Web
+- Web Intents
+  - http://webintents.org/
+- Linked Data Platform WG
+  - http://www.w3.org/2012/ldp/charter
+- Unhosted
+  - http://unhosted.org
+- Semantic Web in a Box
+- The Big Intuition 
+  - A Semantic Web-friendly application costs no more to develop than a traditional one
+  - Short term : increased surface area, good for SEO
+  - Longer term : easy reuse
+- Blue Oceans
+  - no two companies are offering the same product or service
+  - capturing new demand rather than competing for existing market-share
+  - innovation!
+  - http://en.wikipedia.org/wiki/Blue_Ocean_Strategy
+  - http://www.talis.com/nodalities/pdf/nodalities_issue2.pdf
+
