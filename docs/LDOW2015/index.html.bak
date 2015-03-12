@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>LD Agents</title>
+  </head>
+  <body>
+    <div>
+      <h1>Linked Data and the <span class="name">Agent Paradigm</span></h1>
+      <br>
+      Material prepared for <a href="http://events.linkeddata.org/ldow2015/">Linked
+        Data on the Web</a> workshop at <a href="http://www.www2015.it">WWW2015</a>,
+      Florence.<br>
+      <ul>
+        <li>Linked Data Applications</li>
+        <li>application showcases including browsers and search engines</li>
+      </ul>
+      <ol>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#background">Background</a></li>
+        <ol>
+          <li><a href="#environment">Characterizing the Environment</a></li>
+          <li><a href="#linkeddata">Characterizing Linked Data</a></li>
+          <li><a href="#agents">Characterizing Agents</a></li>
+        </ol>
+      </ol>
+      <ul>
+      </ul>
+      <h2><a id="intro">Introduction</a></h2>
+      <p>There have been major changes in the Web environment in recent years.
+        For the Web developer these have probably been most significant in two
+        areas: the massive increase in the use of mobile devices and the
+        improvements in browsers that enable more complex software to run
+        client-side in the browser. In the near future it seems probable that
+        there will also be a growth in the network-enabling of other consumer
+        products (cars, cookers, ) in the "Internet of Things".</p>
+      <p>The Linked Data community is well-advised and well-positioned to
+        embrace these changes. In general, to exploit innovations it is best to
+        have frameworks (development methodologies, system architectures and so
+        on) in place that are flexible and well-suited to rapid change and </p>
+      <p>Moving to the client.</p>
+      <p>Reduce friction</p>
+      <p>the browser is no longer a fancy dumb terminal...SETI</p>
+      <h2><a id="background">Background</a></h2>
+      This section will give a brief description of the state of the Web in
+      2015, the current position of Linked Data in this environment and an
+      overview of the agent paradigm.<br>
+      <h3><a id="environment">Characterizing the Environment</a></h3>
+      <p>The primary substrate for Linked Data is, naturally, the Web. That in
+        turn sits on top of a network of machines surrounded by people.<br>
+      </p>
+      <h4>Services--BG----BG--</h4>
+      <p><a href="REST.html">REST and the Agent Paradigm</a></p>
+      <p><a href="REST.html"><br>
+        </a></p>
+      <h3><a id="linkeddata">Characterizing Linked Data</a></h3>
+      <h3><a id="agents">Characterizing Agents</a></h3>
+      <h2>Agents for Linked Data</h2>
+      <p>This section will look at how the agent paradigm may be applied in the
+        context of Linked Data systems.</p>
+      <ul>
+        <li>REST</li>
+        <li><br>
+          <ul>
+            <li>it's possible to lift a load of ideas from the AI literature</li>
+            <li>bots</li>
+            <li>Services vs. Agents
+              <ul>
+                <li>client-*server*</li>
+                <li>are not strictly invoked for a task, but activate themselves
+                  <ul>
+                    <li>push vs. pull</li>
+                    <li>messaging</li>
+                  </ul>
+                </li>
+                <li>At the low end, with one or two senses, a single action, and
+                  an absurdly simple control structure (mind?) we find a
+                  thermostat. [franklin]</li>
+                <li>tasks</li>
+                <li>how to trigger actions
+                  <ul>
+                    <li>Each is situated in, and is a part on some environment.
+                      Each senses its environment and act autonomously upon it.
+                      [franklin]</li>
+                    <li>HTTP message
+                      <ul>
+                        <li>probably indirect</li>
+                      </ul>
+                    </li>
+                    <li>cron etc.</li>
+                    <li>plan-matching</li>
+                    <li>forward/backward chaining</li>
+                  </ul>
+                </li>
+                <li>agents in an environment</li>
+                <li>Russell and Norvig put it this way: "The notion of an agent
+                  is meant to be a tool for analyzing systems, not an absolute
+                  characterization that divides the world into agents and
+                  non-agents." [1995, page 33] </li>
+                <li>location (see Bigraphs) - humans are good at remembering
+                  location, Roman room</li>
+              </ul>
+            </li>
+            <li>Microservices
+              <ul>
+                <li>http://martinfowler.com/articles/microservices.html</li>
+              </ul>
+            </li>
+            <li>Don't Scare the Horses</li>
+            <li><br>
+            </li>
+            <li>5-Star</li>
+            <li>LDP</li>
+            <li>History/Related Systems
+              <ul>
+                <li>Tuplespace
+                  <ul>
+                    <li>Linda</li>
+                    <li>Seneca</li>
+                  </ul>
+                </li>
+                <li>Danny 2007 model - looks like a computer</li>
+                <li> agents sound just like computer programs. How are they
+                  different?
+                  <ul>
+                    <li>http://www.msci.memphis.edu/~franklin/AgentProg.html</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Linked Data Agents</li>
+            <li>Requirements
+              <ul>
+                <li>Compact Core</li>
+                <li>Simple Modular Extensibility</li>
+              </ul>
+            </li>
+            <li>Formats &amp; Protocols</li>
+            <li>Components
+              <ul>
+                <li>Access Control</li>
+                <li>Router</li>
+                <li>Templater</li>
+                <li>HTTP Client</li>
+                <li>HTTP Server</li>
+                <li>SPARQL Store</li>
+                <li>Code Runner</li>
+              </ul>
+            </li>
+            <li>Research Directions
+              <ul>
+                <li>Proof of Concept
+                  <ul>
+                    <li>Server-side : Seki</li>
+                    <li>Client-side FooWiki</li>
+                    <li>http://wifo5-03.informatik.uni-mannheim.de/pubby/</li>
+                  </ul>
+                </li>
+                <li>Modelling
+                  <ul>
+                    <li>UML</li>
+                    <li>High Abstraction</li>
+                    <li>Bigraphs</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>versioning</li>
+            <li>cross-site scripting</li>
+            <li>Mobile agents on the Internet may be beyond calling back by the
+              user. [franklin]</li>
+            <li>SPARQL injection</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

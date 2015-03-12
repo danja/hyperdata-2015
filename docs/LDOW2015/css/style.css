@@ -1,0 +1,48 @@
+body {
+	background: #FFFFFF; color: #000000; font-family: georgia, helvetica, verdana, arial, sans-serif; margin: 1% 5% 1% 5%;
+}
+img {
+	border-right: medium none; border-top: medium none; border-left: medium none; border-bottom: medium none;
+}
+
+a:link { }
+a:active { color: rgb(184,38,25); }
+a:hover { color: #666666; }
+a:visited { color: rgb(184,38,25); }
+
+#mainnav {
+	display: block;
+	float: left;
+	width: 15%;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 0.3em;
+}
+
+#mainnav ul {
+	padding: 0;
+}
+
+#mainnav li {
+	margin-bottom: 0.6em;
+	border: 1px solid rgb(184,38,25);
+	list-style-type: none;
+	text-align: center;
+	padding: 8px;
+}
+
+#mainnav p {
+	text-align: center;
+}
+
+#maincontent {
+	display: block;
+	float: right;
+	width: 80%;
+}
+
+
+h1,h2,h3,h4,h5,h6,th,a,dt,hr {
+	color: rgb(184,38,25);
+}
+

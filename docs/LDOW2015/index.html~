@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <title>LD Agents</title>
+  </head>
+  <body>
+    <div>
+      <h1><span class="name"><span class="name">Linked Data and the </span></span><span
+          class="name"><span class="name"><span class="name"><span class="name">Agent
+                Paradigm</span></span></span></span></h1>
+      <h1><span class="name"><span class="name"></span></span></h1>
+      <span class="name"><br>
+        Material prepared for <a href="http://events.linkeddata.org/ldow2015/">Linked
+          Data on the Web</a> workshop at <a href="http://www.www2015.it">WWW2015</a>,
+        Florence.<br>
+      </span>
+      <ul>
+        <li><span class="name">Linked Data Applications</span></li>
+        <li><span class="name">application showcases including browsers and
+            search engines</span></li>
+      </ul>
+      <p><br>
+      </p>
+      <ul>
+        <li><span class="name"></span>
+          <ul>
+            <li><span class="name">it's possible to lift a load of ideas from
+                the AI literature</span></li>
+            <li><span class="name">bots</span></li>
+            <li><span class="name">Services vs. Agents</span>
+              <ul>
+                <li><span class="name">client-*server*</span></li>
+                <li><span class="name">are not strictly invoked for a task, but
+                    activate themselves</span>
+                  <ul>
+                    <li><span class="name">push vs. pull</span></li>
+                    <li><span class="name">messaging</span></li>
+                  </ul>
+                </li>
+                <li><span class="name">At the low end, with one or two senses, a
+                    single action, and an absurdly simple control structure
+                    (mind?) we find a thermostat. [franklin]</span></li>
+                <li><span class="name">tasks</span></li>
+                <li><span class="name">how to trigger actions</span>
+                  <ul>
+                    <li><span class="name">Each is situated in, and is a part on
+                        some environment. Each senses its environment and act
+                        autonomously upon it. [franklin]</span></li>
+                    <li><span class="name">HTTP message</span>
+                      <ul>
+                        <li><span class="name">probably indirect</span></li>
+                      </ul>
+                    </li>
+                    <li><span class="name">cron etc.</span></li>
+                    <li><span class="name">plan-matching</span></li>
+                    <li><span class="name">forward/backward chaining</span></li>
+                  </ul>
+                </li>
+                <li><span class="name">agents in an environment</span></li>
+                <li><span class="name">Russell and Norvig put it this way: "The
+                    notion of an agent is meant to be a tool for analyzing
+                    systems, not an absolute characterization that divides the
+                    world into agents and non-agents." [1995, page 33] </span></li>
+                <li><span class="name">location (see Bigraphs) - humans are good
+                    at remembering location, Roman room</span></li>
+              </ul>
+            </li>
+            <li><span class="name">Microservices</span>
+              <ul>
+                <li><span class="name">http://martinfowler.com/articles/microservices.html</span></li>
+              </ul>
+            </li>
+            <li><span class="name">Don't Scare the Horses</span></li>
+            <li><span class="name">REST</span></li>
+            <li><span class="name">5-Star</span></li>
+            <li><span class="name">LDP</span></li>
+            <li><span class="name">History/Related Systems</span>
+              <ul>
+                <li><span class="name">Tuplespace</span>
+                  <ul>
+                    <li><span class="name">Linda</span></li>
+                    <li><span class="name">Seneca</span></li>
+                  </ul>
+                </li>
+                <li><span class="name">Danny 2007 model - looks like a computer</span></li>
+                <li><span class="name"> agents sound just like computer
+                    programs. How are they different?</span>
+                  <ul>
+                    <li><span class="name">http://www.msci.memphis.edu/~franklin/AgentProg.html</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="name">Linked Data Agents</span></li>
+            <li><span class="name">Requirements</span>
+              <ul>
+                <li><span class="name">Compact Core</span></li>
+                <li><span class="name">Simple Modular Extensibility</span></li>
+              </ul>
+            </li>
+            <li><span class="name">Formats &amp; Protocols</span></li>
+            <li><span class="name">Components</span>
+              <ul>
+                <li><span class="name">Access Control</span></li>
+                <li><span class="name">Router</span></li>
+                <li><span class="name">Templater</span></li>
+                <li><span class="name">HTTP Client</span></li>
+                <li><span class="name">HTTP Server</span></li>
+                <li><span class="name">SPARQL Store</span></li>
+                <li><span class="name">Code Runner</span></li>
+              </ul>
+            </li>
+            <li><span class="name">Research Directions</span>
+              <ul>
+                <li><span class="name">Proof of Concept</span>
+                  <ul>
+                    <li><span class="name">Server-side : Seki</span></li>
+                    <li><span class="name">Client-side FooWiki</span></li>
+                    <li><span class="name">http://wifo5-03.informatik.uni-mannheim.de/pubby/</span></li>
+                  </ul>
+                </li>
+                <li><span class="name">Modelling</span>
+                  <ul>
+                    <li><span class="name">UML</span></li>
+                    <li><span class="name">High Abstraction</span></li>
+                    <li><span class="name">Bigraphs</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="name">versioning</span></li>
+            <li><span class="name">cross-site scripting</span></li>
+            <li><span class="name">Mobile agents on the Internet may be beyond
+                calling back by the user. [franklin]</span></li>
+            <li><span class="name">SPARQL injection</span></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
